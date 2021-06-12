@@ -149,7 +149,7 @@ public class PlayerController : MonoBehaviour
     {
         GameObject currentBullet = Instantiate(Bullet);
         currentBullet.GetComponent<Projectile>().SetData( attackRange, hitPoints);
-        bullet.transform.rotation = Quaternion.LookRotation(_aimDirectionVector/*+ (new Vector3(0, Angle,0)).normalized*/);
+        //bullet.transform.rotation = Quaternion.LookRotation(/*_aimDirectionVector*//*+ (new Vector3(0, Angle,0)).normalized*/);
 
     }
 
