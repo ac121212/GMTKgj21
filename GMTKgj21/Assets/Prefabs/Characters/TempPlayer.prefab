@@ -104,7 +104,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isKilled: 0
   wire: {fileID: 1664770629832976695, guid: 58f4fa5df77972e45be2fc4be50017d0, type: 3}
-  turret: {fileID: 4097503893737340642, guid: 8ab56423ca50ce84ba4013677406ead7, type: 3}
+  turret: {fileID: 4255690664474628377, guid: 5725691e55bdba445893067f44f47bf6, type: 3}
   Bullet: {fileID: 8167036622384439544, guid: cdd702c92e0ae244d845a4f1ebacb58a, type: 3}
   BombPrefab: {fileID: 0}
   Animator: {fileID: 0}
