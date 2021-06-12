@@ -58,7 +58,6 @@ public class GameController : MonoBehaviour
 
     public void GameEnd()
     {
-
         SceneManager.LoadScene(0);
     }
 

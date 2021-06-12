@@ -6,7 +6,7 @@ public class Movement : MonoBehaviour
 {
     private PlayerController playerController;
     private Enemy enemyController;
-    //[Range(0, .3f)] [SerializeField] private float m_MovementSmoothing = .05f;	// How much to smooth out the movement
+    [Range(0, .3f)] [SerializeField] private float m_MovementSmoothing = .05f;	// How much to smooth out the movement
 
     public float speed;
     public bool _isCollidingWithObstacle;
@@ -18,7 +18,6 @@ public class Movement : MonoBehaviour
     /* private vars */
     public bool _isMoving;
     private Vector3 _TempMoveVector;
-    public GameObject laser;
     public Vector3 publicMoveVector;
 
     public void Start()
@@ -29,21 +28,20 @@ public class Movement : MonoBehaviour
         if (GetComponent<Rigidbody>() != null)
             rigidbody = GetComponent<Rigidbody>();
 
-        laser = (GameObject)Instantiate(laser, new Vector3(GetComponent<Transform>().position.x, GetComponent<Transform>().position.y, GetComponent<Transform>().position.z), Quaternion.identity);
 
     }
 
 
     private void LookAt(Vector3 direction)
     {
-        laser.transform.rotation = Quaternion.LookRotation(direction); 
-        laser.transform.position = GetComponent<Transform>().position;
+        
         transform.rotation = Quaternion.LookRotation(direction);
     }
 
     public void Move(Vector3 moveVector)
     {
         if (playerController.isKilled) return;
+        playerController.Animator.SetFloat("Forward", 1);
 
         //this is for slip unit when it collide with obstacle
         if (this._isCollidingWithObstacle)
@@ -72,20 +70,18 @@ public class Movement : MonoBehaviour
         {
             Vector3 aimPoint = GetGunHeightAimPoint(ray, hitInfo);
             gameObject.transform.LookAt(aimPoint);
-            //reticle.GetComponent<Transform>().position = aimPoint;
-           // finalPoint = aimPoint;
-            //this.LookAt(aimPoint);
         }
 
-        
+
+        transform.rotation = Quaternion.LookRotation(moveVector);
+
         this.transform.position = new Vector3(transform.position.x, 0.5f, transform.position.z);
 
         transform.Translate(moveVector/moveVector.magnitude * speed * Time.deltaTime, Space.World); //Direct
-        publicMoveVector = moveVector;
-        //transform.Translate(Vector3.SmoothDamp(rigidbody.velocity, moveVector, ref moveVector, m_MovementSmoothing) * Time.deltaTime * speed , Space.World);
-
-        playerController.SetState(Common.State.RUN);
         
+        publicMoveVector = moveVector;
+
+
     }
 
     public void StopMove()
@@ -152,6 +148,8 @@ public class Movement : MonoBehaviour
 
     void Update()
     {
+        playerController.Animator.SetFloat("Forward", 0);
+
         _TempMoveVector = Vector3.zero;
 
         this._isMoving = false;
@@ -159,12 +157,16 @@ public class Movement : MonoBehaviour
         if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow)) // left
         {
             _TempMoveVector = new Vector3(-1, 0, _TempMoveVector.z);
+            playerController.Animator.SetFloat("LeftRight", -1);
+
             this._isMoving = true;
 
         }
         else if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow)) //right
         {
             _TempMoveVector = new Vector3(1, 0, _TempMoveVector.z);
+            playerController.Animator.SetFloat("LeftRight", 1);
+
             this._isMoving = true;
 
         }
@@ -187,6 +189,7 @@ public class Movement : MonoBehaviour
 
         if (!_isMoving)
             StopMove();
+
 
     }
 }
