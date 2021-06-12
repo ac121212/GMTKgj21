@@ -1,31 +1,340 @@
 m_ProjectFiles:
   m_ManifestFileStatus:
-    m_FilePath: C:/Users/aslos/Documents/GitHub/GMTKgj21/GMTKgj21/Packages/manifest.json
+    m_FilePath: /Users/patrickoetterli/Projects/GMTKgj21/GMTKgj21/Packages/manifest.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637590157354425121
-    m_Hash: 248146433
+      ticks: 637590835910000000
+    m_Hash: 880583085
   m_LockFileStatus:
-    m_FilePath: C:/Users/aslos/Documents/GitHub/GMTKgj21/GMTKgj21/Packages/packages-lock.json
+    m_FilePath: /Users/patrickoetterli/Projects/GMTKgj21/GMTKgj21/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637590157354425121
-    m_Hash: 2564801494
+      ticks: 637590835910000000
+    m_Hash: 2726101334
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
   m_Packages:
     m_ResolvedPackages:
+    - packageId: com.unity.2d.pixel-perfect@2.1.0
+      testable: 0
+      isDirectDependency: 1
+      version: 2.1.0
+      source: 1
+      resolvedPath: /Users/patrickoetterli/Projects/GMTKgj21/GMTKgj21/Library/PackageCache/com.unity.2d.pixel-perfect@2.1.0
+      assetPath: Packages/com.unity.2d.pixel-perfect
+      name: com.unity.2d.pixel-perfect
+      displayName: 2D Pixel Perfect
+      author:
+        name: 
+        email: 
+        url: 
+      category: 
+      type: 
+      description: 'The 2D Pixel Perfect package contains the Pixel Perfect Camera
+        component which ensures your pixel art remains crisp and clear at different
+        resolutions, and stable in motion.
+
+
+        It is a single component that
+        makes all the calculations needed to scale the viewport with resolution changes,
+        removing the hassle from the user. The user can adjust the definition of
+        the pixel art rendered within the camera viewport through the component settings,
+        as well preview any changes immediately in Game view by using the Run in
+        Edit Mode feature.'
+      status: 4
+      errors: []
+      versions:
+        all:
+        - 1.0.0-preview
+        - 1.0.1-preview
+        - 2.0.2
+        - 2.0.3
+        - 2.0.4
+        - 2.1.0
+        - 3.0.0
+        - 3.0.1
+        - 3.0.2
+        - 4.0.0
+        - 4.0.1
+        - 5.0.0-pre.1
+        - 5.0.0-pre.2
+        - 5.0.0
+        compatible:
+        - 4.0.1
+        verified: 4.0.1
+      dependencies: []
+      resolvedDependencies: []
+      keywords:
+      - pixel
+      - perfect
+      - 2D
+      - sprite
+      registry:
+        id: main
+        name: 
+        url: https://packages.unity.com
+        scopes: []
+        isDefault: 1
+        capabilities: 7
+      hasRegistry: 1
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 637430356360000000
+      documentationUrl: 
+      hasRepository: 1
+      repository:
+        type: git
+        url: https://github.cds.internal.unity3d.com/unity/2d.git
+        revision: af64689d11b5d27eeab4dbd14d16b98d0b3e5fc4
+        path: 
+    - packageId: com.unity.2d.sprite@1.0.0
+      testable: 0
+      isDirectDependency: 1
+      version: 1.0.0
+      source: 2
+      resolvedPath: /Users/patrickoetterli/Projects/GMTKgj21/GMTKgj21/Library/PackageCache/com.unity.2d.sprite@1.0.0
+      assetPath: Packages/com.unity.2d.sprite
+      name: com.unity.2d.sprite
+      displayName: 2D Sprite
+      author:
+        name: 
+        email: 
+        url: 
+      category: 2D
+      type: 
+      description: Use Unity Sprite Editor Window to create and edit Sprite asset
+        properties like pivot, borders and Physics shape
+      status: 4
+      errors: []
+      versions:
+        all:
+        - 1.0.0
+        compatible:
+        - 1.0.0
+        verified: 1.0.0
+      dependencies: []
+      resolvedDependencies: []
+      keywords:
+      - 2d
+      - sprite
+      - sprite editor window
+      registry:
+        id: 
+        name: 
+        url: 
+        scopes: []
+        isDefault: 0
+        capabilities: 0
+      hasRegistry: 0
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 0
+      documentationUrl: 
+      hasRepository: 0
+      repository:
+        type: 
+        url: 
+        revision: 
+        path: 
+    - packageId: com.unity.2d.tilemap@1.0.0
+      testable: 0
+      isDirectDependency: 1
+      version: 1.0.0
+      source: 2
+      resolvedPath: /Users/patrickoetterli/Projects/GMTKgj21/GMTKgj21/Library/PackageCache/com.unity.2d.tilemap@1.0.0
+      assetPath: Packages/com.unity.2d.tilemap
+      name: com.unity.2d.tilemap
+      displayName: 2D Tilemap Editor
+      author:
+        name: 
+        email: 
+        url: 
+      category: 2D
+      type: 
+      description: 2D Tilemap Editor is a package that contains editor functionalities
+        for editing Tilemaps.
+      status: 4
+      errors: []
+      versions:
+        all:
+        - 1.0.0
+        compatible:
+        - 1.0.0
+        verified: 1.0.0
+      dependencies: []
+      resolvedDependencies: []
+      keywords:
+      - 2d
+      - Tilemap
+      registry:
+        id: 
+        name: 
+        url: 
+        scopes: []
+        isDefault: 0
+        capabilities: 0
+      hasRegistry: 0
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 0
+      documentationUrl: 
+      hasRepository: 0
+      repository:
+        type: 
+        url: 
+        revision: 
+        path: 
+    - packageId: com.unity.cinemachine@2.7.4
+      testable: 0
+      isDirectDependency: 1
+      version: 2.7.4
+      source: 1
+      resolvedPath: /Users/patrickoetterli/Projects/GMTKgj21/GMTKgj21/Library/PackageCache/com.unity.cinemachine@2.7.4
+      assetPath: Packages/com.unity.cinemachine
+      name: com.unity.cinemachine
+      displayName: Cinemachine
+      author:
+        name: 
+        email: 
+        url: 
+      category: cinematography
+      type: 
+      description: "Smart camera tools for passionate creators. \n\nNew starting
+        from 2.7.1: Are you looking for the Cinemachine menu? It has moved to the
+        GameObject menu.\n\nIMPORTANT NOTE: If you are upgrading from the legacy
+        Asset Store version of Cinemachine, delete the Cinemachine asset from your
+        project BEFORE installing this version from the Package Manager."
+      status: 4
+      errors: []
+      versions:
+        all:
+        - 2.1.11-beta.1
+        - 2.1.12
+        - 2.1.13
+        - 2.2.0
+        - 2.2.7
+        - 2.2.8
+        - 2.2.9
+        - 2.2.10-preview.3
+        - 2.2.10-preview.4
+        - 2.3.1
+        - 2.3.3
+        - 2.3.4
+        - 2.3.5-preview.3
+        - 2.4.0-preview.3
+        - 2.4.0-preview.4
+        - 2.4.0-preview.6
+        - 2.4.0-preview.7
+        - 2.4.0-preview.8
+        - 2.4.0-preview.9
+        - 2.4.0-preview.10
+        - 2.4.0
+        - 2.5.0
+        - 2.6.0-preview.2
+        - 2.6.0-preview.3
+        - 2.6.0-preview.5
+        - 2.6.0-preview.8
+        - 2.6.0
+        - 2.6.1-preview.6
+        - 2.6.1
+        - 2.6.2-preview.1
+        - 2.6.2
+        - 2.6.3-preview.2
+        - 2.6.3
+        - 2.6.4
+        - 2.6.5
+        - 2.7.1
+        - 2.7.2
+        - 2.7.3
+        - 2.7.4
+        - 2.8.0-exp.1
+        - 2.8.0-exp.2
+        - 2.8.0-pre.1
+        compatible:
+        - 2.5.0
+        - 2.6.0-preview.2
+        - 2.6.0-preview.3
+        - 2.6.0-preview.5
+        - 2.6.0-preview.8
+        - 2.6.0
+        - 2.6.1-preview.6
+        - 2.6.1
+        - 2.6.2-preview.1
+        - 2.6.2
+        - 2.6.3-preview.2
+        - 2.6.3
+        - 2.6.4
+        - 2.6.5
+        - 2.7.1
+        - 2.7.2
+        - 2.7.3
+        - 2.7.4
+        - 2.8.0-exp.1
+        - 2.8.0-exp.2
+        - 2.8.0-pre.1
+        verified: 2.6.5
+      dependencies: []
+      resolvedDependencies: []
+      keywords:
+      - camera
+      - follow
+      - rig
+      - fps
+      - cinematography
+      - aim
+      - orbit
+      - cutscene
+      - cinematic
+      - collision
+      - freelook
+      - cinemachine
+      - compose
+      - composition
+      - dolly
+      - track
+      - clearshot
+      - noise
+      - framing
+      - handheld
+      - lens
+      - impulse
+      registry:
+        id: main
+        name: 
+        url: https://packages.unity.com
+        scopes: []
+        isDefault: 1
+        capabilities: 7
+      hasRegistry: 1
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 637587723470000000
+      documentationUrl: 
+      hasRepository: 1
+      repository:
+        type: git
+        url: git+https://github.com/Unity-Technologies/com.unity.cinemachine.git
+        revision: 803199910e6565c7fc162aa6ba9a899af633b2ff
+        path: 
     - packageId: com.unity.collab-proxy@1.5.7
       testable: 0
       isDirectDependency: 1
       version: 1.5.7
       source: 1
-      resolvedPath: C:\Users\aslos\Documents\GitHub\GMTKgj21\GMTKgj21\Library\PackageCache\com.unity.collab-proxy@1.5.7
+      resolvedPath: /Users/patrickoetterli/Projects/GMTKgj21/GMTKgj21/Library/PackageCache/com.unity.collab-proxy@1.5.7
       assetPath: Packages/com.unity.collab-proxy
       name: com.unity.collab-proxy
       displayName: Version Control
@@ -60,6 +369,7 @@ m_PackageAssets:
         - 1.3.7
         - 1.3.8
         - 1.3.9
+        - 1.4.9
         - 1.5.7
         - 2.0.0-preview.6
         - 2.0.0-preview.8
@@ -126,7 +436,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 2.0.7
       source: 1
-      resolvedPath: C:\Users\aslos\Documents\GitHub\GMTKgj21\GMTKgj21\Library\PackageCache\com.unity.ide.rider@2.0.7
+      resolvedPath: /Users/patrickoetterli/Projects/GMTKgj21/GMTKgj21/Library/PackageCache/com.unity.ide.rider@2.0.7
       assetPath: Packages/com.unity.ide.rider
       name: com.unity.ide.rider
       displayName: JetBrains Rider Editor
@@ -167,6 +477,7 @@ m_PackageAssets:
         - 3.0.4
         - 3.0.5
         - 3.0.6
+        - 3.0.7
         compatible:
         - 1.0.2
         - 1.0.6
@@ -192,6 +503,7 @@ m_PackageAssets:
         - 3.0.4
         - 3.0.5
         - 3.0.6
+        - 3.0.7
         verified: 2.0.7
       dependencies:
       - name: com.unity.test-framework
@@ -231,7 +543,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 2.0.8
       source: 1
-      resolvedPath: C:\Users\aslos\Documents\GitHub\GMTKgj21\GMTKgj21\Library\PackageCache\com.unity.ide.visualstudio@2.0.8
+      resolvedPath: /Users/patrickoetterli/Projects/GMTKgj21/GMTKgj21/Library/PackageCache/com.unity.ide.visualstudio@2.0.8
       assetPath: Packages/com.unity.ide.visualstudio
       name: com.unity.ide.visualstudio
       displayName: Visual Studio Editor
@@ -261,6 +573,7 @@ m_PackageAssets:
         - 2.0.5
         - 2.0.7
         - 2.0.8
+        - 2.0.9
         compatible:
         - 1.0.2
         - 1.0.3
@@ -275,7 +588,8 @@ m_PackageAssets:
         - 2.0.5
         - 2.0.7
         - 2.0.8
-        verified: 2.0.8
+        - 2.0.9
+        verified: 2.0.9
       dependencies:
       - name: com.unity.test-framework
         version: 1.1.9
@@ -301,7 +615,7 @@ m_PackageAssets:
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 0
+      datePublishedTicks: 637562620210000000
       documentationUrl: 
       hasRepository: 1
       repository:
@@ -314,7 +628,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.2.3
       source: 1
-      resolvedPath: C:\Users\aslos\Documents\GitHub\GMTKgj21\GMTKgj21\Library\PackageCache\com.unity.ide.vscode@1.2.3
+      resolvedPath: /Users/patrickoetterli/Projects/GMTKgj21/GMTKgj21/Library/PackageCache/com.unity.ide.vscode@1.2.3
       assetPath: Packages/com.unity.ide.vscode
       name: com.unity.ide.vscode
       displayName: Visual Studio Code Editor
@@ -378,12 +692,97 @@ m_PackageAssets:
         url: https://github.cds.internal.unity3d.com/unity/com.unity.ide.vscode.git
         revision: b5ec9b38109e52b1b26597d521e4df75e042ebb9
         path: 
+    - packageId: com.unity.postprocessing@2.3.0
+      testable: 0
+      isDirectDependency: 1
+      version: 2.3.0
+      source: 1
+      resolvedPath: /Users/patrickoetterli/Projects/GMTKgj21/GMTKgj21/Library/PackageCache/com.unity.postprocessing@2.3.0
+      assetPath: Packages/com.unity.postprocessing
+      name: com.unity.postprocessing
+      displayName: Post Processing
+      author:
+        name: 
+        email: 
+        url: 
+      category: 
+      type: 
+      description: The post-processing stack (v2) comes with a collection of effects
+        and image filters you can apply to your cameras to improve the visuals of
+        your games.
+      status: 4
+      errors: []
+      versions:
+        all:
+        - 0.1.7
+        - 0.1.8
+        - 2.0.0-beta
+        - 2.0.1-beta
+        - 2.0.2-preview
+        - 2.0.3-preview
+        - 2.0.5-preview
+        - 2.0.7-preview
+        - 2.0.8-preview
+        - 2.0.9-preview
+        - 2.0.10-preview
+        - 2.0.11-preview
+        - 2.0.12-preview
+        - 2.0.13-preview
+        - 2.0.14-preview
+        - 2.0.15-preview
+        - 2.0.16-preview
+        - 2.0.17-preview
+        - 2.1.0
+        - 2.1.1
+        - 2.1.2
+        - 2.1.3
+        - 2.1.4
+        - 2.1.5
+        - 2.1.6
+        - 2.1.7
+        - 2.2.1
+        - 2.2.2
+        - 2.3.0
+        - 3.0.1
+        - 3.0.3
+        - 3.1.0
+        - 3.1.1
+        compatible:
+        - 2.3.0
+        - 3.0.1
+        - 3.0.3
+        - 3.1.0
+        - 3.1.1
+        verified: 3.1.1
+      dependencies: []
+      resolvedDependencies: []
+      keywords: []
+      registry:
+        id: main
+        name: 
+        url: https://packages.unity.com
+        scopes: []
+        isDefault: 1
+        capabilities: 7
+      hasRegistry: 1
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 637144563160000000
+      documentationUrl: 
+      hasRepository: 1
+      repository:
+        type: git
+        url: git@github.com:Unity-Technologies/PostProcessing.git
+        revision: e6de985c41f04a5fc7c7227dd67e3e73fac834e7
+        path: 
     - packageId: com.unity.test-framework@1.1.24
       testable: 0
       isDirectDependency: 1
       version: 1.1.24
       source: 1
-      resolvedPath: C:\Users\aslos\Documents\GitHub\GMTKgj21\GMTKgj21\Library\PackageCache\com.unity.test-framework@1.1.24
+      resolvedPath: /Users/patrickoetterli/Projects/GMTKgj21/GMTKgj21/Library/PackageCache/com.unity.test-framework@1.1.24
       assetPath: Packages/com.unity.test-framework
       name: com.unity.test-framework
       displayName: Test Framework
@@ -426,9 +825,11 @@ m_PackageAssets:
         - 1.1.20
         - 1.1.22
         - 1.1.24
+        - 1.1.26
         compatible:
         - 1.1.24
-        verified: 1.1.24
+        - 1.1.26
+        verified: 1.1.26
       dependencies:
       - name: com.unity.ext.nunit
         version: 1.0.6
@@ -471,7 +872,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 3.0.6
       source: 1
-      resolvedPath: C:\Users\aslos\Documents\GitHub\GMTKgj21\GMTKgj21\Library\PackageCache\com.unity.textmeshpro@3.0.6
+      resolvedPath: /Users/patrickoetterli/Projects/GMTKgj21/GMTKgj21/Library/PackageCache/com.unity.textmeshpro@3.0.6
       assetPath: Packages/com.unity.textmeshpro
       name: com.unity.textmeshpro
       displayName: TextMeshPro
@@ -626,7 +1027,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.4.8
       source: 1
-      resolvedPath: C:\Users\aslos\Documents\GitHub\GMTKgj21\GMTKgj21\Library\PackageCache\com.unity.timeline@1.4.8
+      resolvedPath: /Users/patrickoetterli/Projects/GMTKgj21/GMTKgj21/Library/PackageCache/com.unity.timeline@1.4.8
       assetPath: Packages/com.unity.timeline
       name: com.unity.timeline
       displayName: Timeline
@@ -699,9 +1100,11 @@ m_PackageAssets:
         - 1.5.1-pre.3
         - 1.5.2
         - 1.5.4
+        - 1.5.5
         - 1.6.0-pre.1
         - 1.6.0-pre.3
         - 1.6.0-pre.4
+        - 1.6.0-pre.5
         compatible:
         - 1.4.8
         - 1.5.0-pre.2
@@ -715,9 +1118,11 @@ m_PackageAssets:
         - 1.5.1-pre.3
         - 1.5.2
         - 1.5.4
+        - 1.5.5
         - 1.6.0-pre.1
         - 1.6.0-pre.3
         - 1.6.0-pre.4
+        - 1.6.0-pre.5
         verified: 1.4.8
       dependencies:
       - name: com.unity.modules.director
@@ -755,7 +1160,7 @@ m_PackageAssets:
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 0
+      datePublishedTicks: 637557616100000000
       documentationUrl: 
       hasRepository: 1
       repository:
@@ -768,7 +1173,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\aslos\Documents\GitHub\GMTKgj21\GMTKgj21\Library\PackageCache\com.unity.ugui@1.0.0
+      resolvedPath: /Users/patrickoetterli/Projects/GMTKgj21/GMTKgj21/Library/PackageCache/com.unity.ugui@1.0.0
       assetPath: Packages/com.unity.ugui
       name: com.unity.ugui
       displayName: Unity UI
@@ -831,7 +1236,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\aslos\Documents\GitHub\GMTKgj21\GMTKgj21\Library\PackageCache\com.unity.modules.ai@1.0.0
+      resolvedPath: /Users/patrickoetterli/Projects/GMTKgj21/GMTKgj21/Library/PackageCache/com.unity.modules.ai@1.0.0
       assetPath: Packages/com.unity.modules.ai
       name: com.unity.modules.ai
       displayName: AI
@@ -879,7 +1284,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\aslos\Documents\GitHub\GMTKgj21\GMTKgj21\Library\PackageCache\com.unity.modules.androidjni@1.0.0
+      resolvedPath: /Users/patrickoetterli/Projects/GMTKgj21/GMTKgj21/Library/PackageCache/com.unity.modules.androidjni@1.0.0
       assetPath: Packages/com.unity.modules.androidjni
       name: com.unity.modules.androidjni
       displayName: Android JNI
@@ -927,7 +1332,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\aslos\Documents\GitHub\GMTKgj21\GMTKgj21\Library\PackageCache\com.unity.modules.animation@1.0.0
+      resolvedPath: /Users/patrickoetterli/Projects/GMTKgj21/GMTKgj21/Library/PackageCache/com.unity.modules.animation@1.0.0
       assetPath: Packages/com.unity.modules.animation
       name: com.unity.modules.animation
       displayName: Animation
@@ -975,7 +1380,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\aslos\Documents\GitHub\GMTKgj21\GMTKgj21\Library\PackageCache\com.unity.modules.assetbundle@1.0.0
+      resolvedPath: /Users/patrickoetterli/Projects/GMTKgj21/GMTKgj21/Library/PackageCache/com.unity.modules.assetbundle@1.0.0
       assetPath: Packages/com.unity.modules.assetbundle
       name: com.unity.modules.assetbundle
       displayName: Asset Bundle
@@ -1023,7 +1428,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\aslos\Documents\GitHub\GMTKgj21\GMTKgj21\Library\PackageCache\com.unity.modules.audio@1.0.0
+      resolvedPath: /Users/patrickoetterli/Projects/GMTKgj21/GMTKgj21/Library/PackageCache/com.unity.modules.audio@1.0.0
       assetPath: Packages/com.unity.modules.audio
       name: com.unity.modules.audio
       displayName: Audio
@@ -1071,7 +1476,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\aslos\Documents\GitHub\GMTKgj21\GMTKgj21\Library\PackageCache\com.unity.modules.cloth@1.0.0
+      resolvedPath: /Users/patrickoetterli/Projects/GMTKgj21/GMTKgj21/Library/PackageCache/com.unity.modules.cloth@1.0.0
       assetPath: Packages/com.unity.modules.cloth
       name: com.unity.modules.cloth
       displayName: Cloth
@@ -1123,7 +1528,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\aslos\Documents\GitHub\GMTKgj21\GMTKgj21\Library\PackageCache\com.unity.modules.director@1.0.0
+      resolvedPath: /Users/patrickoetterli/Projects/GMTKgj21/GMTKgj21/Library/PackageCache/com.unity.modules.director@1.0.0
       assetPath: Packages/com.unity.modules.director
       name: com.unity.modules.director
       displayName: Director
@@ -1179,7 +1584,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\aslos\Documents\GitHub\GMTKgj21\GMTKgj21\Library\PackageCache\com.unity.modules.imageconversion@1.0.0
+      resolvedPath: /Users/patrickoetterli/Projects/GMTKgj21/GMTKgj21/Library/PackageCache/com.unity.modules.imageconversion@1.0.0
       assetPath: Packages/com.unity.modules.imageconversion
       name: com.unity.modules.imageconversion
       displayName: Image Conversion
@@ -1228,7 +1633,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\aslos\Documents\GitHub\GMTKgj21\GMTKgj21\Library\PackageCache\com.unity.modules.imgui@1.0.0
+      resolvedPath: /Users/patrickoetterli/Projects/GMTKgj21/GMTKgj21/Library/PackageCache/com.unity.modules.imgui@1.0.0
       assetPath: Packages/com.unity.modules.imgui
       name: com.unity.modules.imgui
       displayName: IMGUI
@@ -1276,7 +1681,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\aslos\Documents\GitHub\GMTKgj21\GMTKgj21\Library\PackageCache\com.unity.modules.jsonserialize@1.0.0
+      resolvedPath: /Users/patrickoetterli/Projects/GMTKgj21/GMTKgj21/Library/PackageCache/com.unity.modules.jsonserialize@1.0.0
       assetPath: Packages/com.unity.modules.jsonserialize
       name: com.unity.modules.jsonserialize
       displayName: JSONSerialize
@@ -1324,7 +1729,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\aslos\Documents\GitHub\GMTKgj21\GMTKgj21\Library\PackageCache\com.unity.modules.particlesystem@1.0.0
+      resolvedPath: /Users/patrickoetterli/Projects/GMTKgj21/GMTKgj21/Library/PackageCache/com.unity.modules.particlesystem@1.0.0
       assetPath: Packages/com.unity.modules.particlesystem
       name: com.unity.modules.particlesystem
       displayName: Particle System
@@ -1372,7 +1777,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\aslos\Documents\GitHub\GMTKgj21\GMTKgj21\Library\PackageCache\com.unity.modules.physics@1.0.0
+      resolvedPath: /Users/patrickoetterli/Projects/GMTKgj21/GMTKgj21/Library/PackageCache/com.unity.modules.physics@1.0.0
       assetPath: Packages/com.unity.modules.physics
       name: com.unity.modules.physics
       displayName: Physics
@@ -1420,7 +1825,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\aslos\Documents\GitHub\GMTKgj21\GMTKgj21\Library\PackageCache\com.unity.modules.physics2d@1.0.0
+      resolvedPath: /Users/patrickoetterli/Projects/GMTKgj21/GMTKgj21/Library/PackageCache/com.unity.modules.physics2d@1.0.0
       assetPath: Packages/com.unity.modules.physics2d
       name: com.unity.modules.physics2d
       displayName: Physics 2D
@@ -1468,7 +1873,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\aslos\Documents\GitHub\GMTKgj21\GMTKgj21\Library\PackageCache\com.unity.modules.screencapture@1.0.0
+      resolvedPath: /Users/patrickoetterli/Projects/GMTKgj21/GMTKgj21/Library/PackageCache/com.unity.modules.screencapture@1.0.0
       assetPath: Packages/com.unity.modules.screencapture
       name: com.unity.modules.screencapture
       displayName: Screen Capture
@@ -1520,7 +1925,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\aslos\Documents\GitHub\GMTKgj21\GMTKgj21\Library\PackageCache\com.unity.modules.terrain@1.0.0
+      resolvedPath: /Users/patrickoetterli/Projects/GMTKgj21/GMTKgj21/Library/PackageCache/com.unity.modules.terrain@1.0.0
       assetPath: Packages/com.unity.modules.terrain
       name: com.unity.modules.terrain
       displayName: Terrain
@@ -1568,7 +1973,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\aslos\Documents\GitHub\GMTKgj21\GMTKgj21\Library\PackageCache\com.unity.modules.terrainphysics@1.0.0
+      resolvedPath: /Users/patrickoetterli/Projects/GMTKgj21/GMTKgj21/Library/PackageCache/com.unity.modules.terrainphysics@1.0.0
       assetPath: Packages/com.unity.modules.terrainphysics
       name: com.unity.modules.terrainphysics
       displayName: Terrain Physics
@@ -1624,7 +2029,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\aslos\Documents\GitHub\GMTKgj21\GMTKgj21\Library\PackageCache\com.unity.modules.tilemap@1.0.0
+      resolvedPath: /Users/patrickoetterli/Projects/GMTKgj21/GMTKgj21/Library/PackageCache/com.unity.modules.tilemap@1.0.0
       assetPath: Packages/com.unity.modules.tilemap
       name: com.unity.modules.tilemap
       displayName: Tilemap
@@ -1676,7 +2081,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\aslos\Documents\GitHub\GMTKgj21\GMTKgj21\Library\PackageCache\com.unity.modules.ui@1.0.0
+      resolvedPath: /Users/patrickoetterli/Projects/GMTKgj21/GMTKgj21/Library/PackageCache/com.unity.modules.ui@1.0.0
       assetPath: Packages/com.unity.modules.ui
       name: com.unity.modules.ui
       displayName: UI
@@ -1724,7 +2129,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\aslos\Documents\GitHub\GMTKgj21\GMTKgj21\Library\PackageCache\com.unity.modules.uielements@1.0.0
+      resolvedPath: /Users/patrickoetterli/Projects/GMTKgj21/GMTKgj21/Library/PackageCache/com.unity.modules.uielements@1.0.0
       assetPath: Packages/com.unity.modules.uielements
       name: com.unity.modules.uielements
       displayName: UIElements
@@ -1788,7 +2193,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\aslos\Documents\GitHub\GMTKgj21\GMTKgj21\Library\PackageCache\com.unity.modules.umbra@1.0.0
+      resolvedPath: /Users/patrickoetterli/Projects/GMTKgj21/GMTKgj21/Library/PackageCache/com.unity.modules.umbra@1.0.0
       assetPath: Packages/com.unity.modules.umbra
       name: com.unity.modules.umbra
       displayName: Umbra
@@ -1836,7 +2241,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\aslos\Documents\GitHub\GMTKgj21\GMTKgj21\Library\PackageCache\com.unity.modules.unityanalytics@1.0.0
+      resolvedPath: /Users/patrickoetterli/Projects/GMTKgj21/GMTKgj21/Library/PackageCache/com.unity.modules.unityanalytics@1.0.0
       assetPath: Packages/com.unity.modules.unityanalytics
       name: com.unity.modules.unityanalytics
       displayName: Unity Analytics
@@ -1892,7 +2297,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\aslos\Documents\GitHub\GMTKgj21\GMTKgj21\Library\PackageCache\com.unity.modules.unitywebrequest@1.0.0
+      resolvedPath: /Users/patrickoetterli/Projects/GMTKgj21/GMTKgj21/Library/PackageCache/com.unity.modules.unitywebrequest@1.0.0
       assetPath: Packages/com.unity.modules.unitywebrequest
       name: com.unity.modules.unitywebrequest
       displayName: Unity Web Request
@@ -1940,7 +2345,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\aslos\Documents\GitHub\GMTKgj21\GMTKgj21\Library\PackageCache\com.unity.modules.unitywebrequestassetbundle@1.0.0
+      resolvedPath: /Users/patrickoetterli/Projects/GMTKgj21/GMTKgj21/Library/PackageCache/com.unity.modules.unitywebrequestassetbundle@1.0.0
       assetPath: Packages/com.unity.modules.unitywebrequestassetbundle
       name: com.unity.modules.unitywebrequestassetbundle
       displayName: Unity Web Request Asset Bundle
@@ -1996,7 +2401,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\aslos\Documents\GitHub\GMTKgj21\GMTKgj21\Library\PackageCache\com.unity.modules.unitywebrequestaudio@1.0.0
+      resolvedPath: /Users/patrickoetterli/Projects/GMTKgj21/GMTKgj21/Library/PackageCache/com.unity.modules.unitywebrequestaudio@1.0.0
       assetPath: Packages/com.unity.modules.unitywebrequestaudio
       name: com.unity.modules.unitywebrequestaudio
       displayName: Unity Web Request Audio
@@ -2052,7 +2457,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\aslos\Documents\GitHub\GMTKgj21\GMTKgj21\Library\PackageCache\com.unity.modules.unitywebrequesttexture@1.0.0
+      resolvedPath: /Users/patrickoetterli/Projects/GMTKgj21/GMTKgj21/Library/PackageCache/com.unity.modules.unitywebrequesttexture@1.0.0
       assetPath: Packages/com.unity.modules.unitywebrequesttexture
       name: com.unity.modules.unitywebrequesttexture
       displayName: Unity Web Request Texture
@@ -2108,7 +2513,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\aslos\Documents\GitHub\GMTKgj21\GMTKgj21\Library\PackageCache\com.unity.modules.unitywebrequestwww@1.0.0
+      resolvedPath: /Users/patrickoetterli/Projects/GMTKgj21/GMTKgj21/Library/PackageCache/com.unity.modules.unitywebrequestwww@1.0.0
       assetPath: Packages/com.unity.modules.unitywebrequestwww
       name: com.unity.modules.unitywebrequestwww
       displayName: Unity Web Request WWW
@@ -2180,7 +2585,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\aslos\Documents\GitHub\GMTKgj21\GMTKgj21\Library\PackageCache\com.unity.modules.vehicles@1.0.0
+      resolvedPath: /Users/patrickoetterli/Projects/GMTKgj21/GMTKgj21/Library/PackageCache/com.unity.modules.vehicles@1.0.0
       assetPath: Packages/com.unity.modules.vehicles
       name: com.unity.modules.vehicles
       displayName: Vehicles
@@ -2232,7 +2637,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\aslos\Documents\GitHub\GMTKgj21\GMTKgj21\Library\PackageCache\com.unity.modules.video@1.0.0
+      resolvedPath: /Users/patrickoetterli/Projects/GMTKgj21/GMTKgj21/Library/PackageCache/com.unity.modules.video@1.0.0
       assetPath: Packages/com.unity.modules.video
       name: com.unity.modules.video
       displayName: Video
@@ -2292,7 +2697,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\aslos\Documents\GitHub\GMTKgj21\GMTKgj21\Library\PackageCache\com.unity.modules.vr@1.0.0
+      resolvedPath: /Users/patrickoetterli/Projects/GMTKgj21/GMTKgj21/Library/PackageCache/com.unity.modules.vr@1.0.0
       assetPath: Packages/com.unity.modules.vr
       name: com.unity.modules.vr
       displayName: VR
@@ -2354,7 +2759,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\aslos\Documents\GitHub\GMTKgj21\GMTKgj21\Library\PackageCache\com.unity.modules.wind@1.0.0
+      resolvedPath: /Users/patrickoetterli/Projects/GMTKgj21/GMTKgj21/Library/PackageCache/com.unity.modules.wind@1.0.0
       assetPath: Packages/com.unity.modules.wind
       name: com.unity.modules.wind
       displayName: Wind
@@ -2402,7 +2807,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\aslos\Documents\GitHub\GMTKgj21\GMTKgj21\Library\PackageCache\com.unity.modules.xr@1.0.0
+      resolvedPath: /Users/patrickoetterli/Projects/GMTKgj21/GMTKgj21/Library/PackageCache/com.unity.modules.xr@1.0.0
       assetPath: Packages/com.unity.modules.xr
       name: com.unity.modules.xr
       displayName: XR
@@ -2462,7 +2867,7 @@ m_PackageAssets:
       isDirectDependency: 0
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\aslos\Documents\GitHub\GMTKgj21\GMTKgj21\Library\PackageCache\com.unity.modules.subsystems@1.0.0
+      resolvedPath: /Users/patrickoetterli/Projects/GMTKgj21/GMTKgj21/Library/PackageCache/com.unity.modules.subsystems@1.0.0
       assetPath: Packages/com.unity.modules.subsystems
       name: com.unity.modules.subsystems
       displayName: Subsystems
@@ -2514,7 +2919,7 @@ m_PackageAssets:
       isDirectDependency: 0
       version: 1.0.0
       source: 2
-      resolvedPath: C:\Users\aslos\Documents\GitHub\GMTKgj21\GMTKgj21\Library\PackageCache\com.unity.modules.uielementsnative@1.0.0
+      resolvedPath: /Users/patrickoetterli/Projects/GMTKgj21/GMTKgj21/Library/PackageCache/com.unity.modules.uielementsnative@1.0.0
       assetPath: Packages/com.unity.modules.uielementsnative
       name: com.unity.modules.uielementsnative
       displayName: UIElements Native
@@ -2573,7 +2978,7 @@ m_PackageAssets:
       isDirectDependency: 0
       version: 1.0.6
       source: 1
-      resolvedPath: C:\Users\aslos\Documents\GitHub\GMTKgj21\GMTKgj21\Library\PackageCache\com.unity.ext.nunit@1.0.6
+      resolvedPath: /Users/patrickoetterli/Projects/GMTKgj21/GMTKgj21/Library/PackageCache/com.unity.ext.nunit@1.0.6
       assetPath: Packages/com.unity.ext.nunit
       name: com.unity.ext.nunit
       displayName: Custom NUnit
@@ -2634,7 +3039,7 @@ m_PackageAssets:
       isDirectDependency: 0
       version: 2.0.0
       source: 1
-      resolvedPath: C:\Users\aslos\Documents\GitHub\GMTKgj21\GMTKgj21\Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0
+      resolvedPath: /Users/patrickoetterli/Projects/GMTKgj21/GMTKgj21/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0
       assetPath: Packages/com.unity.nuget.newtonsoft-json
       name: com.unity.nuget.newtonsoft-json
       displayName: Newtonsoft Json
@@ -2643,7 +3048,7 @@ m_PackageAssets:
         email: 
         url: 
       category: 
-      type: library
+      type: 
       description: 'Newtonsoft Json for use in Unity projects and Unity packages.
         Currently synced to version 12.0.2.
 
@@ -2658,9 +3063,27 @@ m_PackageAssets:
       errors: []
       versions:
         all:
+        - 1.0.0-preview.2
+        - 1.0.0-preview.3
+        - 1.0.0-preview.4
+        - 1.0.1-preview.1
+        - 1.1.2
+        - 2.0.0-preview
+        - 2.0.0-preview.1
+        - 2.0.0-preview.2
         - 2.0.0
+        - 2.0.1-preview.1
         compatible:
+        - 1.0.0-preview.2
+        - 1.0.0-preview.3
+        - 1.0.0-preview.4
+        - 1.0.1-preview.1
+        - 1.1.2
+        - 2.0.0-preview
+        - 2.0.0-preview.1
+        - 2.0.0-preview.2
         - 2.0.0
+        - 2.0.1-preview.1
         verified: 2.0.0
       dependencies: []
       resolvedDependencies: []
@@ -2677,7 +3100,7 @@ m_PackageAssets:
       entitlements:
         isAllowed: 1
       isAssetStorePackage: 0
-      datePublishedTicks: 0
+      datePublishedTicks: 637237898320000000
       documentationUrl: 
       hasRepository: 1
       repository:
@@ -2687,5 +3110,5 @@ m_PackageAssets:
         path: 
   m_LocalPackages:
     m_LocalFileStatus: []
-m_ProjectPath: C:/Users/aslos/Documents/GitHub/GMTKgj21/GMTKgj21/Packages
+m_ProjectPath: /Users/patrickoetterli/Projects/GMTKgj21/GMTKgj21/Packages
 m_EditorVersion: 2020.3.11f1 (99c7afb366b3)

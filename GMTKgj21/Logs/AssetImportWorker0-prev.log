@@ -1,246 +1,1326 @@
 Using pre-set license
-Built from '2020.3/staging' branch; Version is '2020.3.11f1 (99c7afb366b3) revision 10078127'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Home; OS build 19041.1052; Version 2004; 64bit' Language: 'en' Physical Memory: 16304 MB
-BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
-C:\Program Files\Unity\Hub\Editor\2020.3.11f1\Editor\Unity.exe
+/Applications/Unity/Hub/Editor/2020.3.11f1/Unity.app/Contents/MacOS/Unity
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/aslos/Documents/GitHub/GMTKgj21/GMTKgj21
+/Users/patrickoetterli/Projects/GMTKgj21/GMTKgj21
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-60557
-Successfully changed project path to: C:/Users/aslos/Documents/GitHub/GMTKgj21/GMTKgj21
-C:/Users/aslos/Documents/GitHub/GMTKgj21/GMTKgj21
+53093
+Successfully changed project path to: /Users/patrickoetterli/Projects/GMTKgj21/GMTKgj21
+/Users/patrickoetterli/Projects/GMTKgj21/GMTKgj21
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 27.52 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 38.24 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.11f1 (99c7afb366b3)
-[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/aslos/Documents/GitHub/GMTKgj21/GMTKgj21/Assets
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2020.3.11f1/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/patrickoetterli/Projects/GMTKgj21/GMTKgj21/Assets
 GfxDevice: creating device client; threaded=0
-Direct3D:
-    Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce GTX 970 (ID=0x13c2)
-    Vendor:   
-    VRAM:     4043 MB
-    Driver:   27.21.14.6611
+2021-06-12 08:53:18.847 Unity[11519:367215] LU28R55 preferred device: Intel Iris Pro Graphics (low power)
+2021-06-12 08:53:18.847 Unity[11519:367215] Metal devices available: 1
+2021-06-12 08:53:18.848 Unity[11519:367215] 0: Intel Iris Pro Graphics (low power)
+2021-06-12 08:53:18.848 Unity[11519:367215] Using device Intel Iris Pro Graphics (low power)
+Initializing Metal device caps: Intel Iris Pro Graphics
 Initialize mono
-Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/Managed'
-Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
-Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56512
+Mono path[0] = '/Applications/Unity/Hub/Editor/2020.3.11f1/Unity.app/Contents/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/2020.3.11f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = '/Applications/Unity/Hub/Editor/2020.3.11f1/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56519
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.11f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002503 seconds.
+Register platform support module: /Applications/Unity/Hub/Editor/2020.3.11f1/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2020.3.11f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2020.3.11f1/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001080 seconds.
 Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 31.33 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 35.52 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.359 seconds
+- Completed reload, in  4.534 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.007126 seconds.
+Registered in 0.003595 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.14 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.40 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.072 seconds
+- Completed reload, in  1.588 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.11 seconds
-Refreshing native plugins compatible for Editor in 0.67 ms, found 2 plugins.
+Launching external process: /Applications/Unity/Hub/Editor/2020.3.11f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.02 seconds
+Refreshing native plugins compatible for Editor in 0.45 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1393 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 65.0 MB.
-System memory in use after: 65.1 MB.
+System memory in use before: 139.5 MB.
+System memory in use after: 139.5 MB.
 
 Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 1827.
-Total: 1.579200 ms (FindLiveObjects: 0.127200 ms CreateObjectMapping: 0.038500 ms MarkObjects: 1.340200 ms  DeleteObjects: 0.072300 ms)
+Total: 2.865488 ms (FindLiveObjects: 0.200066 ms CreateObjectMapping: 0.058330 ms MarkObjects: 2.326289 ms  DeleteObjects: 0.278684 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Scenes/GameMap1.unity
-  artifactKey: Guid(46a50c8fb4bfbea49a43aeb7e8c78971) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/GameMap1.unity using Guid(46a50c8fb4bfbea49a43aeb7e8c78971) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec5b4d7f7ba4dc74fbee64105be922a3') in 0.016352 seconds
-  Import took 0.018311 seconds .
+  path: Assets/Scenes/MainMenu.unity
+  artifactKey: Guid(1a4031424863eeb4783683a8a298a64d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/MainMenu.unity using Guid(1a4031424863eeb4783683a8a298a64d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9c6a21f629597132828bd3f86173a1e') in 0.020432 seconds
+  Import took 0.025950 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000160 seconds.
+  Time since last request: 0.000380 seconds.
+  path: Assets/Scenes
+  artifactKey: Guid(c38ffee12097ff84d9960b85ade907d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes using Guid(c38ffee12097ff84d9960b85ade907d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62ff44cc3f744d75889a29efb9cc0e76') in 0.001138 seconds
+  Import took 0.004617 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000292 seconds.
   path: Assets/Scenes/SampleScene.unity
   artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '000658e9bf1d64a6fecc7625d7c0a359') in 0.009353 seconds
-  Import took 0.011212 seconds .
+Start importing Assets/Scenes/SampleScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96e629dc7106f5f6700d5f8fc5844267') in 0.002795 seconds
+  Import took 0.008374 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 15.065865 seconds.
-  path: Assets/Scenes/Test_FBX_ello
-  artifactKey: Guid(907a89a9cb2e2c14a94dcbd3f076d9d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Test_FBX_ello using Guid(907a89a9cb2e2c14a94dcbd3f076d9d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b52ba4ad26e233422eb1448f2bb567df') in 0.016796 seconds
-  Import took 0.022638 seconds .
+  Time since last request: 11.480513 seconds.
+  path: Assets/Prefabs/Characters/TempEnemy.prefab
+  artifactKey: Guid(92bb8cfef6bac7940981849cad831671) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Characters/TempEnemy.prefab using Guid(92bb8cfef6bac7940981849cad831671) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9da19ef2b080277fe2d5fc3138705c7c') in 1.839836 seconds
+  Import took 1.843769 seconds .
+
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 4.08 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 12 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 120.9 MB.
+System memory in use after: 120.9 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 1836.
+Total: 4.123890 ms (FindLiveObjects: 0.350930 ms CreateObjectMapping: 0.131174 ms MarkObjects: 3.582085 ms  DeleteObjects: 0.058402 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005776 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.36 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.647 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.40 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1388 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 147.7 MB.
+System memory in use after: 147.7 MB.
+
+Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 1839.
+Total: 2.310107 ms (FindLiveObjects: 0.230816 ms CreateObjectMapping: 0.053373 ms MarkObjects: 1.940915 ms  DeleteObjects: 0.083876 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.075447 seconds.
-  path: Assets/Scenes/Test_FBX_ello/test_FBX.fbx
-  artifactKey: Guid(7adddf864309ee44b814a1d48fdcb009) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Test_FBX_ello/test_FBX.fbx using Guid(7adddf864309ee44b814a1d48fdcb009) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a07f6c305e7f1ce6ed340f99e8949b09') in 0.572735 seconds
-  Import took 0.575030 seconds .
+  Time since last request: 836.543485 seconds.
+  path: Assets/Plugins
+  artifactKey: Guid(4c7c14a697316481ba19268d0ed36dba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins using Guid(4c7c14a697316481ba19268d0ed36dba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c50a15a2154fba2017399c88839d5a1') in 0.013950 seconds
+  Import took 0.018183 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005544 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.52 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+[ScriptCompilation] NOT recompiling all scripts because this is an import worker process. Reason to compile was: Define symbols changed
+Mono: successfully reloaded assembly
+- Completed reload, in  1.843 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.56 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1744 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 168.1 MB.
+System memory in use after: 166.2 MB.
+
+Unloading 43 unused Assets to reduce memory usage. Loaded Objects now: 2173.
+Total: 3.324901 ms (FindLiveObjects: 0.183262 ms CreateObjectMapping: 0.066632 ms MarkObjects: 2.233742 ms  DeleteObjects: 0.840127 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.012839 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 2.65 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  5.842 seconds
+Platform modules already initialized, skipping
+Shader 'TextMeshPro/Distance Field': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
+Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
+Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
+Refreshing native plugins compatible for Editor in 1.00 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2574 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 275.3 MB.
+System memory in use after: 199.4 MB.
+
+Unloading 72 unused Assets to reduce memory usage. Loaded Objects now: 2978.
+Total: 20.419778 ms (FindLiveObjects: 0.418540 ms CreateObjectMapping: 0.139451 ms MarkObjects: 2.951311 ms  DeleteObjects: 16.908704 ms)
+
+========================================================================
+Received Prepare
+Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
+Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
+Refreshing native plugins compatible for Editor in 7.33 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 70 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 226.3 MB.
+System memory in use after: 150.4 MB.
+
+Unloading 70 unused Assets to reduce memory usage. Loaded Objects now: 2978.
+Total: 23.070241 ms (FindLiveObjects: 0.314985 ms CreateObjectMapping: 0.130729 ms MarkObjects: 3.250172 ms  DeleteObjects: 19.372646 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004764 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.89 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.856 seconds
+Platform modules already initialized, skipping
+Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
+Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
+Refreshing native plugins compatible for Editor in 0.85 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2576 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 276.3 MB.
+System memory in use after: 200.4 MB.
+
+Unloading 74 unused Assets to reduce memory usage. Loaded Objects now: 2982.
+Total: 19.649254 ms (FindLiveObjects: 0.368221 ms CreateObjectMapping: 0.123909 ms MarkObjects: 2.590427 ms  DeleteObjects: 16.565521 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006160 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.25 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.869 seconds
+Platform modules already initialized, skipping
+Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
+Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
+Refreshing native plugins compatible for Editor in 1.00 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2576 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 276.1 MB.
+System memory in use after: 200.1 MB.
+
+Unloading 74 unused Assets to reduce memory usage. Loaded Objects now: 2985.
+Total: 24.496836 ms (FindLiveObjects: 0.540975 ms CreateObjectMapping: 0.189555 ms MarkObjects: 4.392461 ms  DeleteObjects: 19.372193 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000249 seconds.
-  path: Assets/Scenes/Test_FBX_ello/test_TEX.png
-  artifactKey: Guid(dd41c7752c596194ea4d7a9c0ee0ef4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Test_FBX_ello/test_TEX.png using Guid(dd41c7752c596194ea4d7a9c0ee0ef4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '638169f46984bec921d1fd2d30742137') in 0.077167 seconds
-  Import took 0.080609 seconds .
+  Time since last request: 584.527017 seconds.
+  path: Assets/Plugins/TopDownEngine/ThirdParty
+  artifactKey: Guid(a2f8d84d71816564d8622c501e66c41e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/TopDownEngine/ThirdParty using Guid(a2f8d84d71816564d8622c501e66c41e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c602de66812254ddfacfe338de0998ae') in 0.007241 seconds
+  Import took 0.012911 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 1.952601 seconds.
-  path: Assets/Scenes/Test_FBX_ello/ello_test_scene.unity
-  artifactKey: Guid(1a0d9a2319f577347ac55b320f5ad501) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Test_FBX_ello/ello_test_scene.unity using Guid(1a0d9a2319f577347ac55b320f5ad501) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0bdff465720de283a25648ad1eb666c1') in 0.009491 seconds
-  Import took 0.014082 seconds .
+  Time since last request: 0.005247 seconds.
+  path: Assets/Plugins/TopDownEngine/ThirdParty
+  artifactKey: Guid(a2f8d84d71816564d8622c501e66c41e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/TopDownEngine/ThirdParty using Guid(a2f8d84d71816564d8622c501e66c41e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c602de66812254ddfacfe338de0998ae') in 0.001601 seconds
+  Import took 0.007324 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.004325 seconds.
+Registered in 0.003742 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.29 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.98 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.957 seconds
+- Completed reload, in  1.668 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.27 ms, found 2 plugins.
+Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
+Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
+Refreshing native plugins compatible for Editor in 1.18 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1388 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 68.4 MB.
-System memory in use after: 68.5 MB.
+Unloading 2576 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 276.2 MB.
+System memory in use after: 200.3 MB.
 
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 1874.
-Total: 3.365300 ms (FindLiveObjects: 0.163400 ms CreateObjectMapping: 0.047400 ms MarkObjects: 3.096000 ms  DeleteObjects: 0.057200 ms)
+Unloading 74 unused Assets to reduce memory usage. Loaded Objects now: 2988.
+Total: 21.964963 ms (FindLiveObjects: 0.404368 ms CreateObjectMapping: 0.215949 ms MarkObjects: 2.615810 ms  DeleteObjects: 18.727671 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.005286 seconds.
+Registered in 0.006310 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.28 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.86 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.047 seconds
+- Completed reload, in  1.706 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.27 ms, found 2 plugins.
+Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
+Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
+Refreshing native plugins compatible for Editor in 0.90 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1388 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 68.5 MB.
-System memory in use after: 68.5 MB.
+Unloading 2576 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 276.4 MB.
+System memory in use after: 200.4 MB.
 
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 1877.
-Total: 1.999600 ms (FindLiveObjects: 0.159300 ms CreateObjectMapping: 0.058000 ms MarkObjects: 1.726800 ms  DeleteObjects: 0.053700 ms)
+Unloading 74 unused Assets to reduce memory usage. Loaded Objects now: 2991.
+Total: 20.830906 ms (FindLiveObjects: 0.377301 ms CreateObjectMapping: 0.116359 ms MarkObjects: 2.852082 ms  DeleteObjects: 17.484043 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.004024 seconds.
+Registered in 0.008475 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.27 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.87 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.016 seconds
+- Completed reload, in  1.702 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.29 ms, found 2 plugins.
+Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
+Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
+Refreshing native plugins compatible for Editor in 0.85 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1388 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 68.5 MB.
-System memory in use after: 68.5 MB.
+Unloading 2576 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 276.6 MB.
+System memory in use after: 200.6 MB.
 
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 1880.
-Total: 1.718400 ms (FindLiveObjects: 0.155300 ms CreateObjectMapping: 0.049600 ms MarkObjects: 1.461100 ms  DeleteObjects: 0.051300 ms)
+Unloading 74 unused Assets to reduce memory usage. Loaded Objects now: 2994.
+Total: 18.648744 ms (FindLiveObjects: 0.330982 ms CreateObjectMapping: 0.119066 ms MarkObjects: 2.601669 ms  DeleteObjects: 15.595840 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 351.818648 seconds.
+  path: Assets/Plugins/TopDownEngine/Demos/Loft3D/Loft3D.unity
+  artifactKey: Guid(d1174410a185495439298917edf07eea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/TopDownEngine/Demos/Loft3D/Loft3D.unity using Guid(d1174410a185495439298917edf07eea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f71d88a71838105419987c265f597937') in 0.018394 seconds
+  Import took 0.024607 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.006882 seconds.
+Registered in 0.005838 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.28 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 1.02 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.022 seconds
+- Completed reload, in  1.702 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.30 ms, found 2 plugins.
+Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
+Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
+Refreshing native plugins compatible for Editor in 0.83 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1388 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 68.5 MB.
-System memory in use after: 68.6 MB.
+Unloading 2576 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 276.8 MB.
+System memory in use after: 200.9 MB.
 
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 1883.
-Total: 1.828400 ms (FindLiveObjects: 0.144900 ms CreateObjectMapping: 0.044200 ms MarkObjects: 1.586100 ms  DeleteObjects: 0.052000 ms)
+Unloading 74 unused Assets to reduce memory usage. Loaded Objects now: 2997.
+Total: 21.763661 ms (FindLiveObjects: 0.414147 ms CreateObjectMapping: 0.169342 ms MarkObjects: 2.757643 ms  DeleteObjects: 18.421317 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.006088 seconds.
+Registered in 0.006854 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.31 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.96 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.068 seconds
+- Completed reload, in  1.848 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.26 ms, found 2 plugins.
+Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
+Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
+Refreshing native plugins compatible for Editor in 0.97 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1388 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 68.5 MB.
-System memory in use after: 68.6 MB.
+Unloading 2576 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 277.2 MB.
+System memory in use after: 201.2 MB.
 
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 1886.
-Total: 2.053400 ms (FindLiveObjects: 0.134100 ms CreateObjectMapping: 0.039000 ms MarkObjects: 1.817200 ms  DeleteObjects: 0.061400 ms)
+Unloading 74 unused Assets to reduce memory usage. Loaded Objects now: 3000.
+Total: 20.421903 ms (FindLiveObjects: 0.364579 ms CreateObjectMapping: 0.193425 ms MarkObjects: 3.415923 ms  DeleteObjects: 16.446194 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 355.381636 seconds.
+  path: Assets/Prefabs/Characters/Player.prefab
+  artifactKey: Guid(972b0f97df7a84170bd09dc573a3241b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Characters/Player.prefab using Guid(972b0f97df7a84170bd09dc573a3241b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5af81891a58b783b4c2ec63b5b647671') in 0.195978 seconds
+  Import took 0.203792 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002565 seconds.
+  path: Assets/Prefabs/Characters/Player.prefab
+  artifactKey: Guid(972b0f97df7a84170bd09dc573a3241b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Characters/Player.prefab using Guid(972b0f97df7a84170bd09dc573a3241b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5af81891a58b783b4c2ec63b5b647671') in 0.012789 seconds
+  Import took 0.018678 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 27.076908 seconds.
+  path: Assets/Prefabs/Characters/Player.prefab
+  artifactKey: Guid(972b0f97df7a84170bd09dc573a3241b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Characters/Player.prefab using Guid(972b0f97df7a84170bd09dc573a3241b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41488f63d789f069570bfc89c6811fc6') in 0.011517 seconds
+  Import took 0.016416 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 96.774756 seconds.
+  path: Assets/Prefabs/Characters/Player.prefab
+  artifactKey: Guid(972b0f97df7a84170bd09dc573a3241b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Characters/Player.prefab using Guid(972b0f97df7a84170bd09dc573a3241b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c045e1988d3fc0774e99a554dacdf115') in 0.041937 seconds
+  Import took 0.048785 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 66.994447 seconds.
+  path: Assets/Scripts/PlayerController.cs
+  artifactKey: Guid(43f158fe078204c2d84da4939400c505) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerController.cs using Guid(43f158fe078204c2d84da4939400c505) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a06d955e8867436b7cfb0bc5bef58629') in 0.434791 seconds
+  Import took 0.441469 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.005082 seconds.
+Registered in 0.005138 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.27 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 1.15 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.000 seconds
+- Completed reload, in  1.798 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.27 ms, found 2 plugins.
+Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
+Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
+Refreshing native plugins compatible for Editor in 1.55 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1388 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 68.5 MB.
-System memory in use after: 68.6 MB.
+Unloading 2577 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 282.1 MB.
+System memory in use after: 206.2 MB.
 
-Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 1889.
-Total: 1.789800 ms (FindLiveObjects: 0.134500 ms CreateObjectMapping: 0.040600 ms MarkObjects: 1.557400 ms  DeleteObjects: 0.056400 ms)
+Unloading 75 unused Assets to reduce memory usage. Loaded Objects now: 3007.
+Total: 29.795999 ms (FindLiveObjects: 0.732456 ms CreateObjectMapping: 0.355567 ms MarkObjects: 3.959947 ms  DeleteObjects: 24.745282 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 334.505552 seconds.
+  path: Assets/Scripts/PlayerController.cs
+  artifactKey: Guid(43f158fe078204c2d84da4939400c505) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerController.cs using Guid(43f158fe078204c2d84da4939400c505) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c565fc9b49463ae89f763f7f312fa227') in 0.009486 seconds
+  Import took 0.015905 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.011223 seconds.
+  path: Assets/Scripts/PlayerController.cs
+  artifactKey: Guid(43f158fe078204c2d84da4939400c505) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerController.cs using Guid(43f158fe078204c2d84da4939400c505) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c565fc9b49463ae89f763f7f312fa227') in 0.002158 seconds
+  Import took 0.006602 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.024483 seconds.
+  path: Assets/Plugins/TopDownEngine/Demos/Minimal3D/MinimalSword3D.unity
+  artifactKey: Guid(a8bba52c06984564fbf26a7cfc873e39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/TopDownEngine/Demos/Minimal3D/MinimalSword3D.unity using Guid(a8bba52c06984564fbf26a7cfc873e39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a31a9d08ffc187862e1e2194d8554ee2') in 0.016263 seconds
+  Import took 0.022024 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.877193 seconds.
+  path: Assets/Plugins/TopDownEngine/Demos/Minimal3D/MinimalPathfinding3D.unity
+  artifactKey: Guid(cf1765d7f98243b4185a616df4e45868) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/TopDownEngine/Demos/Minimal3D/MinimalPathfinding3D.unity using Guid(cf1765d7f98243b4185a616df4e45868) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '349166973eaf47c67962b9c52bb8e4a9') in 0.002353 seconds
+  Import took 0.010606 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.767172 seconds.
+  path: Assets/Plugins/TopDownEngine/Demos/Minimal3D/MinimalPerformance.unity
+  artifactKey: Guid(b118ddfd651e28542947aedf2a9684f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/TopDownEngine/Demos/Minimal3D/MinimalPerformance.unity using Guid(b118ddfd651e28542947aedf2a9684f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f94f810dc1cebeb266dcde32df5b16f') in 0.003619 seconds
+  Import took 0.011154 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.082054 seconds.
+  path: Assets/Plugins/TopDownEngine/Demos/Minimal3D/MinimalRooms3D.unity
+  artifactKey: Guid(ca2d5b64c544736469d5bf86d4ddd7fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/TopDownEngine/Demos/Minimal3D/MinimalRooms3D.unity using Guid(ca2d5b64c544736469d5bf86d4ddd7fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e42a37fd0679e9d0ee8a92913c1b48f0') in 0.004463 seconds
+  Import took 0.013179 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.500353 seconds.
+  path: Assets/Plugins/TopDownEngine/Demos/Minimal3D/MinimalSandbox3D.unity
+  artifactKey: Guid(f7c701f79b6cb6b44b4fd656eda8e473) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/TopDownEngine/Demos/Minimal3D/MinimalSandbox3D.unity using Guid(f7c701f79b6cb6b44b4fd656eda8e473) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61b1fbbb58730757fbe43ecd689d82dd') in 0.001629 seconds
+  Import took 0.009216 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.236365 seconds.
+  path: Assets/Plugins/TopDownEngine/Demos/Minimal3D/MinimalScene3D.unity
+  artifactKey: Guid(7dd4341e6eb3f384daaf23d76ce07ee2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/TopDownEngine/Demos/Minimal3D/MinimalScene3D.unity using Guid(7dd4341e6eb3f384daaf23d76ce07ee2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '012fdcc0f73d38df464e821b28d06bbc') in 0.003734 seconds
+  Import took 0.011766 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.514413 seconds.
+  path: Assets/Plugins/TopDownEngine/Demos/Koala2D/KoalaRooms.unity
+  artifactKey: Guid(e04cbbc59c9fc7f4daf2418621d84909) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/TopDownEngine/Demos/Koala2D/KoalaRooms.unity using Guid(e04cbbc59c9fc7f4daf2418621d84909) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98493fc25d7981941854ca1f41a9d62b') in 0.003375 seconds
+  Import took 0.009364 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.845625 seconds.
+  path: Assets/Plugins/TopDownEngine/Demos/Minimal3D/Materials/Minimal3DGlassesMaterial.mat
+  artifactKey: Guid(54a1638915d40f4429c5323171ac1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/TopDownEngine/Demos/Minimal3D/Materials/Minimal3DGlassesMaterial.mat using Guid(54a1638915d40f4429c5323171ac1a95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98b66235557101c4c057e3d133fa0d39') in 0.516040 seconds
+  Import took 0.521692 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000228 seconds.
+  path: Assets/Plugins/TopDownEngine/Demos/Minimal3D/Materials/MinimalGuide.mat
+  artifactKey: Guid(b7dfc3fa81111364ca3265d1d9d6ea88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/TopDownEngine/Demos/Minimal3D/Materials/MinimalGuide.mat using Guid(b7dfc3fa81111364ca3265d1d9d6ea88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '213fb1110dcea4f0eed19d6b9e67bc0c') in 0.438782 seconds
+  Import took 0.443666 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000359 seconds.
+  path: Assets/Plugins/TopDownEngine/Demos/Minimal3D/MinimalAI3D/NavMesh-Navmesh.asset
+  artifactKey: Guid(2e0f0df90a2941b49942eb8aad07a05f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/TopDownEngine/Demos/Minimal3D/MinimalAI3D/NavMesh-Navmesh.asset using Guid(2e0f0df90a2941b49942eb8aad07a05f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fcfe8820ed551fe6331191be73cb2c5') in 0.314697 seconds
+  Import took 0.320077 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000232 seconds.
+  path: Assets/Plugins/TopDownEngine/Demos/Minimal3D/MinimalRooms3D/Lightmap-0_comp_light.exr
+  artifactKey: Guid(999263c322b651d4bb2ce2b88c83ef2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/TopDownEngine/Demos/Minimal3D/MinimalRooms3D/Lightmap-0_comp_light.exr using Guid(999263c322b651d4bb2ce2b88c83ef2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a05c2dc994b315a178a82d40fb3438a2') in 1.442398 seconds
+  Import took 1.447710 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000238 seconds.
+  path: Assets/Plugins/TopDownEngine/Demos/Minimal3D/MinimalScene3D/LightingData.asset
+  artifactKey: Guid(025d717bffd7add4eb2995cfda97a736) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/TopDownEngine/Demos/Minimal3D/MinimalScene3D/LightingData.asset using Guid(025d717bffd7add4eb2995cfda97a736) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8f36880c0f509f1ce9e17d1a3c40955') in 0.005636 seconds
+  Import took 0.010415 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000319 seconds.
+  path: Assets/Plugins/TopDownEngine/Demos/Minimal3D/MinimalRooms3D/ReflectionProbe-0.exr
+  artifactKey: Guid(2c84a88c004ca0c469d3f90566738dff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/TopDownEngine/Demos/Minimal3D/MinimalRooms3D/ReflectionProbe-0.exr using Guid(2c84a88c004ca0c469d3f90566738dff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '038d4fbe6fd822636f268fa3da36564c') in 0.164854 seconds
+  Import took 0.172068 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000265 seconds.
+  path: Assets/Plugins/TopDownEngine/Demos/Minimal3D/Models/MinimalDude.mat
+  artifactKey: Guid(4867b37d732339b4e9b65b7cea92fa77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/TopDownEngine/Demos/Minimal3D/Models/MinimalDude.mat using Guid(4867b37d732339b4e9b65b7cea92fa77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9254742072bc19639bc22a212e8de312') in 0.011038 seconds
+  Import took 0.015185 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000258 seconds.
+  path: Assets/Plugins/TopDownEngine/Demos/Minimal3D/MinimalScene3D/Lightmap-0_comp_light.exr
+  artifactKey: Guid(f6db30b991a455b45a91b58edfd91284) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/TopDownEngine/Demos/Minimal3D/MinimalScene3D/Lightmap-0_comp_light.exr using Guid(f6db30b991a455b45a91b58edfd91284) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3556e5964313deaddb5fa04e2a3bc47') in 0.071133 seconds
+  Import took 0.076421 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000319 seconds.
+  path: Assets/Plugins/TopDownEngine/Demos/Minimal3D/MinimalScene3D/ReflectionProbe-0.exr
+  artifactKey: Guid(c9666318429f8074491c2d13266cbe14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/TopDownEngine/Demos/Minimal3D/MinimalScene3D/ReflectionProbe-0.exr using Guid(c9666318429f8074491c2d13266cbe14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9a086af0d30c01e43f934a167193705') in 0.037249 seconds
+  Import took 0.045090 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000276 seconds.
+  path: Assets/Plugins/TopDownEngine/Demos/Minimal3D/Models/Minimal3DCoin.obj
+  artifactKey: Guid(b113a48a69f999f4ab640652725054b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/TopDownEngine/Demos/Minimal3D/Models/Minimal3DCoin.obj using Guid(b113a48a69f999f4ab640652725054b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f75e3a2ef9c4f58f2cf99141ff4189a') in 2.182915 seconds
+  Import took 2.188480 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000262 seconds.
+  path: Assets/Plugins/TopDownEngine/Demos/Minimal3D/Models/MinimalDude.fbx
+  artifactKey: Guid(5de4a37320be3e348aebe2c58a1fbd8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/TopDownEngine/Demos/Minimal3D/Models/MinimalDude.fbx using Guid(5de4a37320be3e348aebe2c58a1fbd8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c728e5c89a2f48cbc296c4dd933f525') in 0.319353 seconds
+  Import took 0.325265 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000277 seconds.
+  path: Assets/Plugins/TopDownEngine/Demos/Minimal3D/Materials/MinimalGridGround.mat
+  artifactKey: Guid(5e6c05e280f501c49a2a35650acf12af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/TopDownEngine/Demos/Minimal3D/Materials/MinimalGridGround.mat using Guid(5e6c05e280f501c49a2a35650acf12af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '509636523e8788f0bcf5171234cff903') in 0.294233 seconds
+  Import took 0.300023 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000248 seconds.
+  path: Assets/Plugins/TopDownEngine/Demos/Minimal3D/MinimalRooms3D/LightingData.asset
+  artifactKey: Guid(7f436dc0cd6f3da4c8be1cbe66b4b790) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/TopDownEngine/Demos/Minimal3D/MinimalRooms3D/LightingData.asset using Guid(7f436dc0cd6f3da4c8be1cbe66b4b790) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85abf4cd3d99881466ab08fa13330787') in 0.004335 seconds
+  Import took 0.009394 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000219 seconds.
+  path: Assets/Plugins/TopDownEngine/Demos/Minimal3D/Models/Minimal3DGlasses.fbx
+  artifactKey: Guid(68e83e9e49482f04b895b0ab335332fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/TopDownEngine/Demos/Minimal3D/Models/Minimal3DGlasses.fbx using Guid(68e83e9e49482f04b895b0ab335332fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50a5cfd4945ca04b1b72072cd17a9755') in 0.171328 seconds
+  Import took 0.177257 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 76.075208 seconds.
+  path: Assets/Scripts/PlayerController.cs
+  artifactKey: Guid(43f158fe078204c2d84da4939400c505) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerController.cs using Guid(43f158fe078204c2d84da4939400c505) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd39b58fe22eaad1081b49fb1051e655') in 0.007037 seconds
+  Import took 0.018342 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.428765 seconds.
+  path: Assets/Scripts/Move.cs
+  artifactKey: Guid(f93fe1d84cf674d42b6899b34f8e885a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Move.cs using Guid(f93fe1d84cf674d42b6899b34f8e885a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee1e1fe338d44eb935e1d4382c1d2945') in 0.007889 seconds
+  Import took 0.015739 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 295.029689 seconds.
+  path: Assets/Scripts/PlayerController.cs
+  artifactKey: Guid(43f158fe078204c2d84da4939400c505) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerController.cs using Guid(43f158fe078204c2d84da4939400c505) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51abd9c01b97a6e0d6cbb7d1bbfd681e') in 0.006999 seconds
+  Import took 0.018756 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.012498 seconds.
+  path: Assets/Scripts/PlayerController.cs
+  artifactKey: Guid(43f158fe078204c2d84da4939400c505) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerController.cs using Guid(43f158fe078204c2d84da4939400c505) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51abd9c01b97a6e0d6cbb7d1bbfd681e') in 0.005088 seconds
+  Import took 0.012580 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.464411 seconds.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SampleScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69b636f7f6e3babe33489f222c28e7c9') in 0.002999 seconds
+  Import took 0.009821 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003409 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.95 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.656 seconds
+Platform modules already initialized, skipping
+Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
+Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
+Refreshing native plugins compatible for Editor in 0.90 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2577 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 304.7 MB.
+System memory in use after: 228.7 MB.
+
+Unloading 74 unused Assets to reduce memory usage. Loaded Objects now: 3052.
+Total: 21.670288 ms (FindLiveObjects: 0.403092 ms CreateObjectMapping: 0.303605 ms MarkObjects: 2.589829 ms  DeleteObjects: 18.372290 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002802 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.89 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.645 seconds
+Platform modules already initialized, skipping
+Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
+Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
+Refreshing native plugins compatible for Editor in 0.94 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2577 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 304.9 MB.
+System memory in use after: 228.9 MB.
+
+Unloading 74 unused Assets to reduce memory usage. Loaded Objects now: 3055.
+Total: 23.909618 ms (FindLiveObjects: 0.450837 ms CreateObjectMapping: 0.283775 ms MarkObjects: 3.407973 ms  DeleteObjects: 19.765240 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002490 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.36 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.665 seconds
+Platform modules already initialized, skipping
+Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
+Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
+Refreshing native plugins compatible for Editor in 0.83 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2577 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 305.1 MB.
+System memory in use after: 229.1 MB.
+
+Unloading 74 unused Assets to reduce memory usage. Loaded Objects now: 3058.
+Total: 18.303479 ms (FindLiveObjects: 0.285866 ms CreateObjectMapping: 0.142955 ms MarkObjects: 2.772041 ms  DeleteObjects: 15.101347 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 158.260361 seconds.
+  path: Assets/Scripts/Projectile.cs
+  artifactKey: Guid(fc66d7038abe0c54d914546fe80fbef8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Projectile.cs using Guid(fc66d7038abe0c54d914546fe80fbef8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e588111716d6ad417d8fb9a79409badc') in 0.011096 seconds
+  Import took 0.016801 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000389 seconds.
+  path: Assets/Scripts/Projectile.cs
+  artifactKey: Guid(fc66d7038abe0c54d914546fe80fbef8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Projectile.cs using Guid(fc66d7038abe0c54d914546fe80fbef8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e588111716d6ad417d8fb9a79409badc') in 0.004941 seconds
+  Import took 0.010345 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.485512 seconds.
+  path: Assets/Scripts/PlayerController.cs
+  artifactKey: Guid(43f158fe078204c2d84da4939400c505) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerController.cs using Guid(43f158fe078204c2d84da4939400c505) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ccfd8454efcffebfbc0ba55667946fb7') in 0.005939 seconds
+  Import took 0.011809 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002596 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.94 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.719 seconds
+Platform modules already initialized, skipping
+Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
+Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
+Refreshing native plugins compatible for Editor in 1.20 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2576 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 305.3 MB.
+System memory in use after: 229.3 MB.
+
+Unloading 75 unused Assets to reduce memory usage. Loaded Objects now: 3060.
+Total: 20.035102 ms (FindLiveObjects: 0.385809 ms CreateObjectMapping: 0.119386 ms MarkObjects: 2.953971 ms  DeleteObjects: 16.574593 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002489 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.87 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.651 seconds
+Platform modules already initialized, skipping
+Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
+Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
+Refreshing native plugins compatible for Editor in 1.09 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2576 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 305.5 MB.
+System memory in use after: 229.5 MB.
+
+Unloading 74 unused Assets to reduce memory usage. Loaded Objects now: 3063.
+Total: 19.954273 ms (FindLiveObjects: 0.370476 ms CreateObjectMapping: 0.121840 ms MarkObjects: 2.566040 ms  DeleteObjects: 16.893507 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 235.760221 seconds.
+  path: Assets/Scenes/NewBehaviourScript.cs
+  artifactKey: Guid(27bdd8d120d934dbf8db471a6271516c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/NewBehaviourScript.cs using Guid(27bdd8d120d934dbf8db471a6271516c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c93f3d5d44255f160b877a44b00282f') in 0.018213 seconds
+  Import took 0.025877 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005785 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.92 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.787 seconds
+Platform modules already initialized, skipping
+Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
+Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
+Refreshing native plugins compatible for Editor in 0.81 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2576 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 305.7 MB.
+System memory in use after: 229.7 MB.
+
+Unloading 74 unused Assets to reduce memory usage. Loaded Objects now: 3066.
+Total: 19.890662 ms (FindLiveObjects: 0.369194 ms CreateObjectMapping: 0.259365 ms MarkObjects: 2.880527 ms  DeleteObjects: 16.379929 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003200 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.97 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.676 seconds
+Platform modules already initialized, skipping
+Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
+Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
+Refreshing native plugins compatible for Editor in 0.80 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2576 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 305.9 MB.
+System memory in use after: 229.9 MB.
+
+Unloading 74 unused Assets to reduce memory usage. Loaded Objects now: 3069.
+Total: 19.224512 ms (FindLiveObjects: 0.489555 ms CreateObjectMapping: 0.406609 ms MarkObjects: 3.433850 ms  DeleteObjects: 14.892874 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.308802 seconds.
+  path: Assets/Scripts/GameController.cs
+  artifactKey: Guid(6674e8e45553c4d518e4389faee11cc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/GameController.cs using Guid(6674e8e45553c4d518e4389faee11cc3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07b412a797913b8eddc6ec4a1d8f115b') in 0.015819 seconds
+  Import took 0.027421 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002565 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.86 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.645 seconds
+Platform modules already initialized, skipping
+Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
+Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
+Refreshing native plugins compatible for Editor in 1.06 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2577 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 306.1 MB.
+System memory in use after: 230.2 MB.
+
+Unloading 74 unused Assets to reduce memory usage. Loaded Objects now: 3073.
+Total: 21.368596 ms (FindLiveObjects: 0.446160 ms CreateObjectMapping: 0.171862 ms MarkObjects: 3.568812 ms  DeleteObjects: 17.180013 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002512 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.99 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.638 seconds
+Platform modules already initialized, skipping
+Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
+Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
+Refreshing native plugins compatible for Editor in 0.84 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2577 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 306.4 MB.
+System memory in use after: 230.4 MB.
+
+Unloading 74 unused Assets to reduce memory usage. Loaded Objects now: 3076.
+Total: 19.597803 ms (FindLiveObjects: 0.385865 ms CreateObjectMapping: 0.116917 ms MarkObjects: 2.672625 ms  DeleteObjects: 16.421230 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005780 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.93 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.657 seconds
+Platform modules already initialized, skipping
+Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
+Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
+Refreshing native plugins compatible for Editor in 0.98 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2577 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 306.6 MB.
+System memory in use after: 230.6 MB.
+
+Unloading 74 unused Assets to reduce memory usage. Loaded Objects now: 3079.
+Total: 20.516172 ms (FindLiveObjects: 0.284611 ms CreateObjectMapping: 0.120853 ms MarkObjects: 2.438036 ms  DeleteObjects: 17.671466 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005847 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.95 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.684 seconds
+Platform modules already initialized, skipping
+Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
+Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
+Refreshing native plugins compatible for Editor in 0.84 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2577 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 306.8 MB.
+System memory in use after: 230.9 MB.
+
+Unloading 74 unused Assets to reduce memory usage. Loaded Objects now: 3082.
+Total: 21.948566 ms (FindLiveObjects: 0.569964 ms CreateObjectMapping: 0.156526 ms MarkObjects: 2.975822 ms  DeleteObjects: 18.245235 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006723 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.91 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.808 seconds
+Platform modules already initialized, skipping
+Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
+Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
+Refreshing native plugins compatible for Editor in 0.82 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2577 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 307.1 MB.
+System memory in use after: 231.2 MB.
+
+Unloading 74 unused Assets to reduce memory usage. Loaded Objects now: 3085.
+Total: 21.558657 ms (FindLiveObjects: 0.426588 ms CreateObjectMapping: 0.120768 ms MarkObjects: 2.532487 ms  DeleteObjects: 18.477423 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006058 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.88 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.558 seconds
+Platform modules already initialized, skipping
+Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
+Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
+Refreshing native plugins compatible for Editor in 0.89 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2577 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 307.5 MB.
+System memory in use after: 231.5 MB.
+
+Unloading 74 unused Assets to reduce memory usage. Loaded Objects now: 3088.
+Total: 18.058510 ms (FindLiveObjects: 0.324137 ms CreateObjectMapping: 0.124973 ms MarkObjects: 2.512931 ms  DeleteObjects: 15.094977 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005351 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.05 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.595 seconds
+Platform modules already initialized, skipping
+Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
+Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
+Refreshing native plugins compatible for Editor in 0.92 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2577 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 307.7 MB.
+System memory in use after: 231.7 MB.
+
+Unloading 74 unused Assets to reduce memory usage. Loaded Objects now: 3091.
+Total: 20.994189 ms (FindLiveObjects: 0.465476 ms CreateObjectMapping: 0.287569 ms MarkObjects: 3.089273 ms  DeleteObjects: 17.150699 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005295 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.87 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.474 seconds
+Platform modules already initialized, skipping
+Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
+Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
+Refreshing native plugins compatible for Editor in 0.97 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2577 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 308.0 MB.
+System memory in use after: 232.0 MB.
+
+Unloading 74 unused Assets to reduce memory usage. Loaded Objects now: 3094.
+Total: 19.100464 ms (FindLiveObjects: 0.384479 ms CreateObjectMapping: 0.241555 ms MarkObjects: 2.576600 ms  DeleteObjects: 15.896653 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002488 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.89 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.618 seconds
+Platform modules already initialized, skipping
+Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
+Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
+Refreshing native plugins compatible for Editor in 0.89 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2577 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 308.2 MB.
+System memory in use after: 232.2 MB.
+
+Unloading 74 unused Assets to reduce memory usage. Loaded Objects now: 3097.
+Total: 16.549193 ms (FindLiveObjects: 0.279247 ms CreateObjectMapping: 0.113512 ms MarkObjects: 2.526831 ms  DeleteObjects: 13.628524 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002505 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.88 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.490 seconds
+Platform modules already initialized, skipping
+Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
+Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
+Refreshing native plugins compatible for Editor in 0.80 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2577 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 308.4 MB.
+System memory in use after: 232.5 MB.
+
+Unloading 74 unused Assets to reduce memory usage. Loaded Objects now: 3100.
+Total: 22.379903 ms (FindLiveObjects: 0.428131 ms CreateObjectMapping: 0.254343 ms MarkObjects: 3.163976 ms  DeleteObjects: 18.532152 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004819 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.88 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.457 seconds
+Platform modules already initialized, skipping
+Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
+Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
+Refreshing native plugins compatible for Editor in 0.87 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2577 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 308.6 MB.
+System memory in use after: 232.7 MB.
+
+Unloading 74 unused Assets to reduce memory usage. Loaded Objects now: 3103.
+Total: 21.001292 ms (FindLiveObjects: 0.443574 ms CreateObjectMapping: 0.280265 ms MarkObjects: 3.044575 ms  DeleteObjects: 17.231824 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002386 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.80 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.471 seconds
+Platform modules already initialized, skipping
+Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
+Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
+Refreshing native plugins compatible for Editor in 0.81 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2577 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 308.9 MB.
+System memory in use after: 232.9 MB.
+
+Unloading 74 unused Assets to reduce memory usage. Loaded Objects now: 3106.
+Total: 20.926532 ms (FindLiveObjects: 0.448783 ms CreateObjectMapping: 0.268730 ms MarkObjects: 3.195897 ms  DeleteObjects: 17.011781 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003300 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.99 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.478 seconds
+Platform modules already initialized, skipping
+Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
+Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
+Refreshing native plugins compatible for Editor in 0.83 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2577 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 309.2 MB.
+System memory in use after: 233.2 MB.
+
+Unloading 74 unused Assets to reduce memory usage. Loaded Objects now: 3109.
+Total: 20.889489 ms (FindLiveObjects: 0.475642 ms CreateObjectMapping: 0.165693 ms MarkObjects: 2.816265 ms  DeleteObjects: 17.430757 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005773 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 2.66 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.656 seconds
+Platform modules already initialized, skipping
+Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
+Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
+Refreshing native plugins compatible for Editor in 2.54 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2577 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 309.4 MB.
+System memory in use after: 233.4 MB.
+
+Unloading 74 unused Assets to reduce memory usage. Loaded Objects now: 3112.
+Total: 41.935221 ms (FindLiveObjects: 1.224440 ms CreateObjectMapping: 0.778195 ms MarkObjects: 5.029576 ms  DeleteObjects: 34.900513 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 2304.897322 seconds.
+  path: Assets/Prefabs/GameController.prefab
+  artifactKey: Guid(d58a18bfb8c814dc893403ef41126b00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/GameController.prefab using Guid(d58a18bfb8c814dc893403ef41126b00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '709630d2852e953f67f1dc98646f69e1') in 0.044478 seconds
+  Import took 0.050836 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.169327 seconds.
+  path: Assets/Prefabs/GameController.prefab
+  artifactKey: Guid(d58a18bfb8c814dc893403ef41126b00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/GameController.prefab using Guid(d58a18bfb8c814dc893403ef41126b00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '709630d2852e953f67f1dc98646f69e1') in 0.053194 seconds
+  Import took 0.059107 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003707 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.02 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.566 seconds
+Platform modules already initialized, skipping
+Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
+Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
+Refreshing native plugins compatible for Editor in 0.92 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2577 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 309.6 MB.
+System memory in use after: 233.7 MB.
+
+Unloading 74 unused Assets to reduce memory usage. Loaded Objects now: 3115.
+Total: 22.751999 ms (FindLiveObjects: 0.476925 ms CreateObjectMapping: 0.271281 ms MarkObjects: 3.209906 ms  DeleteObjects: 18.792690 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005363 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.85 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.644 seconds
+Platform modules already initialized, skipping
+Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
+Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
+Refreshing native plugins compatible for Editor in 0.94 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2577 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 309.9 MB.
+System memory in use after: 233.9 MB.
+
+Unloading 74 unused Assets to reduce memory usage. Loaded Objects now: 3118.
+Total: 18.447658 ms (FindLiveObjects: 0.304396 ms CreateObjectMapping: 0.117685 ms MarkObjects: 2.469207 ms  DeleteObjects: 15.554842 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 194.324117 seconds.
+  path: Packages/com.unity.cinemachine/package.json
+  artifactKey: Guid(7d93e7b7399fbe64790358e67fc94b18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.cinemachine/package.json using Guid(7d93e7b7399fbe64790358e67fc94b18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbee8ff9a27d8e29589813b12bc1bd14') in 1.848450 seconds
+  Import took 1.855940 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002718 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.02 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.492 seconds
+Platform modules already initialized, skipping
+Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
+Shader 'MoreMountains/MMRipple': fallback shader 'Particle/AlphaBlended' not found
+Refreshing native plugins compatible for Editor in 0.87 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2604 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 315.7 MB.
+System memory in use after: 239.3 MB.
+
+Unloading 76 unused Assets to reduce memory usage. Loaded Objects now: 3146.
+Total: 18.827547 ms (FindLiveObjects: 0.408922 ms CreateObjectMapping: 0.114373 ms MarkObjects: 2.507978 ms  DeleteObjects: 15.794921 ms)
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

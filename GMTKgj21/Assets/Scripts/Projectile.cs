@@ -17,6 +17,7 @@ public class Projectile : MonoBehaviour
     {
         
     }
+
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.name == "Cylinder")

@@ -16,6 +16,9 @@ public class Enemy : MonoBehaviour
     void Start()
     {
         controller = gameObject.AddComponent<CharacterController>();
+
+        player = FindObjectOfType<Move>().gameObject;
+
     }
 
     // Update is called once per frame
@@ -38,6 +41,7 @@ public class Enemy : MonoBehaviour
             Destroy(gameObject);
             Destroy(GetComponent<Rigidbody>());
         }
+
        controller.Move(playerVelocity * Time.deltaTime * playerVelocity.magnitude);
        playerVelocity = .995f * playerVelocity;
 
@@ -61,7 +65,6 @@ public class Enemy : MonoBehaviour
         }
         if (other.gameObject.CompareTag("Explosion"))
         {
-
             
             Vector3 mag = new Vector3(other.gameObject.GetComponent<Transform>().position.x - GetComponent<Transform>().position.x, 0f, other.gameObject.GetComponent<Transform>().position.z - GetComponent<Transform>().position.z);
           

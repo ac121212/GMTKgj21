@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 879091775295880511}
   - component: {fileID: 9036602788028563253}
   - component: {fileID: -1050954226361010503}
+  - component: {fileID: 7040040174986620180}
   m_Layer: 0
   m_Name: TempEnemy
   m_TagString: Untagged
@@ -109,5 +110,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e739dce7b57014b4b97b616bb2ef9b40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sampleObject: {fileID: 8167036622384439544, guid: cdd702c92e0ae244d845a4f1ebacb58a, type: 3}
+  sampleObject: {fileID: 8167036622384439544, guid: cdd702c92e0ae244d845a4f1ebacb58a,
+    type: 3}
   HP: 100
+  player: {fileID: 0}
+--- !u!195 &7040040174986620180
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5559116101408951984}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5000001
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 1
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
