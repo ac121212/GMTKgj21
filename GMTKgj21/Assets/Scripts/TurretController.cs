@@ -61,4 +61,8 @@ public class TurretController : MonoBehaviour
             enemies.Remove(other);
         }
     }
+    public void Shoot()
+    {
+
+    }
 }
