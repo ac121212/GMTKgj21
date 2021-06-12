@@ -4,16 +4,29 @@ using UnityEngine;
 
 public class CameraBehavior : MonoBehaviour
 {
-    public GameObject player;
+    [Header("here is the player (Notice there is a small delay to declare the Player Object)")]
+    public Transform player;
+
+    public Vector3 CameraOffset;
     // Start is called before the first frame update
     void Start()
     {
-        gameObject.transform.position = new Vector3 (player.transform.position.x, 7f, player.transform.position.z-3.5f);
+        //this function will be called direct on start
+        StartCoroutine(LateStart());
+    }
+
+    public IEnumerator LateStart()
+    {
+        //this will wait so the player has enough time to spawn
+        yield return new WaitForSeconds(0.1f);
+        player = FindObjectOfType<PlayerController>().transform;
+        gameObject.transform.position = new Vector3(player.position.x + CameraOffset.x, player.position.y + CameraOffset.y, player.position.z + CameraOffset.z);
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        gameObject.transform.position = new Vector3 (player.transform.position.x, 7, player.transform.position.z-3.5f);
+        gameObject.transform.position = new Vector3 (player.position.x + CameraOffset.x, player.position.y + CameraOffset.y, player.position.z + CameraOffset.z);
     }
 }

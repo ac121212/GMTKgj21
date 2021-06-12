@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
@@ -33,7 +34,7 @@ public class GameController : MonoBehaviour
     public void StartGame()
     {
         // Start Game
-        Player = Instantiate(PlayerPrefab, new Vector3(0, 0, 0), Quaternion.identity);
+        Player = Instantiate(PlayerPrefab, new Vector3(0, 1, 0), Quaternion.identity);
 
         StartCoroutine(Wave());
     }
@@ -49,6 +50,12 @@ public class GameController : MonoBehaviour
         WaveCounter++;
         yield return new WaitForSeconds(0.1f);
 
+    }
+
+    public void GameEnd()
+    {
+
+        SceneManager.LoadScene(0);
     }
 
     // Start is called before the first frame update
