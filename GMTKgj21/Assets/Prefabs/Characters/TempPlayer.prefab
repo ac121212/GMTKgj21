@@ -104,10 +104,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isKilled: 0
   wire: {fileID: 1664770629832976695, guid: 58f4fa5df77972e45be2fc4be50017d0, type: 3}
-  turret: {fileID: 4097503893737340642, guid: 8ab56423ca50ce84ba4013677406ead7, type: 3}
+  turret: {fileID: 4255690664474628377, guid: 5725691e55bdba445893067f44f47bf6, type: 3}
   Bullet: {fileID: 8167036622384439544, guid: cdd702c92e0ae244d845a4f1ebacb58a, type: 3}
-  Animator: {fileID: 158884255865412827}
-  Model: {fileID: 6697202190642659552}
+  BombPrefab: {fileID: 0}
+  Animator: {fileID: 0}
+  Model: {fileID: 0}
   _isCollidingWithObstacle: 0
   AttackVoiceSound: {fileID: 0}
   audioListener: {fileID: 0}
@@ -120,6 +121,10 @@ MonoBehaviour:
   reloadTime: 1
   attackTime: 0.5
   recoverTime: 0.5
+  grenade: {fileID: 7423124767841338256, guid: 4d2fd1f9ffa845b4aa41485019481206, type: 3}
+  bullet: {fileID: 8167036622384439544, guid: cdd702c92e0ae244d845a4f1ebacb58a, type: 3}
+  grenadeReticle: {fileID: 2481776928355762303, guid: c08e002746ba6f447a0e3707dd6451e5,
+    type: 3}
 --- !u!114 &295464680440906151
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -132,11 +137,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f93fe1d84cf674d42b6899b34f8e885a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_MovementSmoothing: 0.05
-  speed: 20
+  speed: 5
   _isCollidingWithObstacle: 0
   rigidbody: {fileID: 0}
   _isMoving: 0
+  laser: {fileID: 7815069833903160560, guid: 4d20af9b17b03a544b2a282742bf5da5, type: 3}
   publicMoveVector: {x: 0, y: 0, z: 0}
 --- !u!54 &1460121297695943648
 Rigidbody:

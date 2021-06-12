@@ -14,6 +14,7 @@ public class Enemy : MonoBehaviour
     public Movement movement;
     /* prefabs */
     public GameObject Bullet;
+    public GameObject BombPrefab;
 
     /* component refs */
     public Animator Animator;
@@ -23,6 +24,7 @@ public class Enemy : MonoBehaviour
     private Vector3 _collisionVector;
     private GameController gameController;
     public AudioSource AttackVoiceSound;
+    public AudioListener audioListener;
 
     public float attackRange = 4f;
 
@@ -37,7 +39,16 @@ public class Enemy : MonoBehaviour
     private Rigidbody rigidbody;
     public bool _isMoving;
 
+    //private GameController gameController;
 
+    //private CharacterController controller;
+    //public GameObject sampleObject;
+    //public double HP;
+    //private bool isTriggered = false;
+    //private float gravityValue = -9.81f;
+    //private bool groundedPlayer;
+    //private Vector3 playerVelocity = new Vector3 (0f,0f,0f);
+    //public GameObject player;
     // Start is called before the first frame update
     void Start()
     {
@@ -107,7 +118,12 @@ public class Enemy : MonoBehaviour
     private void Die()
     {
         gameController.Enemys.Remove(this.gameObject);
-        Destroy(this.gameObject);
+        this.gameObject.SetActive(false);
+        currentHealth = healthPoints;
+
+        gameController.Enemys.Remove(this.gameObject);
+
+        //Destroy(this.gameObject);
     }
 
 
@@ -123,7 +139,32 @@ public class Enemy : MonoBehaviour
         // gameObject.GetComponent<Rigidbody>().velocity +=.2f*(player.transform.position - gameObject.transform.position);
     }
 
-    
+    //private void OnTriggerEnter(Collider other)
+    //{
+    //    if (other.gameObject.name.Contains("Bullet"))
+    //    {
+    //        HP -= 3;
+    //        playerVelocity += new Vector3(other.gameObject.GetComponent<Rigidbody>().velocity.x,0f, other.gameObject.GetComponent<Rigidbody>().velocity.z)*2;
+    //    }
+    //    if (other.gameObject.CompareTag("Explosion"))
+    //    {
+    //        
+    //        Vector3 mag = new Vector3(other.gameObject.GetComponent<Transform>().position.x - GetComponent<Transform>().position.x, 0f, other.gameObject.GetComponent<Transform>().position.z - GetComponent<Transform>().position.z);
+    //      
+    //        float dist = mag.magnitude;
+    //        float range = other.gameObject.GetComponent<SphereCollider>().radius+GetComponent<CapsuleCollider>().radius;
+    //        float scale = 1f;
+    //
+    //        playerVelocity += (mag / dist) * (1 - dist * dist / (range * range)) * (-1f) * scale;
+    //    }
+    //    
+    //}
+
+    //private void OnTriggerExit(Collider coll)
+    //{
+    //    isTriggered = false;
+    //}
+
     #region AI
     /* private vars */
 
@@ -131,6 +172,7 @@ public class Enemy : MonoBehaviour
 
     private Vector3 _targetPosition;
     private bool _targetFound;
+    //private Vector3 _moveVector;
     private int AttackCounter;
 
     public AIGoal myCurrentGoal;
@@ -248,7 +290,6 @@ public class Enemy : MonoBehaviour
     {
 
         this._targetUnit = FindObjectOfType<PlayerController>();
-        this._targetPosition = this._targetUnit.transform.position;
 
         this._targetFound = true;
 
@@ -258,13 +299,17 @@ public class Enemy : MonoBehaviour
     
     private IEnumerator _RepeatFindTargetAfterAWhile()
     {
+                
         yield return new WaitForSeconds(Random.Range(minResetAIGoalTime, maxResetAIGoalTime));
         this._targetFound = false;
-        FindTarget();
     }
 
 
 
     #endregion AI
+
+
+
+
 
 }

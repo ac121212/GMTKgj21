@@ -98,7 +98,7 @@ GameObject:
   - component: {fileID: 3939076061735552499}
   m_Layer: 0
   m_Name: TempEnemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -167,7 +167,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5559116101408951984}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.9
   m_Height: 2.5
@@ -188,10 +188,12 @@ MonoBehaviour:
   isKilled: 0
   movement: {fileID: 0}
   Bullet: {fileID: 0}
+  BombPrefab: {fileID: 0}
   Animator: {fileID: 0}
   Model: {fileID: 0}
   _isCollidingWithObstacle: 0
   AttackVoiceSound: {fileID: 0}
+  audioListener: {fileID: 0}
   attackRange: 2
   currentHealth: 0
   healthPoints: 10
@@ -205,8 +207,8 @@ MonoBehaviour:
   _targetUnit: {fileID: 0}
   myCurrentGoal: 0
   myAIType: 0
-  navMeshAgent: {fileID: 7040040174986620180}
-  minResetAIGoalTime: 1
+  navMeshAgent: {fileID: 0}
+  minResetAIGoalTime: 2
   maxResetAIGoalTime: 4
 --- !u!195 &7040040174986620180
 NavMeshAgent:
@@ -218,7 +220,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5000001
-  m_Speed: 1
+  m_Speed: 3.5
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
