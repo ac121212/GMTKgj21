@@ -151,12 +151,25 @@ public class PlayerController : MonoBehaviour
 
     public void ConnectWire()
     {
-        newWire = Instantiate(wire);
+        newWire = Instantiate(wire, gameObject.transform.position, Quaternion.identity);
     }
     public void KeepWireConnected()
     {
         newWire.transform.position = (gameObject.transform.position + newTurret.transform.position)/2f;
-
+        newWire.transform.LookAt(newTurret.transform.position);
+        newWire.transform.Rotate(Vector3.right, 90);
+        newWire.transform.Scale.y = (gameObject.transform.position - newTurret.transform.position).magnitude;
+        if ((gameObject.transform.position-newTurret.transform.position).magnitude > 4f) {
+            gameObject.GetComponent<Movement>().speed = 2;
+            Vector3 moveVector = gameObject.GetComponent<Movement>().publicMoveVector;
+            newTurret.GetComponent<Rigidbody>().velocity = moveVector/moveVector.magnitude * gameObject.GetComponent<Movement>().speed;
+        }
+        if ((gameObject.transform.position - newTurret.transform.position).magnitude <= 4f)
+        {
+            gameObject.GetComponent<Movement>().speed = 5;
+            newTurret.GetComponent<Rigidbody>().velocity = .995f * newTurret.GetComponent<Rigidbody>().velocity;
+        }
+        
     }
     public void ShootBullet()
     {

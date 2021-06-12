@@ -8,7 +8,7 @@ public class Movement : MonoBehaviour
     private Enemy enemyController;
     //[Range(0, .3f)] [SerializeField] private float m_MovementSmoothing = .05f;	// How much to smooth out the movement
 
-    public float speed = 2f;
+    public float speed;
     public bool _isCollidingWithObstacle;
     private Vector3 _collisionVector;
 
@@ -19,6 +19,7 @@ public class Movement : MonoBehaviour
     public bool _isMoving;
     private Vector3 _TempMoveVector;
     public GameObject laser;
+    public Vector3 publicMoveVector;
 
     public void Start()
     {
@@ -79,8 +80,8 @@ public class Movement : MonoBehaviour
         
         this.transform.position = new Vector3(transform.position.x, 0.5f, transform.position.z);
 
-        transform.Translate(moveVector * speed * Time.deltaTime, Space.World); //Direct
-        
+        transform.Translate(moveVector/moveVector.magnitude * speed * Time.deltaTime, Space.World); //Direct
+        publicMoveVector = moveVector;
         //transform.Translate(Vector3.SmoothDamp(rigidbody.velocity, moveVector, ref moveVector, m_MovementSmoothing) * Time.deltaTime * speed , Space.World);
 
         playerController.SetState(Common.State.RUN);

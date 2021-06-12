@@ -63,6 +63,7 @@
      <Compile Include="Assets\Scripts\Enemy.cs" />
      <Compile Include="Assets\Scripts\Projectile.cs" />
      <Compile Include="Assets\Samples\Cinemachine\2.7.4\Cinemachine Example Scenes\Shared\Scripts\PlayerMoveOnSphere.cs" />
+     <Compile Include="Assets\Scripts\WireController.cs" />
      <Compile Include="Assets\Samples\Cinemachine\2.7.4\Cinemachine Example Scenes\Scenes\CameraMagnets\CameraMagnetTargetController.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Samples\Cinemachine\2.7.4\Cinemachine Example Scenes\Scenes\Trigger volumes\GenericTrigger.cs" />
