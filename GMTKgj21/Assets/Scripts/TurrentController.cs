@@ -12,15 +12,19 @@ public class TurrentController : MonoBehaviour
 
     public float attackRange = 4f;
     public Transform Laser;
+    private Vector3 _aimDirectionVector = new Vector3(0, 0, 1);
+    public Enemy CurrentTarget;
+    public bool CanShoot;
+    [Header("The lower the faster")]
+    public float ShootingInterval = 0.3f;
+    public float ShootingTime = 0.3f;
 
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("Aim", 1.0f, 0.5f);
+        //InvokeRepeating("Aim", 1.0f, 0.5f);
         Laser.localScale = new Vector3(0, 0, attackRange);
-
     }
-
 
     public Enemy GetNearestEnemy()
     {
@@ -51,13 +55,11 @@ public class TurrentController : MonoBehaviour
 
 
 
-    private Vector3 _aimDirectionVector = new Vector3(0, 0, 1);
     public void Aim()
     {
-        Enemy enemyToShoot = GetNearestEnemy();
+        CurrentTarget = GetNearestEnemy();
 
-        _aimDirectionVector = (enemyToShoot.transform.position + transform.position).normalized;
-
+        _aimDirectionVector = (CurrentTarget.transform.position + transform.position).normalized;
         float distanceToObstacle = attackRange;
         RaycastHit hit;
         Vector3 unitCenterPos = transform.position + new Vector3(0, 0.5f, 0);
@@ -70,33 +72,36 @@ public class TurrentController : MonoBehaviour
                 distanceToObstacle = distance;
         }
 
-        transform.rotation = Quaternion.LookRotation(_aimDirectionVector);
-
-
-        enemyToShoot.TakeDamage(Damage);
+        transform.LookAt(CurrentTarget.transform);
+        CanShoot = true;
     }
 
-
+   
     public void Shoot()
     {
-        Shoot();
+        float dist = Vector3.Distance(CurrentTarget.transform.position, this.transform.position);
 
-        //ShootBullet();
+        if (dist < attackRange)
+        {
+            CurrentTarget.TakeDamage(Damage);
+        }
+        else
+            CanShoot = false;
+
     }
 
-    public void Attack()
+    private void Update()
     {
+        if(ShootingTime > 0)
+        {
+            ShootingTime -= Time.deltaTime;
+            Aim();
+        }
 
-
-        //Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        //
-        //if (Physics.Raycast(ray, out RaycastHit hitInfo))
-        //{
-        //    Vector3 aimPoint = GetGunHeightAimPoint(ray, hitInfo);
-        //    gameObject.transform.LookAt(aimPoint);
-        //}
-
-
-        //ShootBullet();
+        if (CanShoot && ShootingTime <= 0)
+        {
+            ShootingTime = ShootingInterval;
+            Shoot();
+        }
     }
 }

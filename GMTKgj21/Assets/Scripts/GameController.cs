@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -12,6 +13,8 @@ public class GameController : MonoBehaviour
     public GameObject Player;
     public GameObject Turret;
     public GameObject Wire;
+
+    public TextMeshProUGUI WaveText;
 
     [Header("Here comes the enemy prefab")]
     public GameObject EnemyPrefab;
@@ -52,8 +55,18 @@ public class GameController : MonoBehaviour
         }
 
         WaveCounter++;
+
+        StartCoroutine(ShowText());
         yield return new WaitForSeconds(0.1f);
 
+    }
+
+    public IEnumerator ShowText()
+    {
+        WaveText.gameObject.SetActive(true);
+        WaveText.text = "Wave " + WaveCounter;
+        yield return new WaitForSeconds(1);
+        WaveText.gameObject.SetActive(false);
     }
 
     public void GameEnd()
@@ -72,5 +85,14 @@ public class GameController : MonoBehaviour
         Enemys.Add(Instantiate(EnemyPrefab, new Vector3(x, 0.5f, z), Quaternion.identity));
     }
 
-   
+    private void Update()
+    {
+        if(Enemys.Count == 0)
+        {
+            StartCoroutine(Wave());
+
+        }
+    }
+
+
 }
