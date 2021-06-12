@@ -95,8 +95,6 @@
     <Compile Include="Assets/Plugins/TopDownEngine/Common/Scripts/Characters/AI/Advanced/AIActionMoveAwayFromTarget3D.cs" />
     <Compile Include="Assets/Plugins/TopDownEngine/Common/Scripts/Characters/Weapons/WeaponAutoAim3D.cs" />
     <Compile Include="Assets/Plugins/TopDownEngine/Common/Scripts/Characters/Weapons/BouncyProjectile.cs" />
-    <Compile Include="Assets/Plugins/TopDownEngine/Common/Scripts/Characters/AI/Advanced/AIActionRotateConeOfVision2D.cs" />
-    <Compile Include="Assets/Plugins/TopDownEngine/Common/Scripts/Characters/CharacterAbilities/CharacterAbilityNodeSwap.cs" />
     <Compile Include="Assets/Plugins/TopDownEngine/Common/Scripts/GUI/DialogueZone.cs" />
     <Compile Include="Assets/Plugins/TopDownEngine/Common/Scripts/Environment/ButtonActivator.cs" />
     <Compile Include="Assets/Plugins/TopDownEngine/Common/Scripts/Achievements/AchievementRules.cs" />
@@ -108,14 +106,12 @@
     <Compile Include="Assets/Plugins/TopDownEngine/Common/Scripts/Characters/AI/Advanced/AIActionMoveRandomlyGrid.cs" />
     <Compile Include="Assets/Plugins/TopDownEngine/Common/Scripts/Characters/Weapons/PusherProjectile3D.cs" />
     <Compile Include="Assets/Plugins/TopDownEngine/Common/Scripts/Camera/LevelLimits.cs" />
-    <Compile Include="Assets/Plugins/TopDownEngine/Common/Scripts/Characters/CharacterAbilities/CharacterDamageDash3D.cs" />
     <Compile Include="Assets/Plugins/TopDownEngine/Common/Scripts/Characters/Weapons/HitscanWeapon.cs" />
     <Compile Include="Assets/Plugins/TopDownEngine/Common/Scripts/Characters/AI/Advanced/AIActionMoveRandomly3D.cs" />
     <Compile Include="Assets/Plugins/TopDownEngine/Common/Scripts/Environment/ProximityManaged.cs" />
     <Compile Include="Assets/Plugins/TopDownEngine/Common/Scripts/Characters/AI/Advanced/AIActionMoveAwayFromTarget2D.cs" />
     <Compile Include="Assets/Plugins/TopDownEngine/Common/Scripts/Managers/CharacterSwapManager.cs" />
     <Compile Include="Assets/Plugins/TopDownEngine/Common/Scripts/Characters/AI/Advanced/AIActionCrouchStop.cs" />
-    <Compile Include="Assets/Plugins/TopDownEngine/Common/Scripts/Characters/CharacterAbilities/CharacterDamageDash2D.cs" />
     <Compile Include="Assets/Plugins/TopDownEngine/Common/Scripts/Characters/AI/Advanced/AIDecisionRandom.cs" />
     <Compile Include="Assets/Plugins/TopDownEngine/Common/Scripts/Characters/CharacterAbilities/CharacterOrientation2D.cs" />
     <Compile Include="Assets/Plugins/TopDownEngine/Common/Scripts/Characters/Weapons/WeaponModelEnabler.cs" />
@@ -128,7 +124,6 @@
     <Compile Include="Assets/Plugins/TopDownEngine/Common/Scripts/Characters/AI/Advanced/AIActionChangeWeapon.cs" />
     <Compile Include="Assets/Plugins/TopDownEngine/Common/Scripts/Environment/DashZone3D.cs" />
     <Compile Include="Assets/Plugins/TopDownEngine/Common/Scripts/Environment/MovingPlatform2D.cs" />
-    <Compile Include="Assets/Plugins/TopDownEngine/Common/Scripts/Characters/AI/Advanced/AIActionSwapBrain.cs" />
     <Compile Include="Assets/Plugins/TopDownEngine/Common/Scripts/Characters/CharacterAbilities/CharacterSwap.cs" />
     <Compile Include="Assets/Plugins/TopDownEngine/Common/Scripts/Characters/AI/Automation/PathedProjectileSpawner.cs" />
     <Compile Include="Assets/Plugins/TopDownEngine/Common/Scripts/Characters/AI/Advanced/AIDecisionTargetIsAlive.cs" />
@@ -142,7 +137,6 @@
     <Compile Include="Assets/Plugins/TopDownEngine/Common/Scripts/Characters/Weapons/WeaponAmmo.cs" />
     <Compile Include="Assets/Plugins/TopDownEngine/Common/Scripts/Characters/Weapons/WeaponAim2D.cs" />
     <Compile Include="Assets/Plugins/TopDownEngine/Common/Scripts/Characters/CharacterAbilities/CharacterFallDownHoles2D.cs" />
-    <Compile Include="Assets/Plugins/TopDownEngine/Common/Scripts/Characters/AI/Advanced/AIActionAimObject.cs" />
     <Compile Include="Assets/Plugins/TopDownEngine/Common/Scripts/Characters/Animations/CharacterAnimationParametersInitializer.cs" />
     <Compile Include="Assets/Plugins/TopDownEngine/Common/Scripts/Characters/AI/Advanced/AIActionPathfinderToTarget3D.cs" />
     <Compile Include="Assets/Plugins/TopDownEngine/Common/Scripts/Characters/AI/Advanced/AIActionReload.cs" />
@@ -152,7 +146,6 @@
     <Compile Include="Assets/Plugins/TopDownEngine/Common/Scripts/Managers/SoundManager.cs" />
     <Compile Include="Assets/Plugins/TopDownEngine/Common/Scripts/Characters/Core/CharacterStates.cs" />
     <Compile Include="Assets/Plugins/TopDownEngine/Common/Scripts/Items/InventoryPickableItem.cs" />
-    <Compile Include="Assets/Plugins/TopDownEngine/Common/Scripts/Items/Loot.cs" />
     <Compile Include="Assets/Plugins/TopDownEngine/Common/Scripts/GUI/LevelSelector.cs" />
     <Compile Include="Assets/Plugins/TopDownEngine/Common/Scripts/Characters/CharacterAbilities/CharacterConeOfVision.cs" />
     <Compile Include="Assets/Plugins/TopDownEngine/Common/Scripts/Characters/AI/Advanced/AIActionMovePatrol3D.cs" />
@@ -165,7 +158,6 @@
     <Compile Include="Assets/Plugins/TopDownEngine/Common/Scripts/Characters/AI/Advanced/AIActionUnityEvents.cs" />
     <Compile Include="Assets/Plugins/TopDownEngine/Common/Scripts/Characters/Weapons/WeaponAim3D.cs" />
     <Compile Include="Assets/Plugins/TopDownEngine/Common/Scripts/Characters/AI/Advanced/AIDecisionGrounded.cs" />
-    <Compile Include="Assets/Plugins/TopDownEngine/Common/Scripts/Managers/LayerManager.cs" />
     <Compile Include="Assets/Plugins/TopDownEngine/Common/Scripts/Environment/Switch.cs" />
     <Compile Include="Assets/Plugins/TopDownEngine/Common/Scripts/Characters/Core/CharacterEvents.cs" />
     <Compile Include="Assets/Plugins/TopDownEngine/Common/Scripts/GUI/AmmoDisplay.cs" />
@@ -190,7 +182,6 @@
     <Compile Include="Assets/Plugins/TopDownEngine/Common/Scripts/Characters/AI/Advanced/AIActionRotateTowardsTarget3D.cs" />
     <Compile Include="Assets/Plugins/TopDownEngine/Common/Scripts/Characters/Weapons/WeaponSpriteSortingOrderThreshold.cs" />
     <Compile Include="Assets/Plugins/TopDownEngine/Common/Scripts/Characters/AI/Advanced/AIActionCrouchStart.cs" />
-    <Compile Include="Assets/Plugins/TopDownEngine/Common/Scripts/Items/PickableDash2D.cs" />
     <Compile Include="Assets/Plugins/TopDownEngine/Common/Scripts/GUI/PauseButton.cs" />
     <Compile Include="Assets/Plugins/TopDownEngine/Common/Scripts/Characters/AI/Advanced/AIActionMoveTowardsTarget2D.cs" />
     <Compile Include="Assets/Plugins/TopDownEngine/Common/Scripts/Characters/AI/Advanced/AIActionShoot3D.cs" />
@@ -226,7 +217,6 @@
     <Compile Include="Assets/Plugins/TopDownEngine/Common/Scripts/Managers/InputManager.cs" />
     <Compile Include="Assets/Plugins/TopDownEngine/Common/Scripts/Characters/AI/Advanced/AIDecisionTimeInState.cs" />
     <Compile Include="Assets/Plugins/TopDownEngine/Common/Scripts/MMFeedbacks/MMFeedbackTopDownEngineFloatingText.cs" />
-    <Compile Include="Assets/Plugins/TopDownEngine/Common/Scripts/Characters/Weapons/WeaponIKDisabler.cs" />
     <Compile Include="Assets/Plugins/TopDownEngine/Common/Scripts/Characters/AI/Advanced/AIDecisionHealth.cs" />
     <Compile Include="Assets/Plugins/TopDownEngine/Common/Scripts/Characters/Weapons/WeaponPreventShootingWhenCloseToWalls3D.cs" />
     <Compile Include="Assets/Plugins/TopDownEngine/Common/Scripts/Characters/CharacterAbilities/CharacterDash2D.cs" />

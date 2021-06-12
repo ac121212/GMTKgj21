@@ -56,44 +56,13 @@
     <Analyzer Include="/Applications/Visual Studio.app/Contents/Resources/lib/monodevelop/AddIns/MonoDevelop.Unity/Analyzers/Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets/Samples/Cinemachine/2.7.4/Cinemachine Example Scenes/Shared/Scripts/PlayerMovePhysics.cs" />
-    <Compile Include="Assets/Scripts/CameraBehavior.cs" />
-    <Compile Include="Assets/Scripts/StartMenuButton.cs" />
-    <Compile Include="Assets/Scripts/ChooseAttacks.cs" />
-    <Compile Include="Assets/Samples/Cinemachine/2.7.4/Cinemachine Example Scenes/Shared/Scripts/PlayerMove.cs" />
-    <Compile Include="Assets/Samples/Cinemachine/2.7.4/Cinemachine Example Scenes/Scenes/Scripting/ScriptingExample.cs" />
-    <Compile Include="Assets/Samples/Cinemachine/2.7.4/Cinemachine Example Scenes/Shared/Models/UnityCharacter/Scripts/CharacterMovement2D.cs" />
-    <Compile Include="Assets/Samples/Cinemachine/2.7.4/Cinemachine Example Scenes/Shared/Scripts/InvokeEventFromInspector.cs" />
-    <Compile Include="Assets/Samples/Cinemachine/2.7.4/Cinemachine Example Scenes/Shared/Scripts/MixingCameraBlend.cs" />
     <Compile Include="Assets/Scripts/GameController.cs" />
-    <Compile Include="Assets/Samples/Cinemachine/2.7.4/Cinemachine Example Scenes/Scenes/CameraMagnets/CameraMagnetProperty.cs" />
-    <Compile Include="Assets/Scripts/GrenadeGravity.cs" />
-    <Compile Include="Assets/Samples/Cinemachine/2.7.4/Cinemachine Example Scenes/Shared/Scripts/SpawnInCircle.cs" />
     <Compile Include="Assets/Scripts/Enemy.cs" />
     <Compile Include="Assets/Scripts/Projectile.cs" />
-    <Compile Include="Assets/Samples/Cinemachine/2.7.4/Cinemachine Example Scenes/Shared/Scripts/PlayerMoveOnSphere.cs" />
-    <Compile Include="Assets/Scripts/WireController.cs" />
     <Compile Include="Assets/Scripts/TurrentController.cs" />
-    <Compile Include="Assets/Samples/Cinemachine/2.7.4/Cinemachine Example Scenes/Scenes/CameraMagnets/CameraMagnetTargetController.cs" />
-    <Compile Include="Assets/Scripts/PlayerController.cs" />
-    <Compile Include="Assets/Samples/Cinemachine/2.7.4/Cinemachine Example Scenes/Scenes/Trigger volumes/GenericTrigger.cs" />
-    <Compile Include="Assets/Samples/Cinemachine/2.7.4/Cinemachine Example Scenes/Shared/Models/UnityCharacter/Scripts/CharacterMovement.cs" />
-    <Compile Include="Assets/Samples/Cinemachine/2.7.4/Cinemachine Example Scenes/Shared/Models/UnityCharacter/Scripts/CharacterMovementNoCamera.cs" />
-    <Compile Include="Assets/Samples/Cinemachine/2.7.4/Cinemachine Example Scenes/Shared/Scripts/ActivateCamOnPlay.cs" />
-    <Compile Include="Assets/Samples/Cinemachine/2.7.4/Cinemachine Example Scenes/Shared/Scripts/SimpleElevator.cs" />
-    <Compile Include="Assets/Samples/Cinemachine/2.7.4/Cinemachine Example Scenes/Scenes/DualTarget/PointAtAimTarget.cs" />
-    <Compile Include="Assets/Samples/Cinemachine/2.7.4/Cinemachine Example Scenes/Scenes/FadeOutNearbyObjects/CinemachineFadeOutNearbyObjects.cs" />
-    <Compile Include="Assets/Samples/Cinemachine/2.7.4/Cinemachine Example Scenes/Scenes/Anywhere Door/PlayerMovement.cs" />
-    <Compile Include="Assets/Samples/Cinemachine/2.7.4/Cinemachine Example Scenes/Shared/Scripts/ThirdPersonFollowDistanceModifier.cs" />
-    <Compile Include="Assets/Samples/Cinemachine/2.7.4/Cinemachine Example Scenes/Scenes/3rdPersonWithAimMode/ActivateOnKeypress.cs" />
-    <Compile Include="Assets/Samples/Cinemachine/2.7.4/Cinemachine Example Scenes/Scenes/DualTarget/MoveAimTarget.cs" />
-    <Compile Include="Assets/Scripts/Movement.cs" />
-    <Compile Include="Assets/Scripts/Common.cs" />
-    <Compile Include="Assets/Samples/Cinemachine/2.7.4/Cinemachine Example Scenes/Scenes/Anywhere Door/PlayerLookAt.cs" />
-    <Compile Include="Assets/Samples/Cinemachine/2.7.4/Cinemachine Example Scenes/Shared/Scripts/ExampleHelpWindow.cs" />
-    <Compile Include="Assets/Samples/Cinemachine/2.7.4/Cinemachine Example Scenes/Shared/Scripts/ActivateCameraWithDistance.cs" />
-    <Compile Include="Assets/Samples/Cinemachine/2.7.4/Cinemachine Example Scenes/Scenes/Anywhere Door/TagChanger.cs" />
     <Compile Include="Assets/Scripts/TurretController.cs" />
+    <Compile Include="Assets/Scripts/PlayerController.cs" />
+    <Compile Include="Assets/Scripts/Movement.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/Samples/Cinemachine/2.7.4/Cinemachine Example Scenes/Scenes/FadeOutNearbyObjects/FadeOut.shader" />

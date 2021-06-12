@@ -62,7 +62,6 @@
     <Compile Include="Assets/Plugins/TopDownEngine/ThirdParty/MoreMountains/MMTools/Tools/MMAttributes/MMDebugLogCommandArgumentCountAttribute.cs" />
     <Compile Include="Assets/Plugins/TopDownEngine/ThirdParty/MoreMountains/MMTools/Tools/MMUtilities/MMLayer.cs" />
     <Compile Include="Assets/Plugins/TopDownEngine/ThirdParty/MoreMountains/MMTools/Tools/MMAudio/MMSoundManager/Events/MMSoundManagerTrackFadeEvent.cs" />
-    <Compile Include="Assets/Plugins/TopDownEngine/ThirdParty/MoreMountains/MMTools/Tools/MMLoot/MMLootTableGameObjectSO.cs" />
     <Compile Include="Assets/Plugins/TopDownEngine/ThirdParty/MoreMountains/MMTools/Tools/MMDebugMenu/Scripts/Events/MMDebugMenuButtonEvent.cs" />
     <Compile Include="Assets/Plugins/TopDownEngine/ThirdParty/MoreMountains/MMTools/Tools/MMGUI/MMSelectionBase.cs" />
     <Compile Include="Assets/Plugins/TopDownEngine/ThirdParty/MoreMountains/MMTools/Tools/MMAudio/MMSoundManager/Events/MMSoundManagerSoundFadeEvent.cs" />
@@ -76,7 +75,6 @@
     <Compile Include="Assets/Plugins/TopDownEngine/ThirdParty/MoreMountains/MMTools/Tools/MMParticles/MMRendererSortingLayer.cs" />
     <Compile Include="Assets/Plugins/TopDownEngine/ThirdParty/MoreMountains/MMTools/Tools/MMRadio/MMProperty/MMPropertyLink/MMPropertyLinkBool.cs" />
     <Compile Include="Assets/Plugins/TopDownEngine/ThirdParty/MoreMountains/MMTools/Tools/MMAI/AIBrain.cs" />
-    <Compile Include="Assets/Plugins/TopDownEngine/ThirdParty/MoreMountains/MMTools/Tools/MMLoot/MMLootTable.cs" />
     <Compile Include="Assets/Plugins/TopDownEngine/ThirdParty/MoreMountains/MMTools/Tools/MMExtensions/MMGameObjectExtensions.cs" />
     <Compile Include="Assets/Plugins/TopDownEngine/ThirdParty/MoreMountains/MMTools/Tools/MMObjectBounds/MMObjectBounds.cs" />
     <Compile Include="Assets/Plugins/TopDownEngine/ThirdParty/MoreMountains/MMTools/Tools/MMObjectPool/MMObjectPooler.cs" />
@@ -150,7 +148,6 @@
     <Compile Include="Assets/Plugins/TopDownEngine/ThirdParty/MoreMountains/MMTools/Tools/MMPropertyControllers/TransformController.cs" />
     <Compile Include="Assets/Plugins/TopDownEngine/ThirdParty/MoreMountains/MMTools/Tools/MMExtensions/MMListExtensions.cs" />
     <Compile Include="Assets/Plugins/TopDownEngine/ThirdParty/MoreMountains/MMTools/Tools/MMAchievements/Scripts/MMAchievementList.cs" />
-    <Compile Include="Assets/Plugins/TopDownEngine/ThirdParty/MoreMountains/MMTools/Tools/MMLoot/MMLoot.cs" />
     <Compile Include="Assets/Plugins/TopDownEngine/ThirdParty/MoreMountains/MMTools/Tools/MMAnimation/MMOffsetAnimation.cs" />
     <Compile Include="Assets/Plugins/TopDownEngine/ThirdParty/MoreMountains/MMTools/Tools/MMControls/MMTouchDynamicJoystick.cs" />
     <Compile Include="Assets/Plugins/TopDownEngine/ThirdParty/MoreMountains/MMTools/Tools/MMAudio/MMSoundManager/MMSoundManagerSettingsSO.cs" />
@@ -267,7 +264,6 @@
     <Compile Include="Assets/Plugins/TopDownEngine/ThirdParty/MoreMountains/MMTools/Tools/MMTilemaps/MMTilemapShadow.cs" />
     <Compile Include="Assets/Plugins/TopDownEngine/ThirdParty/MoreMountains/MMTools/Tools/MMAttributes/MMReadOnlyAttribute.cs" />
     <Compile Include="Assets/Plugins/TopDownEngine/ThirdParty/MoreMountains/MMTools/Tools/MMSprites/MMAutoOrderInLayer.cs" />
-    <Compile Include="Assets/Plugins/TopDownEngine/ThirdParty/MoreMountains/MMTools/Tools/MMGUI/MMSceneName.cs" />
     <Compile Include="Assets/Plugins/TopDownEngine/ThirdParty/MoreMountains/MMTools/Tools/MMAudio/MMAudioListener/MMAudioListener.cs" />
     <Compile Include="Assets/Plugins/TopDownEngine/ThirdParty/MoreMountains/MMTools/Tools/MMVision/MMConeOfVision.cs" />
     <Compile Include="Assets/Plugins/TopDownEngine/ThirdParty/MoreMountains/MMTools/Tools/MMInstantiation/MMSpawnAround.cs" />
