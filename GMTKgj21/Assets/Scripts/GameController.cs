@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -28,6 +29,9 @@ public class GameController : MonoBehaviour
     [Header("Enemy Spawning range,  the higher the more further")]
     public float SpawnRange = 20;
 
+    [Header("Enemy Spawning range,  the higher the more further")]
+    public TextMeshProUGUI WaveCountDisplay;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -38,8 +42,6 @@ public class GameController : MonoBehaviour
     {
         // Start Game
         Player = Instantiate(PlayerPrefab, new Vector3(0,2, 0), Quaternion.identity);
-        //Turret = Instantiate(TurretPrefab, new Vector3(2, 1, 2), Quaternion.identity);
-       // Wire = Instantiate(WirePrefab, new Vector3(2, 1, 2), Quaternion.identity);
         StartCoroutine(Wave());
     }
    
@@ -52,9 +54,19 @@ public class GameController : MonoBehaviour
         }
 
         WaveCounter++;
+        StartCoroutine(DisplayWave());
         yield return new WaitForSeconds(0.1f);
 
     }
+
+    public IEnumerator DisplayWave()
+    {
+        WaveCountDisplay.gameObject.SetActive(true);
+        WaveCountDisplay.text = "Wave " + WaveCounter;
+        yield return new WaitForSeconds(1.1f);
+        WaveCountDisplay.gameObject.SetActive(false);
+    }
+
 
     public void GameEnd()
     {
@@ -73,5 +85,14 @@ public class GameController : MonoBehaviour
         Enemys.Add(Instantiate(EnemyPrefab, new Vector3(x, 0.5f, z), Quaternion.identity));
     }
 
-   
+
+    private void Update()
+    {
+        if(Enemys.Count == 0)
+        {
+            StartCoroutine(Wave());
+
+        }
+    }
+
 }

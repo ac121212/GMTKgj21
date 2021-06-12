@@ -5,8 +5,6 @@ using UnityEngine;
 public class Movement : MonoBehaviour
 {
     private PlayerController playerController;
-    private Enemy enemyController;
-    //[Range(0, .3f)] [SerializeField] private float m_MovementSmoothing = .05f;	// How much to smooth out the movement
 
     public float speed;
     public bool _isCollidingWithObstacle;
@@ -44,6 +42,7 @@ public class Movement : MonoBehaviour
     public void Move(Vector3 moveVector)
     {
         if (playerController.isKilled) return;
+        playerController.Animator.SetFloat("Forward", 1);
 
         //this is for slip unit when it collide with obstacle
         if (this._isCollidingWithObstacle)
@@ -65,56 +64,12 @@ public class Movement : MonoBehaviour
         }
 
         rigidbody.velocity = new Vector3(0, 0, 0);
-
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-
-        if (Physics.Raycast(ray, out RaycastHit hitInfo))
-        {
-            Vector3 aimPoint = GetGunHeightAimPoint(ray, hitInfo);
-            gameObject.transform.LookAt(aimPoint);
-            //reticle.GetComponent<Transform>().position = aimPoint;
-           // finalPoint = aimPoint;
-            //this.LookAt(aimPoint);
-        }
-
-        
+        transform.rotation = Quaternion.LookRotation(moveVector);
         this.transform.position = new Vector3(transform.position.x, 0.5f, transform.position.z);
 
         transform.Translate(moveVector/moveVector.magnitude * speed * Time.deltaTime, Space.World); //Direct
         publicMoveVector = moveVector;
-        //transform.Translate(Vector3.SmoothDamp(rigidbody.velocity, moveVector, ref moveVector, m_MovementSmoothing) * Time.deltaTime * speed , Space.World);
-
-        playerController.SetState(Common.State.RUN);
         
-    }
-
-    public void StopMove()
-    {
-        if (this._isMoving)
-        {
-            this._isMoving = false;
-            enemyController.SetState(Common.State.IDLE);
-        }
-    }
-    private Vector3 GetGunHeightAimPoint(Ray mouseAim, RaycastHit hitInfo)
-    {
-        // if the raycast hit something and the Y is above the gun height
-        if (hitInfo.collider != null && hitInfo.point.y > .51)
-        {
-            Vector3 heightAdjusted = hitInfo.point;
-            heightAdjusted.y = .5f;
-            return heightAdjusted;
-        }
-
-        Plane aimPlane = new Plane(Vector3.up, Vector3.up * .5f);
-        if (aimPlane.Raycast(mouseAim, out float distance))
-        {
-            return mouseAim.GetPoint(distance);
-        }
-        else
-        {
-            return Vector3.zero; // you missed the ground
-        }
     }
 
     void OnCollisionExit(Collision collision)
@@ -152,6 +107,8 @@ public class Movement : MonoBehaviour
 
     void Update()
     {
+        playerController.Animator.SetFloat("Forward", 0);
+
         _TempMoveVector = Vector3.zero;
 
         this._isMoving = false;
@@ -159,12 +116,16 @@ public class Movement : MonoBehaviour
         if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow)) // left
         {
             _TempMoveVector = new Vector3(-1, 0, _TempMoveVector.z);
+            playerController.Animator.SetFloat("LeftRight", -1);
+
             this._isMoving = true;
 
         }
         else if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow)) //right
         {
             _TempMoveVector = new Vector3(1, 0, _TempMoveVector.z);
+            playerController.Animator.SetFloat("LeftRight", 1);
+
             this._isMoving = true;
 
         }
@@ -184,9 +145,6 @@ public class Movement : MonoBehaviour
         }
 
         Move(_TempMoveVector);
-
-        if (!_isMoving)
-            StopMove();
 
     }
 }

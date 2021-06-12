@@ -167,7 +167,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5559116101408951984}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.9
   m_Height: 2.5
@@ -188,12 +188,11 @@ MonoBehaviour:
   isKilled: 0
   movement: {fileID: 0}
   Bullet: {fileID: 0}
-  BombPrefab: {fileID: 0}
+  ExplodeParticle: {fileID: 0}
   Animator: {fileID: 0}
   Model: {fileID: 0}
   _isCollidingWithObstacle: 0
   AttackVoiceSound: {fileID: 0}
-  audioListener: {fileID: 0}
   attackRange: 2
   currentHealth: 0
   healthPoints: 10
@@ -208,7 +207,7 @@ MonoBehaviour:
   myCurrentGoal: 0
   myAIType: 0
   navMeshAgent: {fileID: 0}
-  minResetAIGoalTime: 2
+  minResetAIGoalTime: 1
   maxResetAIGoalTime: 4
 --- !u!195 &7040040174986620180
 NavMeshAgent:
@@ -220,7 +219,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5000001
-  m_Speed: 3.5
+  m_Speed: 1.5
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -246,7 +245,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 48
   m_CollisionDetection: 0
 --- !u!1001 &4758942206532330175
 PrefabInstance:

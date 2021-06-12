@@ -98,11 +98,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51d3da4ec52b74ff7aa68eccdf519b41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Animator: {fileID: 0}
-  Model: {fileID: 0}
-  Damage: 5
   attackRange: 6
-  Laser: {fileID: 0}
+  Laser: {fileID: 3675721234469348374}
+  CurrentTarget: {fileID: 0}
+  Damage: 5
+  CanShoot: 0
+  ShootingInterval: 0.3
+  ShootingTime: 0.3
 --- !u!65 &2740530683321380830
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -4,32 +4,29 @@ using UnityEngine;
 
 public class TurrentController : MonoBehaviour
 {
-
-    /* component refs */
-    public Animator Animator;
-    public GameObject Model;
-    public int Damage;
-
     public float attackRange = 4f;
     public Transform Laser;
+    private Vector3 _aimDirectionVector = new Vector3(0, 0, 1);
+    public Enemy CurrentTarget;
+    public int Damage;
 
+    public bool CanShoot;
+    [Header("The lower the faster")]
+    public float ShootingInterval = 0.3f;
+    public float ShootingTime = 0.3f;
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("Aim", 1.0f, 0.5f);
         Laser.localScale = new Vector3(0, 0, attackRange);
-
     }
-
 
     public Enemy GetNearestEnemy()
     {
         Enemy nearestEnemy = null;
         float nearestDistance = attackRange;
         foreach (Enemy enemy in FindObjectsOfType<Enemy>())
-        {           
+        {
             RaycastHit hit;
-
             Vector3 unitCenterPos = transform.position + new Vector3(0, 0.5f, 0);
             Ray ray = new Ray(unitCenterPos, _aimDirectionVector);
             {
@@ -39,9 +36,7 @@ public class TurrentController : MonoBehaviour
                         continue;
                     }
             }
-
             float dist = Vector3.Distance(enemy.transform.position, this.transform.position);
-
             if (dist < nearestDistance)
                 nearestEnemy = enemy;
         }
@@ -49,54 +44,48 @@ public class TurrentController : MonoBehaviour
         return nearestEnemy;
     }
 
-
-
-    private Vector3 _aimDirectionVector = new Vector3(0, 0, 1);
     public void Aim()
     {
-        Enemy enemyToShoot = GetNearestEnemy();
-
-        _aimDirectionVector = (enemyToShoot.transform.position + transform.position).normalized;
-
+        CurrentTarget = GetNearestEnemy();
+        _aimDirectionVector = (CurrentTarget.transform.position + transform.position).normalized;
         float distanceToObstacle = attackRange;
         RaycastHit hit;
         Vector3 unitCenterPos = transform.position + new Vector3(0, 0.5f, 0);
-
         Ray ray = new Ray(unitCenterPos, _aimDirectionVector);
         if (Physics.Raycast(ray, out hit) && hit.transform.CompareTag("Wall"))
         {
             float distance = Vector3.Distance(hit.point, unitCenterPos);
-            if (distance < distanceToObstacle )
+            if (distance < distanceToObstacle)
                 distanceToObstacle = distance;
-        }
 
+        }
         transform.rotation = Quaternion.LookRotation(_aimDirectionVector);
 
 
-        enemyToShoot.TakeDamage(Damage);
+        transform.LookAt(CurrentTarget.transform);
+        CanShoot = true;
     }
-
 
     public void Shoot()
     {
-        Shoot();
-
-        //ShootBullet();
+        float dist = Vector3.Distance(CurrentTarget.transform.position, this.transform.position);
+        if (dist < attackRange)
+            CurrentTarget.TakeDamage(Damage);
+        else
+            CanShoot = false;
     }
 
-    public void Attack()
+    private void Update()
     {
-
-
-        //Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        //
-        //if (Physics.Raycast(ray, out RaycastHit hitInfo))
-        //{
-        //    Vector3 aimPoint = GetGunHeightAimPoint(ray, hitInfo);
-        //    gameObject.transform.LookAt(aimPoint);
-        //}
-
-
-        //ShootBullet();
+        if (ShootingTime > 0)
+        {
+            ShootingTime -= Time.deltaTime;
+            Aim();
+        }
+        if (CanShoot && ShootingTime <= 0)
+        {
+            ShootingTime = ShootingInterval;
+            Shoot();
+        }
     }
 }
