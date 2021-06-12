@@ -18,7 +18,6 @@ public class Movement : MonoBehaviour
     /* private vars */
     public bool _isMoving;
     private Vector3 _TempMoveVector;
-    public GameObject laser;
 
     public void Start()
     {
@@ -28,15 +27,12 @@ public class Movement : MonoBehaviour
         if (GetComponent<Rigidbody>() != null)
             rigidbody = GetComponent<Rigidbody>();
 
-        laser = (GameObject)Instantiate(laser, new Vector3(GetComponent<Transform>().position.x, GetComponent<Transform>().position.y, GetComponent<Transform>().position.z), Quaternion.identity);
 
     }
 
 
     private void LookAt(Vector3 direction)
     {
-        laser.transform.rotation = Quaternion.LookRotation(direction); 
-        laser.transform.position = GetComponent<Transform>().position;
         transform.rotation = Quaternion.LookRotation(direction);
     }
 

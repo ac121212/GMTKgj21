@@ -196,7 +196,7 @@ MonoBehaviour:
   myCurrentGoal: 0
   myAIType: 0
   navMeshAgent: {fileID: 0}
-  minResetAIGoalTime: 2
+  minResetAIGoalTime: 1
   maxResetAIGoalTime: 4
 --- !u!195 &7040040174986620180
 NavMeshAgent:

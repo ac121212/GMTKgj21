@@ -7,6 +7,10 @@ public class PlayerController : MonoBehaviour
     public bool isKilled;
     public GameObject wire;
     public GameObject turret;
+    private GameObject newWire;
+    private GameObject newTurret;
+    public GameObject laser;
+
     private float IntervalLoadAttack = 0.1f;
     private float StartIntervalLoadAttack = 0.1f;
     private Common.State _currentState;
@@ -24,7 +28,6 @@ public class PlayerController : MonoBehaviour
     private Vector3 _collisionVector;
     private GameController gameController;
     public AudioSource AttackVoiceSound;
-    public AudioListener audioListener;
 
     public float attackRange = 4f;
 
@@ -54,8 +57,9 @@ public class PlayerController : MonoBehaviour
     private float grenadeCooldown = 1f;
     private bool grenadeTriggered;
     private Vector3 finalPoint;
-    private GameObject newWire;
-    private GameObject newTurret;
+
+    public Transform BulletSpawn;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -70,6 +74,7 @@ public class PlayerController : MonoBehaviour
         timestamp = 0f;
         ConnectWire();
         newTurret = Instantiate(turret,new Vector3(2, 1, 2), Quaternion.identity);
+        laser = (GameObject)Instantiate(laser, new Vector3(transform.position.x, transform.position.y, transform.position.z), Quaternion.identity);
 
     }
 
@@ -96,8 +101,6 @@ public class PlayerController : MonoBehaviour
     public void Attack()
     {
         ShootBullet();
-
-
     }
 
     // Update is called once per frame
@@ -161,8 +164,8 @@ public class PlayerController : MonoBehaviour
     public void ShootBullet()
     {
         GameObject currentBullet = Instantiate(Bullet);
-        currentBullet.GetComponent<Projectile>().SetData( attackRange, hitPoints);
-        //bullet.transform.rotation = Quaternion.LookRotation(/*_aimDirectionVector*//*+ (new Vector3(0, Angle,0)).normalized*/);
+        currentBullet.GetComponent<Projectile>().SetData(attackRange, hitPoints);
+        bullet.transform.position = BulletSpawn.position;
 
     }
 
@@ -186,10 +189,11 @@ public class PlayerController : MonoBehaviour
         {
             Vector3 aimPoint = GetGunHeightAimPoint(ray, hitInfo);
             gameObject.transform.LookAt(aimPoint);
-            reticle.GetComponent<Transform>().position = aimPoint;
+            reticle.transform.position = aimPoint;
             finalPoint = aimPoint;
         }
-
+        laser.transform.rotation = transform.rotation;
+        laser.transform.position = transform.position;
 
     }
     private Vector3 GetGunHeightAimPoint(Ray mouseAim, RaycastHit hitInfo)

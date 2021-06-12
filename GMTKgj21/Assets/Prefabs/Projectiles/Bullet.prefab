@@ -29,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8167036622384439544}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.46, y: 3.53, z: -0.6282511}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_Children: []
   m_Father: {fileID: 0}
@@ -111,7 +111,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LeftRightDirection: 0
   _hitPoints: 0
-  muzzlePrefab: {fileID: 0}
   hitPrefab: {fileID: 0}
   shotSFX: {fileID: 0}
   hitSFX: {fileID: 0}
@@ -119,8 +118,8 @@ MonoBehaviour:
   DontDestroyOnWalls: 0
   ThrowAttack: 0
   LifeTime: 3
-  bulletSpeed: 10
-  velocity: 10
+  bulletSpeed: 2
+  velocity: 2
 --- !u!54 &-3454069465015089485
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -135,5 +134,5 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
