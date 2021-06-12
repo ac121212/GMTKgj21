@@ -36,7 +36,7 @@ public class PlayerController : MonoBehaviour
     public float reloadTime = 1;
     public float attackTime = 0.5f;
     public float recoverTime = 0.5f;
-
+    private bool slowed;
     private Vector3 playerVelocity;
     private bool groundedPlayer;
     private float playerSpeed = 2.0f;
@@ -56,6 +56,7 @@ public class PlayerController : MonoBehaviour
     private Vector3 finalPoint;
     private GameObject newWire;
     private GameObject newTurret;
+    private float slowTimeStamp;
     // Start is called before the first frame update
     void Start()
     {
@@ -70,7 +71,7 @@ public class PlayerController : MonoBehaviour
         timestamp = 0f;
         ConnectWire();
         newTurret = Instantiate(turret,new Vector3(2, 1, 2), Quaternion.identity);
-
+        slowed = false;
     }
 
     public void SetState(Common.State state)
@@ -158,15 +159,21 @@ public class PlayerController : MonoBehaviour
         newWire.transform.position = (gameObject.transform.position + newTurret.transform.position)/2f;
         newWire.transform.LookAt(newTurret.transform.position);
         newWire.transform.Rotate(Vector3.right, 90);
-        newWire.transform.Scale.y = (gameObject.transform.position - newTurret.transform.position).magnitude;
+        newWire.transform.localScale = new Vector3 (newWire.transform.localScale.x,(gameObject.transform.position - newTurret.transform.position).magnitude/2f, newWire.transform.localScale.z);
         if ((gameObject.transform.position-newTurret.transform.position).magnitude > 4f) {
-            gameObject.GetComponent<Movement>().speed = 2;
+            gameObject.GetComponent<Movement>().speed = 2f;
             Vector3 moveVector = gameObject.GetComponent<Movement>().publicMoveVector;
-            newTurret.GetComponent<Rigidbody>().velocity = moveVector/moveVector.magnitude * gameObject.GetComponent<Movement>().speed;
+            newTurret.GetComponent<Rigidbody>().velocity = moveVector/moveVector.magnitude * gameObject.GetComponent<Movement>().speed*2;
+            slowed = true;
+            slowTimeStamp = Time.time+2f;
         }
         if ((gameObject.transform.position - newTurret.transform.position).magnitude <= 4f)
         {
-            gameObject.GetComponent<Movement>().speed = 5;
+            if (slowed && Time.time >= slowTimeStamp)
+            {
+                gameObject.GetComponent<Movement>().speed = 5;
+            }
+            
             newTurret.GetComponent<Rigidbody>().velocity = .995f * newTurret.GetComponent<Rigidbody>().velocity;
         }
         
