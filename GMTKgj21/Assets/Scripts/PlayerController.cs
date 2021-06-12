@@ -160,14 +160,14 @@ public class PlayerController : MonoBehaviour
         newWire.transform.LookAt(newTurret.transform.position);
         newWire.transform.Rotate(Vector3.right, 90);
         newWire.transform.localScale = new Vector3 (newWire.transform.localScale.x,(gameObject.transform.position - newTurret.transform.position).magnitude/2f, newWire.transform.localScale.z);
-        if ((gameObject.transform.position-newTurret.transform.position).magnitude > 4f) {
+        if ((gameObject.transform.position-newTurret.transform.position).magnitude > 7f) {
             gameObject.GetComponent<Movement>().speed = 2f;
             Vector3 moveVector = gameObject.GetComponent<Movement>().publicMoveVector;
             newTurret.GetComponent<Rigidbody>().velocity = moveVector/moveVector.magnitude * gameObject.GetComponent<Movement>().speed*2;
             slowed = true;
             slowTimeStamp = Time.time+2f;
         }
-        if ((gameObject.transform.position - newTurret.transform.position).magnitude <= 4f)
+        if ((gameObject.transform.position - newTurret.transform.position).magnitude <= 7f)
         {
             if (slowed && Time.time >= slowTimeStamp)
             {

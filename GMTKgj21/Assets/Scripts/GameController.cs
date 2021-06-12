@@ -37,7 +37,7 @@ public class GameController : MonoBehaviour
     public void StartGame()
     {
         // Start Game
-        Player = Instantiate(PlayerPrefab, new Vector3(0, 1, 0), Quaternion.identity);
+        Player = Instantiate(PlayerPrefab, new Vector3(0,2, 0), Quaternion.identity);
         //Turret = Instantiate(TurretPrefab, new Vector3(2, 1, 2), Quaternion.identity);
        // Wire = Instantiate(WirePrefab, new Vector3(2, 1, 2), Quaternion.identity);
         StartCoroutine(Wave());
