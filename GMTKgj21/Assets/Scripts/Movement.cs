@@ -65,7 +65,18 @@ public class Movement : MonoBehaviour
 
         rigidbody.velocity = new Vector3(0, 0, 0);
 
-        this.LookAt(moveVector);
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+
+        if (Physics.Raycast(ray, out RaycastHit hitInfo))
+        {
+            Vector3 aimPoint = GetGunHeightAimPoint(ray, hitInfo);
+            gameObject.transform.LookAt(aimPoint);
+            //reticle.GetComponent<Transform>().position = aimPoint;
+           // finalPoint = aimPoint;
+            //this.LookAt(aimPoint);
+        }
+
+        
         this.transform.position = new Vector3(transform.position.x, 0.5f, transform.position.z);
 
         transform.Translate(moveVector * speed * Time.deltaTime, Space.World); //Direct
@@ -82,6 +93,26 @@ public class Movement : MonoBehaviour
         {
             this._isMoving = false;
             enemyController.SetState(Common.State.IDLE);
+        }
+    }
+    private Vector3 GetGunHeightAimPoint(Ray mouseAim, RaycastHit hitInfo)
+    {
+        // if the raycast hit something and the Y is above the gun height
+        if (hitInfo.collider != null && hitInfo.point.y > .51)
+        {
+            Vector3 heightAdjusted = hitInfo.point;
+            heightAdjusted.y = .5f;
+            return heightAdjusted;
+        }
+
+        Plane aimPlane = new Plane(Vector3.up, Vector3.up * .5f);
+        if (aimPlane.Raycast(mouseAim, out float distance))
+        {
+            return mouseAim.GetPoint(distance);
+        }
+        else
+        {
+            return Vector3.zero; // you missed the ground
         }
     }
 

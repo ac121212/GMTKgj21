@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028355, g: 0.22571374, b: 0.30692255, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -884,7 +884,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 126
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!65 &1778912688
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1115,9 +1115,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2185713250334488086, guid: d58a18bfb8c814dc893403ef41126b00,
         type: 3}
+      propertyPath: WirePrefab
+      value: 
+      objectReference: {fileID: 1664770629832976695, guid: 58f4fa5df77972e45be2fc4be50017d0,
+        type: 3}
+    - target: {fileID: 2185713250334488086, guid: d58a18bfb8c814dc893403ef41126b00,
+        type: 3}
       propertyPath: PlayerPrefab
       value: 
       objectReference: {fileID: 720974035876365623, guid: e5316cc04ff7ee04899971448dae3611,
+        type: 3}
+    - target: {fileID: 2185713250334488086, guid: d58a18bfb8c814dc893403ef41126b00,
+        type: 3}
+      propertyPath: TurretPrefab
+      value: 
+      objectReference: {fileID: 4097503893737340642, guid: 8ab56423ca50ce84ba4013677406ead7,
         type: 3}
     - target: {fileID: 2185713250334488087, guid: d58a18bfb8c814dc893403ef41126b00,
         type: 3}

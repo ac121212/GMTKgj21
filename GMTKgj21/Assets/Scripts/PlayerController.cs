@@ -5,7 +5,8 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public bool isKilled;
-
+    public GameObject wire;
+    public GameObject turret;
     private float IntervalLoadAttack = 0.1f;
     private float StartIntervalLoadAttack = 0.1f;
     private Common.State _currentState;
@@ -53,7 +54,8 @@ public class PlayerController : MonoBehaviour
     private float grenadeCooldown = 1f;
     private bool grenadeTriggered;
     private Vector3 finalPoint;
-
+    private GameObject newWire;
+    private GameObject newTurret;
     // Start is called before the first frame update
     void Start()
     {
@@ -66,6 +68,8 @@ public class PlayerController : MonoBehaviour
         reticle.GetComponent<MeshRenderer>().enabled = false;
         cooldown = .5f;
         timestamp = 0f;
+        ConnectWire();
+        newTurret = Instantiate(turret,new Vector3(2, 1, 2), Quaternion.identity);
 
     }
 
@@ -141,10 +145,19 @@ public class PlayerController : MonoBehaviour
         //    //   AimGrenade(position, forward, headingAngle, playerVelocity);
         //}
         //
-        //FaceMouse();
-
+        FaceMouse();
+        KeepWireConnected();
     }
 
+    public void ConnectWire()
+    {
+        newWire = Instantiate(wire);
+    }
+    public void KeepWireConnected()
+    {
+        newWire.transform.position = (gameObject.transform.position + newTurret.transform.position)/2f;
+
+    }
     public void ShootBullet()
     {
         GameObject currentBullet = Instantiate(Bullet);
@@ -182,7 +195,7 @@ public class PlayerController : MonoBehaviour
     private Vector3 GetGunHeightAimPoint(Ray mouseAim, RaycastHit hitInfo)
     {
         // if the raycast hit something and the Y is above the gun height
-        if (hitInfo.collider != null && hitInfo.point.y > .51)
+        if (hitInfo.collider != null && hitInfo.point.y > .5)
         {
             Vector3 heightAdjusted = hitInfo.point;
             heightAdjusted.y = .5f;

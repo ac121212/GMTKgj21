@@ -7,8 +7,11 @@ public class GameController : MonoBehaviour
 {
     [Header("Here comes the Player prefab")]
     public GameObject PlayerPrefab;
+    public GameObject TurretPrefab;
+    public GameObject WirePrefab;
     public GameObject Player;
-
+    public GameObject Turret;
+    public GameObject Wire;
 
     [Header("Here comes the enemy prefab")]
     public GameObject EnemyPrefab;
@@ -35,7 +38,8 @@ public class GameController : MonoBehaviour
     {
         // Start Game
         Player = Instantiate(PlayerPrefab, new Vector3(0, 1, 0), Quaternion.identity);
-
+        //Turret = Instantiate(TurretPrefab, new Vector3(2, 1, 2), Quaternion.identity);
+       // Wire = Instantiate(WirePrefab, new Vector3(2, 1, 2), Quaternion.identity);
         StartCoroutine(Wave());
     }
    
