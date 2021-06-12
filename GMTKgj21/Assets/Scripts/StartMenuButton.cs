@@ -9,7 +9,6 @@ public class StartMenuButton : MonoBehaviour
     private bool notTwoWeapons;
     public bool isStart;
     public bool isQuit;
-    public bool isWeapons;
     private AssetBundle myAssets;
     private string[] scenePaths;
     // Start is called before the first frame update
@@ -34,21 +33,14 @@ public class StartMenuButton : MonoBehaviour
 
     void OnMouseUp()
     {
-        if (isStart && (PlayerPrefs.GetInt("isGrenade") + PlayerPrefs.GetInt("isBullet") + PlayerPrefs.GetInt("isShield") == 2))
+        if (isStart)
         {
-            SceneManager.LoadScene("GameMap1");
-        } 
-        else if (isStart && (PlayerPrefs.GetInt("isGrenade") + PlayerPrefs.GetInt("isBullet") + PlayerPrefs.GetInt("isShield") != 2))
-        {
-            notTwoWeapons = true;
+            SceneManager.LoadScene("SampleScene");
+            SceneManager.UnloadScene("MainMenu");
         }
         if (isQuit)
         {
             Application.Quit();
-        }
-        if (isWeapons)
-        {
-            SceneManager.LoadScene("ChooseAttacks");
         }
     }
 
@@ -58,9 +50,6 @@ public class StartMenuButton : MonoBehaviour
     }
     void OnGUI()
     {
-        if (notTwoWeapons)
-        {
-            GUI.Label(new Rect(Screen.width / 2, Screen.height / 2, 200f, 200f), "Must have exactly two weapon choices");
-        }
+      
     }
 }
