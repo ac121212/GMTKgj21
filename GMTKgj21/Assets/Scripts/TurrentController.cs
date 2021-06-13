@@ -59,9 +59,9 @@ public class TurrentController : MonoBehaviour
                 distanceToObstacle = distance;
 
         }
-         transform.rotation = Quaternion.LookRotation(_aimDirectionVector);
+        transform.rotation = Quaternion.LookRotation(_aimDirectionVector);
 
-         transform.LookAt(CurrentTarget.transform);
+        transform.LookAt(CurrentTarget.transform);
         turretAnimation.SetBool("Firing", true);
         CanShoot = true;
     }
@@ -72,10 +72,8 @@ public class TurrentController : MonoBehaviour
         float dist = Vector3.Distance(CurrentTarget.transform.position, this.transform.position);
         if (dist < attackRange)
         {
-            
             CurrentTarget.TakeDamage(Damage);
         }
-            
         else
         {
             turretAnimation.SetBool("Firing", false);

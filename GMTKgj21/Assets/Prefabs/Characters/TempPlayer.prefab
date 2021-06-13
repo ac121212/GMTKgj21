@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 720974035876365623}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1, z: 0}
-  m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children:
   - {fileID: 4577315175840037334}
   m_Father: {fileID: 0}
@@ -85,7 +85,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 720974035876365623}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -105,20 +105,12 @@ MonoBehaviour:
   isKilled: 0
   wire: {fileID: 1664770629832976695, guid: 58f4fa5df77972e45be2fc4be50017d0, type: 3}
   turret: {fileID: 4097503893737340642, guid: 8ab56423ca50ce84ba4013677406ead7, type: 3}
-  Bullet: {fileID: 8167036622384439544, guid: cdd702c92e0ae244d845a4f1ebacb58a, type: 3}
   Animator: {fileID: 3897870739570926967}
-  Model: {fileID: 0}
   _isCollidingWithObstacle: 0
   AttackVoiceSound: {fileID: 0}
   attackRange: 4
   currentHealth: 0
   healthPoints: 100
-  healthPointsIncreaser: 0
-  hitPoints: 2
-  hitPointsIncreaser: 0
-  reloadTime: 1
-  attackTime: 0.5
-  recoverTime: 0.5
 --- !u!114 &295464680440906151
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -135,6 +127,7 @@ MonoBehaviour:
   _isCollidingWithObstacle: 0
   rigidbody: {fileID: 0}
   _isMoving: 0
+  laser: {fileID: 0}
   publicMoveVector: {x: 0, y: 0, z: 0}
 --- !u!54 &1460121297695943648
 Rigidbody:

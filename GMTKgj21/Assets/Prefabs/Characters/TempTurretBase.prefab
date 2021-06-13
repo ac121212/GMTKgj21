@@ -103,8 +103,8 @@ GameObject:
   - component: {fileID: 4104126397310417316}
   - component: {fileID: 984499222800466296}
   - component: {fileID: 5933843830514366475}
-  - component: {fileID: 2740530683321380830}
   - component: {fileID: 8041456344289497928}
+  - component: {fileID: 6952459364628589544}
   m_Layer: 0
   m_Name: TempTurretBase
   m_TagString: Untagged
@@ -192,24 +192,11 @@ MonoBehaviour:
   attackRange: 6
   Laser: {fileID: 3675721234469348374}
   CurrentTarget: {fileID: 0}
-  Damage: 1
+  Damage: 10
   turretAnimation: {fileID: 3303145167883263438}
   CanShoot: 0
   ShootingInterval: 0.3
   ShootingTime: 0.3
---- !u!65 &2740530683321380830
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4097503893737340642}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &8041456344289497928
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -222,10 +209,24 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
-  m_Constraints: 48
+  m_Constraints: 116
   m_CollisionDetection: 0
+--- !u!136 &6952459364628589544
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4097503893737340642}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 1.8047057
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.40235287, z: 0}
 --- !u!1 &4528512166233248301
 GameObject:
   m_ObjectHideFlags: 0
