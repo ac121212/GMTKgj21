@@ -15,6 +15,7 @@ public class Movement : MonoBehaviour
     private bool down;
     private bool left;
     private bool right;
+    private Vector3 lookingDirection = new Vector3 (0f,0f,0f);
 
     [HideInInspector]
     public Rigidbody rigidbody;
@@ -50,7 +51,7 @@ public class Movement : MonoBehaviour
     public void Move(Vector3 moveVector)
     {
         if (playerController.isKilled) return;
-        playerController.Animator.SetFloat("Forward", 1);
+        //playerController.Animator.SetFloat("Forward", 1);
 
         //this is for slip unit when it collide with obstacle
         if (this._isCollidingWithObstacle)
@@ -72,8 +73,8 @@ public class Movement : MonoBehaviour
         }
 
         rigidbody.velocity = new Vector3(0, 0, 0);
-        gameObject.transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.LookRotation(moveVector), Time.deltaTime * 100f);
-        float angleDif = (transform.rotation.eulerAngles.y - Quaternion.LookRotation(moveVector).eulerAngles.y);
+        
+        float angleDif = (transform.rotation.eulerAngles.y - Quaternion.LookRotation(lookingDirection).eulerAngles.y);
         if (angleDif < 0)
         {
             angleDif += 360f;
@@ -110,7 +111,7 @@ public class Movement : MonoBehaviour
             playerController.Animator.SetFloat("Forward", forwardScale);
             playerController.Animator.SetFloat("LeftRight", turnScale);
         }
-        print("turnScale:"+turnScale + " angleDif:"+angleDif);
+        
         
         //  transform.rotation = Quaternion.LookRotation(moveVector);
         this.transform.position = new Vector3(transform.position.x, 0.5f, transform.position.z);
@@ -138,7 +139,7 @@ public class Movement : MonoBehaviour
         this._isCollidingWithObstacle = true;
         this._collisionVector = collision.contacts[0].normal;
 
-        if (WalkAgainstWall > 3)
+        if (collision.gameObject.tag == "Wall")
         {
             Vector3 MoveTo = new Vector3(_collisionVector.x, _collisionVector.y, _collisionVector.z);
 
@@ -148,9 +149,11 @@ public class Movement : MonoBehaviour
                 MoveTo = new Vector3(_collisionVector.x, _collisionVector.y, 0);
 
             Move(MoveTo);
+            
         }
         else
             WalkAgainstWall++;
+     //   print(WalkAgainstWall);
     }
 
     void Update()
@@ -163,6 +166,13 @@ public class Movement : MonoBehaviour
         if (!((Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow)) || (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))))
         {
             _TempMoveVector = new Vector3(_TempMoveVector.x, 0f, 0f);
+        }
+        if (_TempMoveVector != Vector3.zero)
+        {
+            lookingDirection = _TempMoveVector;
+        } else
+        {
+            lookingDirection = transform.forward;
         }
 
 
@@ -242,8 +252,8 @@ public class Movement : MonoBehaviour
         {
             forwardScale -= .1f;
         }
-
+        
         Move(_TempMoveVector);
-
+        gameObject.transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.LookRotation(lookingDirection), Time.deltaTime * 100f);
     }
 }

@@ -14,18 +14,21 @@ public class TurrentController : MonoBehaviour
     [Header("The lower the faster")]
     public float ShootingInterval = 0.3f;
     public float ShootingTime = 0.3f;
+    private GameObject closest;
+    List<Collider> enemies = new List<Collider>(); 
     // Start is called before the first frame update
     void Start()
     {
         Laser.localScale = new Vector3(0, 0, attackRange);
     }
 
-    public Enemy GetNearestEnemy()
+   /* public Enemy GetNearestEnemy()
     {
         Enemy nearestEnemy = null;
         float nearestDistance = attackRange;
         foreach (Enemy enemy in FindObjectsOfType<Enemy>())
         {
+            print("here");
             RaycastHit hit;
             Vector3 unitCenterPos = transform.position + new Vector3(0, 0.5f, 0);
             Ray ray = new Ray(unitCenterPos, _aimDirectionVector);
@@ -42,12 +45,13 @@ public class TurrentController : MonoBehaviour
         }
 
         return nearestEnemy;
-    }
+    }*/
 
     public void Aim()
     {
-        CurrentTarget = GetNearestEnemy();
-        _aimDirectionVector = (CurrentTarget.transform.position + transform.position).normalized;
+        //CurrentTarget. = closest;
+        //print("here");
+        _aimDirectionVector = (closest.transform.position + transform.position).normalized;
         float distanceToObstacle = attackRange;
         RaycastHit hit;
         Vector3 unitCenterPos = transform.position + new Vector3(0, 0.5f, 0);
@@ -59,21 +63,67 @@ public class TurrentController : MonoBehaviour
                 distanceToObstacle = distance;
 
         }
-         transform.rotation = Quaternion.LookRotation(_aimDirectionVector);
+      //   transform.rotation = Quaternion.LookRotation(_aimDirectionVector);
+        
 
-         transform.LookAt(CurrentTarget.transform);
+         transform.LookAt(closest.transform.position);
+      
         turretAnimation.SetBool("Firing", true);
         CanShoot = true;
+    }
+    public void OnTriggerEnter(Collider other)
+    {
+        if (!enemies.Contains(other) && other.gameObject.tag == "Enemy")
+        {
+            //add the object to the list
+            enemies.Add(other);
+        }
+    }
+    public void OnTriggerStay(Collider other)
+    {
+        if (other.gameObject.tag == "Enemy")
+        {
+            //laserTurretAnimator.SetTrigger("Fire");
+            closest = ClosestEnemy(enemies);
+            //gameObject.transform.LookAt(closest.transform.position);
+           // print(closest.transform.position);
+
+        }
+
+    }
+    public GameObject ClosestEnemy(List<Collider> colliders)
+    {
+        float bestDist = 100000f;
+        Collider closest = new Collider();
+        foreach (Collider enemy in colliders)
+        {
+            float dist = (gameObject.transform.position - enemy.gameObject.transform.position).magnitude;
+            if (dist < bestDist)
+            {
+                bestDist = dist;
+                closest = enemy;
+            }
+        }
+        return closest.gameObject;
+    }
+    public void OnTriggerExit(Collider other)
+    {
+        //if the object is in the list
+        if (enemies.Contains(other))
+        {
+            //remove it from the list
+            enemies.Remove(other);
+        }
     }
 
     public void Shoot()
     {
         
-        float dist = Vector3.Distance(CurrentTarget.transform.position, this.transform.position);
-        if (dist < attackRange)
+        float dist = Vector3.Distance(closest.transform.position, this.transform.position);
+        if (dist < GetComponent<SphereCollider>().radius)
         {
             
-            CurrentTarget.TakeDamage(Damage);
+         //   CurrentTarget.TakeDamage(Damage);
         }
             
         else
@@ -86,11 +136,11 @@ public class TurrentController : MonoBehaviour
 
     private void Update()
     {
-        if (ShootingTime > 0)
-        {
+       // if (ShootingTime > 0)
+     //   {
             ShootingTime -= Time.deltaTime;
             Aim();
-        }
+      //  }
         if (CanShoot && ShootingTime <= 0)
         {
             ShootingTime = ShootingInterval;
