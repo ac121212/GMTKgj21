@@ -131,11 +131,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f93fe1d84cf674d42b6899b34f8e885a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 8
   _isCollidingWithObstacle: 0
   rigidbody: {fileID: 0}
   _isMoving: 0
-  laser: {fileID: 7815069833903160560, guid: 4d20af9b17b03a544b2a282742bf5da5, type: 3}
   publicMoveVector: {x: 0, y: 0, z: 0}
 --- !u!54 &1460121297695943648
 Rigidbody:

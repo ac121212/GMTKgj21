@@ -13,11 +13,6 @@ public class TurretController : MonoBehaviour
         enemies = new List<Collider>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     public void OnTriggerEnter(Collider other)
     {
         if (!enemies.Contains(other))

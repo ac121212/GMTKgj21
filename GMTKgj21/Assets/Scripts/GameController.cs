@@ -27,7 +27,8 @@ public class GameController : MonoBehaviour
     public List<int> EnemyCounterWaveBased = new List<int>();
 
     [Header("Enemy Spawning range,  the higher the more further")]
-    public float SpawnRange = 20;
+    public float minSpawnRange = 10;
+    public float maxSpawnRange = 40;
 
     [Header("Enemy Spawning range,  the higher the more further")]
     public TextMeshProUGUI WaveCountDisplay;
@@ -78,8 +79,8 @@ public class GameController : MonoBehaviour
     private void SpawnEnemy()
     {
         //Getting two values for x and y 
-        float x = Random.Range(0, SpawnRange);
-        float z = Random.Range(0, SpawnRange);
+        float x = Random.Range(minSpawnRange, maxSpawnRange);
+        float z = Random.Range(minSpawnRange, maxSpawnRange);
 
         //Create's Enemy        //The create the temp position for the enemy prefab
         Enemys.Add(Instantiate(EnemyPrefab, new Vector3(x, 0.5f, z), Quaternion.identity));

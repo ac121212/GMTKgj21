@@ -22,7 +22,6 @@ public class Movement : MonoBehaviour
     /* private vars */
     public bool _isMoving;
     private Vector3 _TempMoveVector;
-    public GameObject laser;
     public Vector3 publicMoveVector;
 
     public void Start()
@@ -73,9 +72,9 @@ public class Movement : MonoBehaviour
         }
 
         rigidbody.velocity = new Vector3(0, 0, 0);
-       gameObject.transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.LookRotation(moveVector), Time.deltaTime * 100f);
+        gameObject.transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.LookRotation(moveVector), Time.deltaTime * 100f);
         float angleDif = (transform.rotation.eulerAngles.y - Quaternion.LookRotation(moveVector).eulerAngles.y);
-        if (angleDif <0)
+        if (angleDif < 0)
         {
             angleDif += 360f;
         }
@@ -156,15 +155,15 @@ public class Movement : MonoBehaviour
 
     void Update()
     {
-      //  playerController.Animator.SetFloat("Forward", 0);
-       /* if (!((Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))||(Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))))
+        playerController.Animator.SetFloat("Forward", 0);
+        if (!((Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))||(Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))))
         {
             _TempMoveVector = new Vector3(0f, 0f, _TempMoveVector.z);
         }
         if (!((Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow)) || (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))))
         {
             _TempMoveVector = new Vector3(_TempMoveVector.x, 0f, 0f);
-        }*/
+        }
 
 
         this._isMoving = false;
@@ -175,28 +174,28 @@ public class Movement : MonoBehaviour
         if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow)) // left
         {
             left = true;
-
+        
             this._isMoving = true;
-
+        
         }
         else if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow)) //right
         {
             right = true;
             this._isMoving = true;
-
+        
         }
-
+        
         if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow)) //up
         {
             up = true;
             this._isMoving = true;
-
+        
         }
         else if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))// down
         {
             down = true;
             this._isMoving = true;
-
+        
         } 
         if ((up || down) && !(left || right))
         {

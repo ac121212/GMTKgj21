@@ -15,11 +15,11 @@ C:/Users/Computer JF/Documents/GitHub/GMTKgj21/GMTKgj21
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-56079
+56380
 Successfully changed project path to: C:/Users/Computer JF/Documents/GitHub/GMTKgj21/GMTKgj21
 C:/Users/Computer JF/Documents/GitHub/GMTKgj21/GMTKgj21
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 28.89 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 28.10 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.11f1 (99c7afb366b3)
 [Subsystems] Discovering subsystems at path D:/Unity Hub/Editor/2020.3.11f1/Editor/Data/Resources/UnitySubsystems
@@ -35,422 +35,246 @@ Initialize mono
 Mono path[0] = 'D:/Unity Hub/Editor/2020.3.11f1/Editor/Data/Managed'
 Mono path[1] = 'D:/Unity Hub/Editor/2020.3.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'D:/Unity Hub/Editor/2020.3.11f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56516
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56864
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/Unity Hub/Editor/2020.3.11f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: D:/Unity Hub/Editor/2020.3.11f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001368 seconds.
+Registered in 0.001363 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 29.60 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 26.45 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.035 seconds
+- Completed reload, in  1.028 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.001089 seconds.
+Registered in 0.001114 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Refreshing native plugins compatible for Editor in 0.28 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.710 seconds
+- Completed reload, in  0.705 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 0.42 ms, found 0 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.28 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1442 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 75.2 MB.
-System memory in use after: 75.3 MB.
+System memory in use after: 75.2 MB.
 
 Unloading 14 unused Assets to reduce memory usage. Loaded Objects now: 1893.
-Total: 1.506200 ms (FindLiveObjects: 0.187500 ms CreateObjectMapping: 0.049500 ms MarkObjects: 1.202300 ms  DeleteObjects: 0.065800 ms)
+Total: 1.606200 ms (FindLiveObjects: 0.156800 ms CreateObjectMapping: 0.047900 ms MarkObjects: 1.296900 ms  DeleteObjects: 0.103400 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Prefabs/Characters/TempEnemy.prefab
-  artifactKey: Guid(92bb8cfef6bac7940981849cad831671) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Characters/TempEnemy.prefab using Guid(92bb8cfef6bac7940981849cad831671) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e943e61ca67ccaa867a0366c43af7ca') in 0.276837 seconds
-  Import took 0.279268 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 386.359843 seconds.
-  path: Assets/Prefabs/GameController.prefab
-  artifactKey: Guid(d58a18bfb8c814dc893403ef41126b00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/GameController.prefab using Guid(d58a18bfb8c814dc893403ef41126b00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fec83115b27e176c93db4365d89d9fc0') in 0.007107 seconds
-  Import took 0.009972 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.326232 seconds.
-  path: Assets/Prefabs/Characters/gameplay_theme_demo.mp3
-  artifactKey: Guid(05fc3584412a62243afe2ff1c200dd8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Characters/gameplay_theme_demo.mp3 using Guid(05fc3584412a62243afe2ff1c200dd8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '700393da6af031500bdc349383fa4c1d') in 0.096354 seconds
-  Import took 0.098699 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000172 seconds.
-  path: Assets/Prefabs/Characters/TempWire.prefab
-  artifactKey: Guid(58f4fa5df77972e45be2fc4be50017d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Characters/TempWire.prefab using Guid(58f4fa5df77972e45be2fc4be50017d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '652aaff15e2f734ae53878d31ff97a9c') in 0.010664 seconds
-  Import took 0.013038 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000198 seconds.
-  path: Assets/Prefabs/Characters/TempPlayer.prefab
-  artifactKey: Guid(e5316cc04ff7ee04899971448dae3611) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Characters/TempPlayer.prefab using Guid(e5316cc04ff7ee04899971448dae3611) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '522db76d883ac2b0ab3d5dba1cf01d19') in 0.019692 seconds
-  Import took 0.022491 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000184 seconds.
-  path: Assets/Prefabs/Characters/TempTurretBase.prefab
-  artifactKey: Guid(8ab56423ca50ce84ba4013677406ead7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Characters/TempTurretBase.prefab using Guid(8ab56423ca50ce84ba4013677406ead7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80e927eaedfddc51231ef40a259dcf28') in 0.037239 seconds
-  Import took 0.039610 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000175 seconds.
-  path: Assets/Prefabs/Characters/LaserTurret.prefab
-  artifactKey: Guid(5725691e55bdba445893067f44f47bf6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Characters/LaserTurret.prefab using Guid(5725691e55bdba445893067f44f47bf6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '410b129526663aac68f074e641089535') in 0.013443 seconds
-  Import took 0.015975 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 11.854390 seconds.
-  path: Assets/Prefabs/Characters/Materials/Texture_Atlas_TEX.mat
-  artifactKey: Guid(72dbf22f427aa2a45986ab7757c7b560) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Characters/Materials/Texture_Atlas_TEX.mat using Guid(72dbf22f427aa2a45986ab7757c7b560) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49cba963650c46e1360efc2cf31931b5') in 0.165587 seconds
-  Import took 0.167951 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 25.650635 seconds.
   path: Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Environment_Floor_1.fbx
   artifactKey: Guid(bb61a2a78409ac2478057f07bcfc66b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Environment_Floor_1.fbx using Guid(bb61a2a78409ac2478057f07bcfc66b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65c89b53abb7e324cb3253b5b0817ca0') in 0.111891 seconds
-  Import took 0.115086 seconds .
+Start importing Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Environment_Floor_1.fbx using Guid(bb61a2a78409ac2478057f07bcfc66b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4bc1032584d3629ee4e3a7caec96ce5') in 0.128347 seconds
+  Import took 0.130623 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000172 seconds.
-  path: Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Environment_Wall_Prop_2.fbx
-  artifactKey: Guid(7d255d1da44b35a45bea87e5ab9a7ca7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Environment_Wall_Prop_2.fbx using Guid(7d255d1da44b35a45bea87e5ab9a7ca7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93a04c99fa37547e2e5b97a1d9b0a98b') in 0.014403 seconds
-  Import took 0.016598 seconds .
+  Time since last request: 43.414269 seconds.
+  path: Assets/Scenes/Game/NavMesh-NavMesh Surface.asset
+  artifactKey: Guid(7db439c5422d441de918d56cc0df2bf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Game/NavMesh-NavMesh Surface.asset using Guid(7db439c5422d441de918d56cc0df2bf7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab4fb92de9b6e82da7a0303d96a19d22') in 0.011473 seconds
+  Import took 0.014103 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000190 seconds.
-  path: Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Environment_Floor_7_DetailCorner.fbx
-  artifactKey: Guid(371e7673db9e7c947a2d7c182952e943) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Environment_Floor_7_DetailCorner.fbx using Guid(371e7673db9e7c947a2d7c182952e943) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb6a65f54b0d02f8237d9d6e1e78e8fb') in 0.026345 seconds
-  Import took 0.029402 seconds .
+  Time since last request: 0.043764 seconds.
+  path: Assets/Scenes/Game/NavMesh.asset
+  artifactKey: Guid(e776e25b4082c8147ace8a01442bb185) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Game/NavMesh.asset using Guid(e776e25b4082c8147ace8a01442bb185) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9520af67e5dbbec23249a105db7bf1fe') in 0.005874 seconds
+  Import took 0.008549 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000176 seconds.
-  path: Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Environment_Wall_Spawner_Hole.fbx
-  artifactKey: Guid(08aed95c4fcc27f41a129164fdf638c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Environment_Wall_Spawner_Hole.fbx using Guid(08aed95c4fcc27f41a129164fdf638c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '408a9766d4e181bc603b13489d7fcafb') in 0.019855 seconds
-  Import took 0.022328 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000168 seconds.
-  path: Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Environment_Wall_2.fbx
-  artifactKey: Guid(b32f8c035724b954e8f3162c6577edab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Environment_Wall_2.fbx using Guid(b32f8c035724b954e8f3162c6577edab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e67ccae26812d6812aa5e0a2af67316b') in 0.015429 seconds
-  Import took 0.017735 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000177 seconds.
-  path: Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Environment_Wall_4.fbx
-  artifactKey: Guid(9ff0af10883ee5241a7256b8b0ef80e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Environment_Wall_4.fbx using Guid(9ff0af10883ee5241a7256b8b0ef80e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c6cd43cf32e0815bb822a28a63e50f7') in 0.018688 seconds
-  Import took 0.021410 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000169 seconds.
-  path: Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Environment_Floor_2.fbx
-  artifactKey: Guid(b090030dade0c5f48a19ef4ccc1ad8b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Environment_Floor_2.fbx using Guid(b090030dade0c5f48a19ef4ccc1ad8b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c58a4dc62c4b09808befec81a232f13') in 0.021702 seconds
-  Import took 0.024022 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000163 seconds.
-  path: Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Environment_Wall_Prop_1.fbx
-  artifactKey: Guid(1844794413a49494894c8d8bc6dc62db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Environment_Wall_Prop_1.fbx using Guid(1844794413a49494894c8d8bc6dc62db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b58711b711a12d661f0634bda7569c7') in 0.014819 seconds
-  Import took 0.017034 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000193 seconds.
-  path: Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Environment_Wall_3.fbx
-  artifactKey: Guid(670bcfe4b0d1cb544bc78d979b5602ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Environment_Wall_3.fbx using Guid(670bcfe4b0d1cb544bc78d979b5602ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c63f7581df57decb98b5a877652e8c9') in 0.018934 seconds
-  Import took 0.021600 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000213 seconds.
-  path: Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Environment_Floor_5_TrimDetail.fbx
-  artifactKey: Guid(8e1bb98721c5fa3468072323e7d140d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Environment_Floor_5_TrimDetail.fbx using Guid(8e1bb98721c5fa3468072323e7d140d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8eb6a1df75766ec72b480f38ac0fae74') in 0.018972 seconds
-  Import took 0.021691 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000154 seconds.
-  path: Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Environment_Piller_1.fbx
-  artifactKey: Guid(95027b66406f7074e82276625750a40d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Environment_Piller_1.fbx using Guid(95027b66406f7074e82276625750a40d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c2b170d821825de54dfae27c289bc72') in 0.016856 seconds
-  Import took 0.019735 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000163 seconds.
-  path: Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Environment_Floor_3_TrimBorder.fbx
-  artifactKey: Guid(4ed5cb0f5e57f194ba31206670d3a9dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Environment_Floor_3_TrimBorder.fbx using Guid(4ed5cb0f5e57f194ba31206670d3a9dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '013f8b8205308917753d30a856146314') in 0.019320 seconds
-  Import took 0.021552 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000164 seconds.
-  path: Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Environment_Floor_4_TrimCorner.fbx
-  artifactKey: Guid(c04e97f7bf234f8488874f7a6923a8bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Environment_Floor_4_TrimCorner.fbx using Guid(c04e97f7bf234f8488874f7a6923a8bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82d6a62919c30204f3402eca165394b2') in 0.014689 seconds
-  Import took 0.017041 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000207 seconds.
-  path: Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Environment_Floor_6_Detail.fbx
-  artifactKey: Guid(0f08b99159c648943ae60fd79f1d3b94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Environment_Floor_6_Detail.fbx using Guid(0f08b99159c648943ae60fd79f1d3b94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2a140998d24ee2b2e9997dbcf069dd1') in 0.018863 seconds
-  Import took 0.021417 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000180 seconds.
-  path: Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Texture_Atlas_TEX.png
-  artifactKey: Guid(eeec7567984695e4da5736e3ed6a4f27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Texture_Atlas_TEX.png using Guid(eeec7567984695e4da5736e3ed6a4f27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '423f890f47d5a696e3621081c16e0091') in 0.012464 seconds
-  Import took 0.014785 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000187 seconds.
+  Time since last request: 185.787368 seconds.
   path: Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Environment_Wall_1.fbx
   artifactKey: Guid(ea3a7359fa9e0164f82ef681eac96371) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Environment_Wall_1.fbx using Guid(ea3a7359fa9e0164f82ef681eac96371) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5df118da1ea80f25ad97d1f7b1be322') in 0.017399 seconds
-  Import took 0.019786 seconds .
+Start importing Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Environment_Wall_1.fbx using Guid(ea3a7359fa9e0164f82ef681eac96371) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b524a9339bc32c7c701a788958e548c5') in 0.020033 seconds
+  Import took 0.022801 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 26.781311 seconds.
-  path: Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Art_Scene_Test/LightingData.asset
-  artifactKey: Guid(f582c33132544744990bf07689b04af1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Art_Scene_Test/LightingData.asset using Guid(f582c33132544744990bf07689b04af1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'edb03ce4c36ddf4bf94efc9713a56284') in 0.007166 seconds
-  Import took 0.009578 seconds .
+  Time since last request: 439.950811 seconds.
+  path: Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Environment_Floor_2.fbx
+  artifactKey: Guid(b090030dade0c5f48a19ef4ccc1ad8b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Environment_Floor_2.fbx using Guid(b090030dade0c5f48a19ef4ccc1ad8b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '066786d856bd9622bbd584910a854be0') in 0.019279 seconds
+  Import took 0.022089 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000174 seconds.
-  path: Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Art_Scene_Test/Lightmap-0_comp_dir.png
-  artifactKey: Guid(a49c5340cf16d5243870280c0961c406) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Art_Scene_Test/Lightmap-0_comp_dir.png using Guid(a49c5340cf16d5243870280c0961c406) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07d8ad4c9923c24db24b4d401978df86') in 0.010942 seconds
-  Import took 0.013104 seconds .
+  Time since last request: 37.388868 seconds.
+  path: Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Environment_Floor_3.fbx
+  artifactKey: Guid(243eca3ba2c48804a8494b2efa550c0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Environment_Floor_3.fbx using Guid(243eca3ba2c48804a8494b2efa550c0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bedf5f5068a13f5c04255c66e2001876') in 0.023332 seconds
+  Import took 0.025694 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000175 seconds.
-  path: Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Art_Scene_Test/Lightmap-1_comp_dir.png
-  artifactKey: Guid(29d3c6f71b5b3384387c3e307756709c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Art_Scene_Test/Lightmap-1_comp_dir.png using Guid(29d3c6f71b5b3384387c3e307756709c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13cc0335cc0c86a2eca3f8cf89fbbbc9') in 0.011007 seconds
-  Import took 0.013412 seconds .
+  Time since last request: 38.635436 seconds.
+  path: Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Environment_Floor_3_TrimBorder.fbx
+  artifactKey: Guid(4ed5cb0f5e57f194ba31206670d3a9dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Environment_Floor_3_TrimBorder.fbx using Guid(4ed5cb0f5e57f194ba31206670d3a9dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fcd90589b6bb8e2b9b9d7cd6fbfecbe') in 0.018501 seconds
+  Import took 0.020834 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000162 seconds.
-  path: Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Art_Scene_Test/Lightmap-0_comp_light.exr
-  artifactKey: Guid(2d23e7959e0e0004896b72abe5fb09c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Art_Scene_Test/Lightmap-0_comp_light.exr using Guid(2d23e7959e0e0004896b72abe5fb09c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7e43ba0c93696c2fb5fcd538deef581') in 0.024808 seconds
-  Import took 0.027349 seconds .
+  Time since last request: 23.008316 seconds.
+  path: Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Environment_Floor_4_TrimCorner.fbx
+  artifactKey: Guid(c04e97f7bf234f8488874f7a6923a8bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Environment_Floor_4_TrimCorner.fbx using Guid(c04e97f7bf234f8488874f7a6923a8bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5bd5302ddbfd8fb4daecbbfebb4d316') in 0.019996 seconds
+  Import took 0.022317 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000183 seconds.
-  path: Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Art_Scene_Test/Lightmap-1_comp_light.exr
-  artifactKey: Guid(a7ffeb3c26d39654fa6af951a570f5cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Art_Scene_Test/Lightmap-1_comp_light.exr using Guid(a7ffeb3c26d39654fa6af951a570f5cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f419591639180a2cdee4f5a15646001f') in 0.010525 seconds
-  Import took 0.012818 seconds .
+  Time since last request: 50.938772 seconds.
+  path: Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Environment_Floor_5_TrimDetail.fbx
+  artifactKey: Guid(8e1bb98721c5fa3468072323e7d140d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Environment_Floor_5_TrimDetail.fbx using Guid(8e1bb98721c5fa3468072323e7d140d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06cdaefcdd19f963bd62e9f35562672e') in 0.017996 seconds
+  Import took 0.020462 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000184 seconds.
-  path: Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Art_Scene_Test/Lightmap-2_comp_light.exr
-  artifactKey: Guid(e1e4787c09b5b914187d45f6e82f1373) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Art_Scene_Test/Lightmap-2_comp_light.exr using Guid(e1e4787c09b5b914187d45f6e82f1373) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80a6275fa6b40466e8af8414439eb745') in 0.015720 seconds
-  Import took 0.018237 seconds .
+  Time since last request: 16.706792 seconds.
+  path: Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Environment_Floor_6_Detail.fbx
+  artifactKey: Guid(0f08b99159c648943ae60fd79f1d3b94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Environment_Floor_6_Detail.fbx using Guid(0f08b99159c648943ae60fd79f1d3b94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '458ba879dd94f2bb9a1291b4a1fe615a') in 0.017323 seconds
+  Import took 0.019727 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000190 seconds.
-  path: Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Art_Scene_Test/ReflectionProbe-0.exr
-  artifactKey: Guid(68d00259cfd818144b8dd1aa70356531) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Art_Scene_Test/ReflectionProbe-0.exr using Guid(68d00259cfd818144b8dd1aa70356531) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1845db5d21a833336c4a2cc013bf169e') in 0.066899 seconds
-  Import took 0.069496 seconds .
+  Time since last request: 57.303928 seconds.
+  path: Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Environment_Floor_7_DetailCorner.fbx
+  artifactKey: Guid(371e7673db9e7c947a2d7c182952e943) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Environment_Floor_7_DetailCorner.fbx using Guid(371e7673db9e7c947a2d7c182952e943) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb0b5d873887227affd3015eb85a905f') in 0.022136 seconds
+  Import took 0.024995 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000181 seconds.
-  path: Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Art_Scene_Test/Lightmap-2_comp_dir.png
-  artifactKey: Guid(0c111cf104bebde499e0a08c3853a287) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Art_Scene_Test/Lightmap-2_comp_dir.png using Guid(0c111cf104bebde499e0a08c3853a287) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69a4fdcb5e25a55de429101161dcf298') in 0.009558 seconds
-  Import took 0.011706 seconds .
+  Time since last request: 75.374731 seconds.
+  path: Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Walls/Environment_Wall_2.fbx
+  artifactKey: Guid(a7274b3819bdc5e4d80a8a16331bfab5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Walls/Environment_Wall_2.fbx using Guid(a7274b3819bdc5e4d80a8a16331bfab5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de754501c5ea24ea66094edb55b22507') in 0.021442 seconds
+  Import took 0.023833 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000164 seconds.
-  path: Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Art_Scene_Test/Lightmap-3_comp_dir.png
-  artifactKey: Guid(88d99f285ba6d8145958cc36db0728db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Art_Scene_Test/Lightmap-3_comp_dir.png using Guid(88d99f285ba6d8145958cc36db0728db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7142e9b88ad3f54773f1adc25f2d1424') in 0.014721 seconds
-  Import took 0.017019 seconds .
+  Time since last request: 99.478241 seconds.
+  path: Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Walls/Environment_Wall_3.fbx
+  artifactKey: Guid(35e246f209e0f964db72c0aa332df738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Walls/Environment_Wall_3.fbx using Guid(35e246f209e0f964db72c0aa332df738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6394d7b673b52adb09f458de063261b3') in 0.022477 seconds
+  Import took 0.024793 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000157 seconds.
-  path: Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Art_Scene_Test/Lightmap-3_comp_light.exr
-  artifactKey: Guid(e50eeb7316aba294caf25a153324eed6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Art_Scene_Test/Lightmap-3_comp_light.exr using Guid(e50eeb7316aba294caf25a153324eed6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c53c13de651d152b185d0ce6e9036d1') in 0.014679 seconds
-  Import took 0.017090 seconds .
+  Time since last request: 64.583610 seconds.
+  path: Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Walls/Environment_Wall_4.fbx
+  artifactKey: Guid(864a437e408d3ec4c8d1f4be19a4f193) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Walls/Environment_Wall_4.fbx using Guid(864a437e408d3ec4c8d1f4be19a4f193) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'beb555e1a93c83fd0f69484c9a9da82f') in 0.007018 seconds
+  Import took 0.009652 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 261.195814 seconds.
-  path: Assets/Prefabs/Characters/FBX/Enemy_Idle.fbx
-  artifactKey: Guid(85fba481428e27041a6fa97e33f0721d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Characters/FBX/Enemy_Idle.fbx using Guid(85fba481428e27041a6fa97e33f0721d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d91030293da95fa51ddc1fb511307e6') in 0.041066 seconds
-  Import took 0.043591 seconds .
+  Time since last request: 0.000999 seconds.
+  path: Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Walls/Environment_Wall_4.fbx
+  artifactKey: Guid(864a437e408d3ec4c8d1f4be19a4f193) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Walls/Environment_Wall_4.fbx using Guid(864a437e408d3ec4c8d1f4be19a4f193) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'beb555e1a93c83fd0f69484c9a9da82f') in 0.002984 seconds
+  Import took 0.005301 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000178 seconds.
-  path: Assets/Prefabs/Characters/FBX/Enemy_Run.fbx
-  artifactKey: Guid(80641aa0dd5257d419038181dab0ccbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Characters/FBX/Enemy_Run.fbx using Guid(80641aa0dd5257d419038181dab0ccbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3cdc75cc90fa497124ba48f02bef8bb0') in 0.050384 seconds
-  Import took 0.052689 seconds .
+  Time since last request: 64.920343 seconds.
+  path: Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Walls/Environment_Wall_4.fbx
+  artifactKey: Guid(864a437e408d3ec4c8d1f4be19a4f193) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Walls/Environment_Wall_4.fbx using Guid(864a437e408d3ec4c8d1f4be19a4f193) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92da43b25178fc52637cd0ed51b67034') in 0.018656 seconds
+  Import took 0.021622 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000182 seconds.
-  path: Assets/Prefabs/Characters/FBX/Pickup_Shotgun.fbx
-  artifactKey: Guid(6d8a20dea951dbd46a3106e9689beecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Characters/FBX/Pickup_Shotgun.fbx using Guid(6d8a20dea951dbd46a3106e9689beecc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2cc6582a6e50bdac33f760e4421ae4f5') in 0.025815 seconds
-  Import took 0.028244 seconds .
+  Time since last request: 629.422692 seconds.
+  path: Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Props/Environment_Wall_Prop_1.fbx
+  artifactKey: Guid(7e400dd59219ff9478d2d6205392e1ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Props/Environment_Wall_Prop_1.fbx using Guid(7e400dd59219ff9478d2d6205392e1ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9260edd7373a050953871bbf3252d9c4') in 0.018477 seconds
+  Import took 0.021461 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000185 seconds.
-  path: Assets/Prefabs/Characters/FBX/Scrap_Bolt.fbx
-  artifactKey: Guid(148ad79b0efe0a64389a0271861547bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Characters/FBX/Scrap_Bolt.fbx using Guid(148ad79b0efe0a64389a0271861547bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b34a89fffb543de67c02486714359c9') in 0.017586 seconds
-  Import took 0.020104 seconds .
+  Time since last request: 0.004022 seconds.
+  path: Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Props/Environment_Wall_Prop_1.fbx
+  artifactKey: Guid(7e400dd59219ff9478d2d6205392e1ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Props/Environment_Wall_Prop_1.fbx using Guid(7e400dd59219ff9478d2d6205392e1ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9260edd7373a050953871bbf3252d9c4') in 0.019185 seconds
+  Import took 0.021747 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000186 seconds.
-  path: Assets/Prefabs/Characters/FBX/Player_Run_L.fbx
-  artifactKey: Guid(dbbc0bad3616f7d479f25088a65680dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Characters/FBX/Player_Run_L.fbx using Guid(dbbc0bad3616f7d479f25088a65680dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '184df4e471edee350bba5de27cbd3b50') in 0.066681 seconds
-  Import took 0.069281 seconds .
+  Time since last request: 2.107528 seconds.
+  path: Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Props/Environment_Wall_Prop_2.fbx
+  artifactKey: Guid(faef10bc25daf4646a553e6447e32f1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Props/Environment_Wall_Prop_2.fbx using Guid(faef10bc25daf4646a553e6447e32f1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a56bae528e7d49e215ea2e388f01528c') in 0.021462 seconds
+  Import took 0.023814 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000174 seconds.
-  path: Assets/Prefabs/Characters/FBX/Scrap_Nut.fbx
-  artifactKey: Guid(7acce80b99fdc6945b32a5115c950c99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Characters/FBX/Scrap_Nut.fbx using Guid(7acce80b99fdc6945b32a5115c950c99) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ee85e4c4e51e7c9567a12b85ca5463e') in 0.016752 seconds
-  Import took 0.018949 seconds .
+  Time since last request: 64.707398 seconds.
+  path: Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Walls/Environment_Wall_Spawner_Hole.fbx
+  artifactKey: Guid(3626cdfecb78d9a43ac3eac96d18a97e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Walls/Environment_Wall_Spawner_Hole.fbx using Guid(3626cdfecb78d9a43ac3eac96d18a97e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd30761db1ea6b75d665473aa4d0ddbbd') in 0.018430 seconds
+  Import took 0.020931 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000156 seconds.
-  path: Assets/Prefabs/Characters/FBX/Player_Run_R.fbx
-  artifactKey: Guid(8f052c77b213b2146ba674fd130c2ba5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Characters/FBX/Player_Run_R.fbx using Guid(8f052c77b213b2146ba674fd130c2ba5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd8d4583f16a88ca7aea025cf170d31b') in 0.062707 seconds
-  Import took 0.065074 seconds .
+  Time since last request: 95.935924 seconds.
+  path: Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Props/Environment_Piller_1.fbx
+  artifactKey: Guid(20552cce05ce6eb49a415a5194e0dd9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Props/Environment_Piller_1.fbx using Guid(20552cce05ce6eb49a415a5194e0dd9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2caab1d3430f2b7b0c4e4b3ac2a4c5af') in 0.024289 seconds
+  Import took 0.026832 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000178 seconds.
-  path: Assets/Prefabs/Characters/FBX/Pickup_Rifle.fbx
-  artifactKey: Guid(23c6593158fc5e647a59ecb62571cd24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Characters/FBX/Pickup_Rifle.fbx using Guid(23c6593158fc5e647a59ecb62571cd24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3653a8cb9a018ca4e9385c0b0161e39a') in 0.031096 seconds
-  Import took 0.033271 seconds .
+  Time since last request: 46.436464 seconds.
+  path: Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Props/Environment_Bush_1.fbx
+  artifactKey: Guid(0cf2ae3514b734044a07f9e58da34bb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Props/Environment_Bush_1.fbx using Guid(0cf2ae3514b734044a07f9e58da34bb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'edebeb15b022ffb10c9f86de45cb8743') in 0.017149 seconds
+  Import took 0.019525 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000177 seconds.
-  path: Assets/Prefabs/Characters/FBX/Scrap_Gear.fbx
-  artifactKey: Guid(2ce7f788b109a4e41862f6c74aff9acc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Characters/FBX/Scrap_Gear.fbx using Guid(2ce7f788b109a4e41862f6c74aff9acc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24bc3047c4d29f0a12d370e8c609f011') in 0.020167 seconds
-  Import took 0.022437 seconds .
+  Time since last request: 24.436105 seconds.
+  path: Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Props/Environment_Bush_2.fbx
+  artifactKey: Guid(9d463f69104e2b04d97c8e78e2e9a2ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Props/Environment_Bush_2.fbx using Guid(9d463f69104e2b04d97c8e78e2e9a2ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42cee697943930c31190a5b1d519fd79') in 0.017767 seconds
+  Import took 0.020243 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000242 seconds.
-  path: Assets/Prefabs/Characters/FBX/Pickup_Laser.fbx
-  artifactKey: Guid(98da21c001470b6409d52dc1cbb2dba7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Characters/FBX/Pickup_Laser.fbx using Guid(98da21c001470b6409d52dc1cbb2dba7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '286efab1e2df0a2edb14a2f705580773') in 0.023859 seconds
-  Import took 0.026555 seconds .
+  Time since last request: 51.623550 seconds.
+  path: Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Props/Environment_Pipe_Top.fbx
+  artifactKey: Guid(3853f6e0890e6c54f956542a6a135fee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Props/Environment_Pipe_Top.fbx using Guid(3853f6e0890e6c54f956542a6a135fee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd835c49296cc94aef6a2dfe636259ff3') in 0.019402 seconds
+  Import took 0.021976 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000173 seconds.
-  path: Assets/Prefabs/Characters/FBX/Player_Run_F.fbx
-  artifactKey: Guid(3746315e5e8563b4cb1b0569708be1f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Characters/FBX/Player_Run_F.fbx using Guid(3746315e5e8563b4cb1b0569708be1f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0837bc40e40ead6fb674a029f854d64e') in 0.062842 seconds
-  Import took 0.065290 seconds .
+  Time since last request: 35.820017 seconds.
+  path: Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Props/Environment_Pipe_Mid.fbx
+  artifactKey: Guid(de7bba9c8610bee45bc88a9f1fffa75d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Props/Environment_Pipe_Mid.fbx using Guid(de7bba9c8610bee45bc88a9f1fffa75d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d6f9e937f150bf8594fadd1e8fc15bd') in 0.023083 seconds
+  Import took 0.025674 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000174 seconds.
-  path: Assets/Prefabs/Characters/FBX/Player_Idle.fbx
-  artifactKey: Guid(6a7312f1c20f9e44981ac0bdab361c5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Characters/FBX/Player_Idle.fbx using Guid(6a7312f1c20f9e44981ac0bdab361c5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0c9d3889842d6ac92aad264a7924d1c') in 0.066511 seconds
-  Import took 0.068712 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 28.453974 seconds.
-  path: Assets/Prefabs/Projectiles/Bullet.prefab
-  artifactKey: Guid(cdd702c92e0ae244d845a4f1ebacb58a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Projectiles/Bullet.prefab using Guid(cdd702c92e0ae244d845a4f1ebacb58a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '722f4b3cd0eb010372394860db1adf4e') in 0.010765 seconds
-  Import took 0.014361 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000173 seconds.
-  path: Assets/Prefabs/Projectiles/Grenade.prefab
-  artifactKey: Guid(4d2fd1f9ffa845b4aa41485019481206) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Projectiles/Grenade.prefab using Guid(4d2fd1f9ffa845b4aa41485019481206) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1f02edd7003bce43ae02306521d644e') in 0.009080 seconds
-  Import took 0.011258 seconds .
+  Time since last request: 5.123644 seconds.
+  path: Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Props/Environment_Pipe_Base.fbx
+  artifactKey: Guid(ad4de5ce516d5cb448d2a7bee51028cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Test_FBX_ello/Art_Environment_Test/Props/Environment_Pipe_Base.fbx using Guid(ad4de5ce516d5cb448d2a7bee51028cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad4543690349929ee9c18a30e1a96d19') in 0.018639 seconds
+  Import took 0.021289 seconds .
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

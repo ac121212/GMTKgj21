@@ -59,11 +59,8 @@ public class TurrentController : MonoBehaviour
                 distanceToObstacle = distance;
 
         }
-        //gameObject.transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.LookRotation(new Vector3(_aimDirectionVector.x,transform.rotation.y,_aimDirectionVector.z)), Time.deltaTime * 100f);
          transform.rotation = Quaternion.LookRotation(_aimDirectionVector);
 
-
-        //gameObject.transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.LookRotation(CurrentTarget.transform.position-transform.position), Time.deltaTime * 100f);
          transform.LookAt(CurrentTarget.transform);
         turretAnimation.SetBool("Firing", true);
         CanShoot = true;

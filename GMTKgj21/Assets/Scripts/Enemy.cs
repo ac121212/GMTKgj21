@@ -68,9 +68,9 @@ public class Enemy : MonoBehaviour
     private void Die()
     {
         float drop = Random.Range(0f, 1f);
-        if (drop >= 0 && <= .05)
+        if (drop <= .05)
         {
-            GameObject scrap = Instantiate(scrap1, Quaternion.identity(transform.position));
+            GameObject scrap = Instantiate(scrap1, transform.position, Quaternion.identity);
         }
         gameController.Enemys.Remove(this.gameObject);
         Destroy(this.gameObject);
@@ -117,15 +117,6 @@ public class Enemy : MonoBehaviour
 
         if(GetComponent<Movement>() != null)
             navMeshAgent.speed = this.GetComponent<Movement>().speed;
-
-        AITypeSetup();
-
-    }
-
-    public void AITypeSetup()
-    {
-
-       
     }
 
     void AIUpdate()
@@ -153,7 +144,6 @@ public class Enemy : MonoBehaviour
 
                 if (this._targetUnit != null)
                     this._targetPosition = this._targetUnit.transform.position;
-               // enemyAnimator.SetFloat("EnemyForward", .8f);
                 MoveWithNavMesh();
 
             }
@@ -170,38 +160,6 @@ public class Enemy : MonoBehaviour
 
     }
 
-    public void SetAIGoal()
-    {
-        switch (myAIType)
-        {
-            case AIType.Beginner:
-                {
-                   
-
-                }
-                break;
-
-            case AIType.Normal:
-                {
-
-
-                }
-                break;
-
-            case AIType.Strong:
-                {
-
-
-                }
-                break;
-        }
-
-    }
-
-  
-
-
-
     public void FindTarget()
     {
         this._targetUnit = FindObjectOfType<PlayerController>();
@@ -213,7 +171,6 @@ public class Enemy : MonoBehaviour
     
     private IEnumerator _RepeatFindTargetAfterAWhile()
     {
-                
         yield return new WaitForSeconds(Random.Range(minResetAIGoalTime, maxResetAIGoalTime));
         this._targetFound = false;
         FindTarget();
