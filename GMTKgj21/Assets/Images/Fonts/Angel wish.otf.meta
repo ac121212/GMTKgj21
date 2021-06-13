@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 3741fbe64eb63ba439f6e7d0f46a5a76
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Angel wish
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: d25a5679fbf0a8b4d9fe6c573ae3c036, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

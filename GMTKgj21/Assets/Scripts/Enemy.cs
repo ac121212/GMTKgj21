@@ -52,6 +52,10 @@ public class Enemy : MonoBehaviour
     void Update()
     {
         AIUpdate();
+        if (currentHealth <=0)
+        {
+            Die();
+        }
     }
 
     public void TakeDamage(float Damage)
@@ -70,6 +74,7 @@ public class Enemy : MonoBehaviour
 
         gameController.Enemys.Remove(this.gameObject);
         Destroy(this.gameObject);
+        print("DIE");
     }
     
     private void Attack()

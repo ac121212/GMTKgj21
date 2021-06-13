@@ -147,7 +147,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5559116101408951984}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.5
   m_Height: 2.5
@@ -166,8 +166,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isKilled: 0
-  movement: {fileID: 0}
-  Bullet: {fileID: 0}
   ExplodeParticle: {fileID: 6240884470303168589, guid: 319e443a7cc4c4ef5b7db1aae311d4fb,
     type: 3}
   Animator: {fileID: 5725026481605000479}
@@ -175,8 +173,8 @@ MonoBehaviour:
   _isCollidingWithObstacle: 0
   AttackVoiceSound: {fileID: 0}
   attackRange: 2
-  currentHealth: 20
-  healthPoints: 100
+  currentHealth: 5
+  healthPoints: 5
   healthPointsIncreaser: 0
   hitPoints: 5
   hitPointsIncreaser: 0

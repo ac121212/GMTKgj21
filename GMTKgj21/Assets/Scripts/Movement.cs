@@ -9,15 +9,13 @@ public class Movement : MonoBehaviour
     public float speed;
     public bool _isCollidingWithObstacle;
     private Vector3 _collisionVector;
-<<<<<<< HEAD
     private bool up;
     private bool down;
     private bool left;
     private bool right;
     private Vector3 lookingDirection = new Vector3 (0f,0f,0f);
-=======
->>>>>>> d0cdc77ebb4dc31dfef8e1dca6486886ede016d3
-
+    private float turnScale = 0f;
+    private float forwardScale = 0f;
     [HideInInspector]
     public Rigidbody rigidbody;
 
@@ -35,15 +33,15 @@ public class Movement : MonoBehaviour
         if (GetComponent<Rigidbody>() != null)
             rigidbody = GetComponent<Rigidbody>();
 
-        laser = (GameObject)Instantiate(laser, new Vector3(GetComponent<Transform>().position.x, GetComponent<Transform>().position.y, GetComponent<Transform>().position.z), Quaternion.identity);
+       // laser = (GameObject)Instantiate(laser, new Vector3(GetComponent<Transform>().position.x, GetComponent<Transform>().position.y, GetComponent<Transform>().position.z), Quaternion.identity);
 
     }
 
 
     private void LookAt(Vector3 direction)
     {
-        laser.transform.rotation = Quaternion.LookRotation(direction);
-        laser.transform.position = GetComponent<Transform>().position;
+      //  laser.transform.rotation = Quaternion.LookRotation(direction);
+      //  laser.transform.position = GetComponent<Transform>().position;
         transform.rotation = Quaternion.LookRotation(direction);
     }
 
@@ -72,7 +70,6 @@ public class Movement : MonoBehaviour
         }
 
         rigidbody.velocity = new Vector3(0, 0, 0);
-<<<<<<< HEAD
         
         float angleDif = (transform.rotation.eulerAngles.y - Quaternion.LookRotation(lookingDirection).eulerAngles.y);
         if (angleDif < 0)
@@ -114,12 +111,10 @@ public class Movement : MonoBehaviour
         
         
         //  transform.rotation = Quaternion.LookRotation(moveVector);
-=======
-        transform.rotation = Quaternion.LookRotation(moveVector);
->>>>>>> d0cdc77ebb4dc31dfef8e1dca6486886ede016d3
+       // transform.rotation = Quaternion.LookRotation(moveVector);
         this.transform.position = new Vector3(transform.position.x, 0.5f, transform.position.z);
 
-        transform.Translate(moveVector /*/ moveVector.magnitude*/ * speed * Time.deltaTime, Space.World); //Direct
+        transform.Translate(moveVector/moveVector.magnitude* speed * Time.deltaTime, Space.World); //Direct
         publicMoveVector = moveVector;
 
     }
@@ -162,7 +157,6 @@ public class Movement : MonoBehaviour
     void Update()
     {
         playerController.Animator.SetFloat("Forward", 0);
-<<<<<<< HEAD
         if (!((Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))||(Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))))
         {
             _TempMoveVector = new Vector3(0f, 0f, _TempMoveVector.z);
@@ -178,8 +172,6 @@ public class Movement : MonoBehaviour
         {
             lookingDirection = transform.forward;
         }
-=======
->>>>>>> d0cdc77ebb4dc31dfef8e1dca6486886ede016d3
 
         _TempMoveVector = Vector3.zero;
 

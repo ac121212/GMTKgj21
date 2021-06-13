@@ -104,7 +104,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isKilled: 0
   wire: {fileID: 1664770629832976695, guid: 58f4fa5df77972e45be2fc4be50017d0, type: 3}
-  turret: {fileID: 4097503893737340642, guid: 8ab56423ca50ce84ba4013677406ead7, type: 3}
+  turret: {fileID: 4255690664474628377, guid: 5725691e55bdba445893067f44f47bf6, type: 3}
   Animator: {fileID: 3897870739570926967}
   _isCollidingWithObstacle: 0
   AttackVoiceSound: {fileID: 0}
@@ -141,7 +141,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 116
   m_CollisionDetection: 3
