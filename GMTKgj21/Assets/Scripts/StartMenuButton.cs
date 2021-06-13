@@ -35,7 +35,7 @@ public class StartMenuButton : MonoBehaviour
     {
         if (isStart)
         {
-            SceneManager.LoadScene("SampleScene");
+            SceneManager.LoadScene("Game");
             SceneManager.UnloadScene("MainMenu");
         }
         if (isQuit)

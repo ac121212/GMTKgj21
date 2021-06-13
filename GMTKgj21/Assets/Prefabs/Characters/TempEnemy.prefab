@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4685284328071985441}
-  - component: {fileID: 4118200364350136662}
   m_Layer: 0
   m_Name: AnimatorGoesHere
   m_TagString: Untagged
@@ -32,25 +31,6 @@ Transform:
   m_Father: {fileID: 7201114501547497385}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &4118200364350136662
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2924755165123167857}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 1c7a58f5e8f25f642b0f07e187a126e4, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &5230890568554071617
 GameObject:
   m_ObjectHideFlags: 0
@@ -189,13 +169,13 @@ MonoBehaviour:
   movement: {fileID: 0}
   Bullet: {fileID: 0}
   ExplodeParticle: {fileID: 0}
-  Animator: {fileID: 0}
-  Model: {fileID: 0}
+  Animator: {fileID: 5725026481605000479}
+  Model: {fileID: 5677422199128203246}
   _isCollidingWithObstacle: 0
   AttackVoiceSound: {fileID: 0}
   attackRange: 2
-  currentHealth: 0
-  healthPoints: 10
+  currentHealth: 20
+  healthPoints: 100
   healthPointsIncreaser: 0
   hitPoints: 2
   hitPointsIncreaser: 0
@@ -203,6 +183,10 @@ MonoBehaviour:
   attackTime: 0.5
   recoverTime: 0.5
   _isMoving: 0
+  enemyAnimator: {fileID: 0}
+  scrap1: {fileID: 919132149155446097, guid: 148ad79b0efe0a64389a0271861547bb, type: 3}
+  scrap2: {fileID: 919132149155446097, guid: 2ce7f788b109a4e41862f6c74aff9acc, type: 3}
+  scrap3: {fileID: 919132149155446097, guid: 7acce80b99fdc6945b32a5115c950c99, type: 3}
   _targetUnit: {fileID: 0}
   myCurrentGoal: 0
   myAIType: 0
@@ -247,6 +231,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 48
   m_CollisionDetection: 0
+--- !u!95 &5725026481605000479
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5677422199128203246}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1c7a58f5e8f25f642b0f07e187a126e4, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &4758942206532330175
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -316,6 +319,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1b4058b38b69e4248834d2754df62b9e, type: 3}
+--- !u!1 &5677422199128203246 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 1b4058b38b69e4248834d2754df62b9e,
+    type: 3}
+  m_PrefabInstance: {fileID: 4758942206532330175}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5008444533495842132 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1b4058b38b69e4248834d2754df62b9e,

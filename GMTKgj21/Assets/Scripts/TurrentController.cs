@@ -9,7 +9,7 @@ public class TurrentController : MonoBehaviour
     private Vector3 _aimDirectionVector = new Vector3(0, 0, 1);
     public Enemy CurrentTarget;
     public int Damage;
-
+    public Animator turretAnimation;
     public bool CanShoot;
     [Header("The lower the faster")]
     public float ShootingInterval = 0.3f;
@@ -59,20 +59,32 @@ public class TurrentController : MonoBehaviour
                 distanceToObstacle = distance;
 
         }
-        transform.rotation = Quaternion.LookRotation(_aimDirectionVector);
+        //gameObject.transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.LookRotation(new Vector3(_aimDirectionVector.x,transform.rotation.y,_aimDirectionVector.z)), Time.deltaTime * 100f);
+         transform.rotation = Quaternion.LookRotation(_aimDirectionVector);
 
 
-        transform.LookAt(CurrentTarget.transform);
+        //gameObject.transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.LookRotation(CurrentTarget.transform.position-transform.position), Time.deltaTime * 100f);
+         transform.LookAt(CurrentTarget.transform);
+        turretAnimation.SetBool("Firing", true);
         CanShoot = true;
     }
 
     public void Shoot()
     {
+        
         float dist = Vector3.Distance(CurrentTarget.transform.position, this.transform.position);
         if (dist < attackRange)
+        {
+            
             CurrentTarget.TakeDamage(Damage);
+        }
+            
         else
+        {
+            turretAnimation.SetBool("Firing", false);
             CanShoot = false;
+        }
+            
     }
 
     private void Update()

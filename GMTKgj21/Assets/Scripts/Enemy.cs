@@ -33,7 +33,10 @@ public class Enemy : MonoBehaviour
     public float recoverTime = 0.5f;
     private Rigidbody rigidbody;
     public bool _isMoving;
-
+    public Animator enemyAnimator;
+    public GameObject scrap1;
+    public GameObject scrap2;
+    public GameObject scrap3;
   
     void Start()
     {
@@ -64,8 +67,14 @@ public class Enemy : MonoBehaviour
 
     private void Die()
     {
+        float drop = Random.Range(0f, 1f);
+        if (drop >= 0 && <= .05)
+        {
+            GameObject scrap = Instantiate(scrap1, Quaternion.identity(transform.position));
+        }
         gameController.Enemys.Remove(this.gameObject);
         Destroy(this.gameObject);
+        
     }
 
     private void Attack()
@@ -144,7 +153,7 @@ public class Enemy : MonoBehaviour
 
                 if (this._targetUnit != null)
                     this._targetPosition = this._targetUnit.transform.position;
-
+               // enemyAnimator.SetFloat("EnemyForward", .8f);
                 MoveWithNavMesh();
 
             }
