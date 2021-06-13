@@ -63,11 +63,17 @@ public class TurrentController : MonoBehaviour
                 distanceToObstacle = distance;
 
         }
+<<<<<<< HEAD
       //   transform.rotation = Quaternion.LookRotation(_aimDirectionVector);
         
 
          transform.LookAt(closest.transform.position);
       
+=======
+        transform.rotation = Quaternion.LookRotation(_aimDirectionVector);
+
+        transform.LookAt(CurrentTarget.transform);
+>>>>>>> d0cdc77ebb4dc31dfef8e1dca6486886ede016d3
         turretAnimation.SetBool("Firing", true);
         CanShoot = true;
     }
@@ -122,10 +128,13 @@ public class TurrentController : MonoBehaviour
         float dist = Vector3.Distance(closest.transform.position, this.transform.position);
         if (dist < GetComponent<SphereCollider>().radius)
         {
+<<<<<<< HEAD
             
          //   CurrentTarget.TakeDamage(Damage);
+=======
+            CurrentTarget.TakeDamage(Damage);
+>>>>>>> d0cdc77ebb4dc31dfef8e1dca6486886ede016d3
         }
-            
         else
         {
             turretAnimation.SetBool("Firing", false);

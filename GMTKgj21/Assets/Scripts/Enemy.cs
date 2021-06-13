@@ -7,9 +7,7 @@ public class Enemy : MonoBehaviour
 {
     public bool isKilled;
 
-    public Movement movement;
     /* prefabs */
-    public GameObject Bullet;
     public GameObject ExplodeParticle;
 
     /* component refs */
@@ -40,7 +38,6 @@ public class Enemy : MonoBehaviour
   
     void Start()
     {
-        movement = GetComponent<Movement>();
         gameController = FindObjectOfType<GameController>();
         rigidbody = GetComponent<Rigidbody>();
         StartAI();
@@ -67,22 +64,21 @@ public class Enemy : MonoBehaviour
 
     private void Die()
     {
-        float drop = Random.Range(0f, 1f);
-        if (drop <= .05)
-        {
-            GameObject scrap = Instantiate(scrap1, transform.position, Quaternion.identity);
-        }
+        if (Random.Range(0, 10) == 1)
+            Instantiate(scrap1, transform.position, Quaternion.identity);
+        Instantiate(ExplodeParticle, transform.position, Quaternion.identity);
+
         gameController.Enemys.Remove(this.gameObject);
         Destroy(this.gameObject);
-        
     }
-
+    
     private void Attack()
     {
         _targetUnit.TakeDamage(hitPoints);
+        Die();
+
     }
 
-   
     #region AI
     /* private vars */
 
@@ -113,7 +109,6 @@ public class Enemy : MonoBehaviour
         this._targetFound = false;
         gameController = FindObjectOfType<GameController>();
         navMeshAgent = GetComponent<NavMeshAgent>();
-
 
         if(GetComponent<Movement>() != null)
             navMeshAgent.speed = this.GetComponent<Movement>().speed;

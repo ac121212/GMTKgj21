@@ -8,12 +8,8 @@ public class PlayerController : MonoBehaviour
     public GameObject wire;
     public GameObject turret;
 
-    /* prefabs */
-    public GameObject Bullet;
-
     /* component refs */
     public Animator Animator;
-    public GameObject Model;
 
     //
     public bool _isCollidingWithObstacle;
@@ -25,13 +21,7 @@ public class PlayerController : MonoBehaviour
 
     public float currentHealth;
     public float healthPoints = 10;
-    public float healthPointsIncreaser;
-    public float hitPoints = 2;
-    public float hitPointsIncreaser;
-    public float reloadTime = 1;
-    public float attackTime = 0.5f;
-    public float recoverTime = 0.5f;
-   
+     
     private GameObject newWire;
     private GameObject newTurret;
 
@@ -42,7 +32,7 @@ public class PlayerController : MonoBehaviour
         currentHealth = healthPoints;
 
         ConnectWire();
-        newTurret = Instantiate(turret,new Vector3(2, 0, 2), Quaternion.identity);
+        newTurret = Instantiate(turret,new Vector3(2, 0.5f, 2), Quaternion.identity);
     }
 
 

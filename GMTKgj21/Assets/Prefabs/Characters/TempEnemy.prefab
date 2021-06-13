@@ -92,7 +92,7 @@ Transform:
   m_GameObject: {fileID: 5559116101408951984}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_Children:
   - {fileID: 4685284328071985441}
   m_Father: {fileID: 0}
@@ -149,7 +149,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.9
+  m_Radius: 0.5
   m_Height: 2.5
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
@@ -168,7 +168,8 @@ MonoBehaviour:
   isKilled: 0
   movement: {fileID: 0}
   Bullet: {fileID: 0}
-  ExplodeParticle: {fileID: 0}
+  ExplodeParticle: {fileID: 6240884470303168589, guid: 319e443a7cc4c4ef5b7db1aae311d4fb,
+    type: 3}
   Animator: {fileID: 5725026481605000479}
   Model: {fileID: 5677422199128203246}
   _isCollidingWithObstacle: 0

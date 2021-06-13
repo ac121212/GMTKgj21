@@ -1,27 +1,22 @@
 ﻿<Properties StartupConfiguration="{E9680770-1B98-451E-8F89-56429F4FD0BD}|">
   <MonoDevelop.Ide.ItemProperties.MoreMountains.Tools.Editor PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Enemy.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Movement.cs">
     <Files>
-      <File FileName="Assets/Scripts/PlayerController.cs" Line="80" Column="13" />
-      <File FileName="Assets/Scripts/Enemy.cs" Line="119" Column="70" />
-      <File FileName="Assets/Scripts/Movement.cs" Line="75" Column="9" />
+      <File FileName="Assets/Scripts/PlayerController.cs" Line="79" Column="5" />
+      <File FileName="Assets/Scripts/Enemy.cs" Line="83" Column="6" />
+      <File FileName="Assets/Scripts/Movement.cs" Line="150" Column="2" />
       <File FileName="Assets/Scripts/TurrentController.cs" Line="64" Column="1" />
       <File FileName="Assets/Scripts/GameController.cs" Line="83" Column="62" />
       <File FileName="Assets/Scripts/CameraBehavior.cs" />
       <File FileName="Assets/Scripts/TurretController.cs" Line="56" Column="1" />
       <File FileName="Assets/Scripts/WireController.cs" />
       <File FileName="Assets/Scripts/StartMenuButton.cs" Line="38" Column="41" />
+      <File FileName="Assets/Scripts/SelfDestroy.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="GMTKgj21" expanded="True">
-            <Node name="Assets" expanded="True">
-              <Node name="Scripts" expanded="True">
-                <Node name="Enemy.cs" selected="True" />
-              </Node>
-            </Node>
-          </Node>
+          <Node name="GMTKgj21" expanded="True" selected="True" />
         </State>
       </Pad>
     </Pads>
